@@ -1,0 +1,22 @@
+%Filename: omlwcrum.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omlwcrum.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OML/wcrum.]
+
+\DeclareFontFamily{OML}{wcrum}{\skewchar \font =127}
+
+\DeclareFontShape{OML}{wcrum}{m}{n}{
+   <-> wcrumm
+}{}
+
+\DeclareFontShape{OML}{wcrum}{b}{n}{
+   <-> wcrumb
+}{}
+
+\DeclareFontShape{OML}{wcrum}{bx}{n}{<->ssub * wcrum/b/n}{}
+
+\endinput

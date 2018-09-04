@@ -1,0 +1,209 @@
+#!/bin/sh
+#
+#  WolframFrontEnd 10.3 Front End command file
+#  Copyright 1988-2016 Wolfram Research, Inc.
+
+#  Make certain that ${PATH} includes /usr/bin and /bin
+PATH="${PATH}:/usr/bin:/bin"
+
+
+
+
+XLIB_SKIP_ARGB_VISUALS=1
+export XLIB_SKIP_ARGB_VISUALS
+
+#  Determine the SystemID by examining the output of `uname -s` and 
+#  `uname -m`. Failsafe to SystemIDList=Unknown.
+if [ -z "${SystemIDList}" ]; then
+	case `uname -s` in
+		Linux)
+			case `uname -m` in
+				i?86)
+					SystemIDList="Linux";;
+				x86_64)
+					SystemIDList="Linux-x86-64 Linux";;
+				armv?l)
+					SystemIDList="Linux-ARM";;
+				*)
+					SystemIDList="Unknown";;
+			esac;;
+		*)
+			SystemIDList="Unknown";;
+	esac
+fi
+
+#  Find the full pathname and name of this script.
+Script="${0}"
+ProgramName=`basename "${0}"`
+
+#  If ${SystemIDList} = Unknown, print an error message and exit
+if [ "${SystemIDList}" = "Unknown" ]; then
+	echo "${ProgramName} cannot determine operating system."
+	exit 1
+fi
+
+#  Test to see if the script is being called via a symlink, if so, examine
+#  the output of ls -l on the symlink to find the link target. Reset
+#  ${Script}.
+LinkDirectory=`pwd`
+while `exec test -L "${Script}"`; do
+	ScriptDirectory=`dirname "${Script}"`
+	Script=`ls -l "${Script}" | sed -e 's/.*-> //g'`
+	cd "${ScriptDirectory}"
+done
+ScriptDirectory=`dirname "${Script}"`
+ScriptDirectory=`cd "${ScriptDirectory}"; pwd`
+cd "${LinkDirectory}"
+
+#  Determine $TopDirectory by removing "Executables" from
+#  "${ScriptDirectory}".
+ScriptLeafDirectory="Executables"
+TopDirectory=`cd "${ScriptDirectory}"; pwd | \
+	sed -e 's/\/'"${ScriptLeafDirectory}"'//g'`
+
+#  Reset $PATH to include Mathematica and X11 directories
+if [ -d "/usr/bin/X11" ]; then
+    PATH="${PATH}:/usr/bin/X11"
+fi
+if [ -d "/usr/openwin/bin" ]; then
+    PATH="/usr/openwin/bin:${PATH}"
+fi
+PATH="${TopDirectory}/${ScriptLeafDirectory}:${PATH}"
+export PATH
+
+#  Determine which X display is being used.
+userDisplay=`echo "$@" | \
+    sed 's/.*-display \{1,\}.*:[^ ]\{1,\}.*/setting user display/'`
+if [ "${userDisplay}" = "setting user display" ]
+then
+    userDisplay=`echo "$@" | sed 's/.*\(-display[ ]*[^ ]*\).*/\1/'`
+else
+    userDisplay=""
+fi
+
+#  Check SystemID and Mathematica location
+for SystemID in $SystemIDList; do
+	MathematicaPath="${TopDirectory}/SystemFiles/FrontEnd/Binaries/${SystemID}"
+	MathematicaFE="${MathematicaPath}/WolframFrontEnd"
+	if [ ! -x "${MathematicaFE}" ]; then
+		fail=1
+		continue
+	else
+		fail=0
+		break
+	fi
+done
+if [ ! "${fail}" = "0" ] ; then
+	for SystemID in $SystemIDList; do
+		MathematicaPath="${TopDirectory}/SystemFiles/FrontEnd/Binaries/${SystemID}"
+		MathematicaFE="${MathematicaPath}/WolframFrontEnd"
+		echo "WolframFrontEnd front end executable"
+		echo "${MathematicaFE}"
+		echo "not found. Your WolframFrontEnd installation may be incomplete"
+		echo "or corrupted."
+	done
+    	exit 1
+fi
+
+# Check for and set XMODIFIERS
+if [ -z "${XMODIFIERS}" ]; then
+	XMODIFIERS='@im=kinput2'
+	export XMODIFIERS
+fi
+
+# Check for the -mesa flag and remove it from the argument list.
+mesa=`echo "$@" | tr ' ' '\n' | grep '^-[Mm][Ee][Ss][Aa]$'`
+
+# Check for version 6.7 of Xlib.
+XDpyInfo=`xdpyinfo ${userDisplay} 2> /dev/null`
+VendorStringMatch=`echo ${XDpyInfo} | grep -i "Vendor string:" | \
+	grep -i "The X.Org Foundation"`
+VendorRelNum=`echo ${XDpyInfo} | grep -i "Vendor release number:" | \
+	grep -i "60700000"`
+if [ -n "${VendorStringMatch}" -a -n "${VendorRelNum}" ]; then
+	mesa="-mesa"
+fi
+
+# Set up library paths
+M_LIBRARY_PATH="${TopDirectory}/SystemFiles/Libraries/${SystemID}"
+SED_LIBRARY_PATH=`echo "${M_LIBRARY_PATH}" | sed -e 's/\\//\\\\\//g'`
+
+# Check for GL and GLU version
+GLTest="env LD_LIBRARY_PATH=${M_LIBRARY_PATH} SHLIB_PATH=${M_LIBRARY_PATH} LIBPATH=${M_LIBRARY_PATH} ${TopDirectory}/SystemFiles/FrontEnd/Binaries/${SystemID}/gltest"
+GLTestResult=`${GLTest} 1 1 1 2 ${userDisplay}  2> /dev/null | grep "GLTest_OK"`
+if [ -z "${GLTestResult}" ]; then
+	mesa="-mesa"
+fi
+
+SHLIB_PATH=`echo "${SHLIB_PATH}" | \
+	sed -e 's/^'"${SED_LIBRARY_PATH}"'://g' | \
+	sed -e 's/:'"${SED_LIBRARY_PATH}"':/:/g' | \
+	sed -e 's/:'"${SED_LIBRARY_PATH}"'$//g' | \
+	sed -e 's/^'"${SED_LIBRARY_PATH}"'$//g' | \
+	sed -e 's/::/:/g' | sed -e 's/:$//'`
+if [ -z "${SHLIB_PATH}" ]; then
+	SHLIB_PATH="${M_LIBRARY_PATH}"
+else
+	SHLIB_PATH="${M_LIBRARY_PATH}:${SHLIB_PATH}"
+fi
+if [ "${mesa}" = "-mesa" ]; then
+	SHLIB_PATH="${SHLIB_PATH}:${M_LIBRARY_PATH}/Mesa"
+fi
+export SHLIB_PATH
+
+LIBPATH=`echo "${LIBPATH}" | \
+	sed -e 's/^'"${SED_LIBRARY_PATH}"'://g' | \
+	sed -e 's/:'"${SED_LIBRARY_PATH}"':/:/g' | \
+	sed -e 's/:'"${SED_LIBRARY_PATH}"'$//g' | \
+	sed -e 's/^'"${SED_LIBRARY_PATH}"'$//g' | \
+	sed -e 's/::/:/g' | sed -e 's/:$//'`
+if [ -z "${LIBPATH}" ]; then
+	LIBPATH="${M_LIBRARY_PATH}"
+else
+	LIBPATH="${M_LIBRARY_PATH}:${LIBPATH}"
+fi
+if [ "${mesa}" = "-mesa" ]; then
+	LIBPATH="${LIBPATH}:${M_LIBRARY_PATH}/Mesa"
+fi
+export LIBPATH
+
+LD_LIBRARY_PATH=`echo "${LD_LIBRARY_PATH}" | \
+	sed -e 's/^'"${SED_LIBRARY_PATH}"'://g' | \
+	sed -e 's/:'"${SED_LIBRARY_PATH}"':/:/g' | \
+	sed -e 's/:'"${SED_LIBRARY_PATH}"'$//g' | \
+	sed -e 's/^'"${SED_LIBRARY_PATH}"'$//g' | \
+	sed -e 's/::/:/g' | sed -e 's/:$//'`
+if [ -z "${LD_LIBRARY_PATH}" ]; then
+        LD_LIBRARY_PATH="${M_LIBRARY_PATH}"
+else
+        LD_LIBRARY_PATH="${M_LIBRARY_PATH}:${LD_LIBRARY_PATH}"
+fi
+if [ "${mesa}" = "-mesa" ]; then
+        LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${M_LIBRARY_PATH}/Mesa"
+fi
+export LD_LIBRARY_PATH
+
+# Setup QT Plugin path
+QT_PLUGIN_PATH="${M_LIBRARY_PATH}/Qt-Plugins"
+export QT_PLUGIN_PATH
+
+# Handle -singleLaunch 
+singlelaunch=`echo "$@" | tr ' ' '\n' | egrep '(^-single[lL]aunch|^--single[lL]aunch)$'`
+simplesl=`echo "$@" | tr ' ' '\n' | grep '^-[sS][lL]$'`
+if [ "${singlelaunch}" ] || [ "${simplesl}" ]; then
+	# check for existing FE 
+	sicheck="${TopDirectory}/SystemFiles/FrontEnd/Binaries/${SystemID}/sicheck"
+	sicheckresult=`${sicheck} -p`
+
+	if [ "${sicheckresult}" = 'FE_FOUND' ]; then
+		# send the FE the files
+		sicheckresult=`${sicheck} -l "$@"`
+		exit 0
+	fi
+fi
+
+#  set espeak data directory
+ESPEAK_DATA="${TopDirectory}/SystemFiles/FrontEnd/SystemResources/X/espeak-data"
+export ESPEAK_DATA
+
+"${MathematicaFE}" -topDirectory "${TopDirectory}" "$@"

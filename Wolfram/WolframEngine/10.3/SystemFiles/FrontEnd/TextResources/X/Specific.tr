@@ -1,0 +1,62 @@
+@@resource DefaultFontPattern
+fixed
+@@resource NormalFontWeights
+{ "medium", "normal", "light", "book"}
+@@resource BoldFontWeights
+{ "bold", "extrabold", "demibold", "demi", "black", "heavy", "semibold"}
+@@resource NormalFontSlants
+{ "r"}
+@@resource ItalicFontSlants
+{ "i", "o", "ri", "ro"}
+@@resource NormalFontWidths
+{"normal"}
+@@resource NarrowFontWidths
+{ "condensed", "semicondensed", "narrow" }
+@@resource AFMFileExtensions
+{ ".afm", ".AFM" }
+@@resource ScreenToFrontEndEncoding
+{
+	"adobe-fontspecific"->"Custom",
+	"adobe-standard"->"AdobeStandard",
+	"hp-roman8"->"ASCII",
+	"ascii-0"->"ASCII",
+	"jisx0208.1983-0"->"EUC-JP",
+	"jisx0208.1990-0"->"EUC-JP",
+	"jisx0201.1976-0"->"EUC-JP",
+	"koi8-r"->"ISOLatinCyrillic"
+}
+@@resource PrintToFrontEndEncoding
+{
+	"applestandard"->"MacintoshRoman",
+	"adobestandardencoding"->"AdobeStandard",
+	"isolatin1encoding"->"ISOLatin1",
+	"fontspecific"->"Custom"
+}
+@@resource FrontEndToScreenEncoding
+{
+	"ISOLatin1"->"iso8859-1",
+	"Custom"->"adobe-fontspecific",
+	"AdobeStandard"->"adobe-standard",
+	"JIS"->"jisx0208.1983-0",
+	"ShiftJIS"->"jisx0208.1983-0",
+	"EUC"->"jisx0208.1983-0",
+	"EUC-JP"->"jisx0208.1983-0",
+	"ISOLatin2"->"iso8859-2",
+	"ISOLatin3"->"iso8859-3",
+	"ISOLatin4"->"iso8859-4",
+	"ISOLatin5"->"iso8859-5",
+	"ISOLatinCyrillic"->"koi8-r"
+}
+@@resource FrontEndToPrintEncoding
+{
+    "MacintoshRoman"->"AppleStandard",
+    "AdobeStandard"->"AdobeStandardEncoding",
+    "ISOLatin1"->"Isolatin1Encoding",
+    "Custom"->"FontSpecific"
+}
+@@resource PSFontMap
+{
+	"New Century Schoolbook"->"NewCenturySchlbk",
+	"NewCenSchlbk"->"NewCenturySchlbk",
+	Default->"Courier",
+}

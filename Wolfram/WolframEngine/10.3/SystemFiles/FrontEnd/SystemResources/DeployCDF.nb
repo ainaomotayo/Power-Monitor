@@ -1,0 +1,1869 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     75558,       1859]
+NotebookOptionsPosition[     73805,       1807]
+NotebookOutlinePosition[     75599,       1859]
+CellTagsIndexPosition[     75556,       1856]
+WindowFrame->ModalDialog*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ OverlayBox[{
+  DynamicBox[FEPrivate`ImportImage[
+    FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+     "ButtonBackgroundStripe.png"]],
+   ImageSizeCache->{575., {18., 22.}}], 
+  PaneBox[
+   DynamicModuleBox[{$CellContext`step$$ = 
+    1, $CellContext`embed$$, $CellContext`source$$, $CellContext`target$$ = 
+    Null, $CellContext`directory$$ = 
+    Null, $CellContext`code$$, $CellContext`cdfdimensions$$, \
+$CellContext`nb$$, $CellContext`entire$$ = 
+    False, $CellContext`init$$, $CellContext`enterprise$$, \
+$CellContext`enhancedSigning$$ = 
+    True, $CellContext`embedFiles$$, $CellContext`getFileName$$, \
+$CellContext`htmlTempFile$$}, 
+    TagBox[GridBox[{
+       {
+        ItemBox[
+         PaneSelectorBox[{True->
+          PaneSelectorBox[{1->
+           OverlayBox[{
+            DynamicBox[FEPrivate`ImportImage[
+              
+              FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+               "EmbedProgress-Step1.png"]]], 
+            PaneBox[
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "Steps4Header"]],
+               StripOnInput->False,
+               LineSpacing->{1, 2}], "DialogStyle",
+              StripOnInput->False,
+              GridBoxOptions->{
+              GridBoxItemStyle->{
+               "Columns" -> {{Automatic}}, 
+                "ColumnsIndexed" -> {1 -> GrayLevel[1]}, 
+                "Rows" -> {{Automatic}}}}],
+             Alignment->Center,
+             BaseStyle->{LineBreakWithin -> False},
+             ImageSize->Full,
+             ImageSizeAction->"ShrinkToFit"], 
+            GraphicsBox[
+             {Opacity[0.005], 
+              TagBox[
+               
+               TagBox[RectangleBox[NCache[
+                 Scaled[{Rational[1, 4], 0}], Scaled[{0.25, 0}]], NCache[
+                 Scaled[{Rational[1, 2], 1}], Scaled[{0.5, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 2), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]]},
+             ImageSize->{541, 41},
+             PlotRange->{{0, 541}, {0, 41}}]}, All, 3,
+            Alignment->Center,
+            ImageSize->{541, 41}], 2->
+           OverlayBox[{
+            DynamicBox[FEPrivate`ImportImage[
+              
+              FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+               "EmbedProgress-Step2.png"]]], 
+            PaneBox[
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "Steps4Header"]],
+               StripOnInput->False,
+               LineSpacing->{1, 2}], "DialogStyle",
+              StripOnInput->False,
+              GridBoxOptions->{
+              GridBoxItemStyle->{
+               "Columns" -> {{Automatic}}, 
+                "ColumnsIndexed" -> {2 -> GrayLevel[1]}, 
+                "Rows" -> {{Automatic}}}}],
+             Alignment->Center,
+             BaseStyle->{LineBreakWithin -> False},
+             ImageSize->Full,
+             ImageSizeAction->"ShrinkToFit"], 
+            GraphicsBox[
+             {Opacity[0.005], 
+              TagBox[
+               
+               TagBox[RectangleBox[Scaled[{0, 0}], NCache[
+                 Scaled[{Rational[1, 4], 1}], Scaled[{0.25, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 1), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]]},
+             ImageSize->{541, 41},
+             PlotRange->{{0, 541}, {0, 41}}]}, All, 3,
+            Alignment->Center,
+            ImageSize->{541, 41}], 3->
+           OverlayBox[{
+            DynamicBox[FEPrivate`ImportImage[
+              
+              FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+               "EmbedProgress-Step3.png"]]], 
+            PaneBox[
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "Steps4Header"]],
+               StripOnInput->False,
+               LineSpacing->{1, 2}], "DialogStyle",
+              StripOnInput->False,
+              GridBoxOptions->{
+              GridBoxItemStyle->{
+               "Columns" -> {{Automatic}}, 
+                "ColumnsIndexed" -> {3 -> GrayLevel[1]}, 
+                "Rows" -> {{Automatic}}}}],
+             Alignment->Center,
+             BaseStyle->{LineBreakWithin -> False},
+             ImageSize->Full,
+             ImageSizeAction->"ShrinkToFit"], 
+            GraphicsBox[
+             {Opacity[0.005], 
+              TagBox[
+               
+               TagBox[RectangleBox[NCache[
+                 Scaled[{Rational[1, 4], 0}], Scaled[{0.25, 0}]], NCache[
+                 Scaled[{Rational[1, 2], 1}], Scaled[{0.5, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 2), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]], 
+              TagBox[
+               
+               TagBox[RectangleBox[Scaled[{0, 0}], NCache[
+                 Scaled[{Rational[1, 4], 1}], Scaled[{0.25, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 1), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]]},
+             ImageSize->{541, 41},
+             PlotRange->{{0, 541}, {0, 41}}]}, All, 3,
+            Alignment->Center,
+            ImageSize->{541, 41}], 4->
+           OverlayBox[{
+            DynamicBox[FEPrivate`ImportImage[
+              
+              FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+               "EmbedProgress-Step4.png"]]], 
+            PaneBox[
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "Steps4Header"]],
+               StripOnInput->False,
+               LineSpacing->{1, 2}], "DialogStyle",
+              StripOnInput->False,
+              GridBoxOptions->{
+              GridBoxItemStyle->{
+               "Columns" -> {{Automatic}}, 
+                "ColumnsIndexed" -> {4 -> GrayLevel[1]}, 
+                "Rows" -> {{Automatic}}}}],
+             Alignment->Center,
+             BaseStyle->{LineBreakWithin -> False},
+             ImageSize->Full,
+             ImageSizeAction->"ShrinkToFit"], 
+            GraphicsBox[
+             {Opacity[0.005], 
+              TagBox[
+               
+               TagBox[RectangleBox[NCache[
+                 Scaled[{Rational[1, 2], 0}], Scaled[{0.5, 0}]], NCache[
+                 Scaled[{Rational[3, 4], 1}], Scaled[{0.75, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 3), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]], 
+              TagBox[
+               
+               TagBox[RectangleBox[NCache[
+                 Scaled[{Rational[1, 4], 0}], Scaled[{0.25, 0}]], NCache[
+                 Scaled[{Rational[1, 2], 1}], Scaled[{0.5, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 2), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]], 
+              TagBox[
+               
+               TagBox[RectangleBox[Scaled[{0, 0}], NCache[
+                 Scaled[{Rational[1, 4], 1}], Scaled[{0.25, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 1), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]]},
+             ImageSize->{541, 41},
+             PlotRange->{{0, 541}, {0, 41}}]}, All, 3,
+            Alignment->Center,
+            ImageSize->{541, 41}]}, Dynamic[$CellContext`step$$]], False->
+          PaneSelectorBox[{1->
+           OverlayBox[{
+            DynamicBox[FEPrivate`ImportImage[
+              
+              FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+               "StandaloneProgress-Step1.png"]],
+             ImageSizeCache->{541., {18., 23.}}], 
+            PaneBox[
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "Steps3Header"],
+                ImageSizeCache->{536., {9.4169921875, 14.5830078125}}],
+               StripOnInput->False,
+               LineSpacing->{1, 2}], "DialogStyle",
+              StripOnInput->False,
+              GridBoxOptions->{
+              GridBoxItemStyle->{
+               "Columns" -> {{Automatic}}, 
+                "ColumnsIndexed" -> {1 -> GrayLevel[1]}, 
+                "Rows" -> {{Automatic}}}}],
+             Alignment->Center,
+             BaseStyle->{LineBreakWithin -> False},
+             ImageSize->Full,
+             ImageSizeAction->"ShrinkToFit"], 
+            GraphicsBox[
+             {Opacity[0.005], 
+              TagBox[
+               
+               TagBox[RectangleBox[NCache[
+                 Scaled[{Rational[1, 3], 0}], 
+                  Scaled[{0.3333333333333333, 0}]], NCache[
+                 Scaled[{Rational[2, 3], 1}], 
+                  Scaled[{0.6666666666666666, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 2), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]]},
+             ImageSize->{541, 41},
+             PlotRange->{{0, 541}, {0, 41}}]}, All, 3,
+            Alignment->Center,
+            ImageSize->{541, 41}], 2->
+           OverlayBox[{
+            DynamicBox[FEPrivate`ImportImage[
+              
+              FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+               "StandaloneProgress-Step2.png"]]], 
+            PaneBox[
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "Steps3Header"]],
+               StripOnInput->False,
+               LineSpacing->{1, 2}], "DialogStyle",
+              StripOnInput->False,
+              GridBoxOptions->{
+              GridBoxItemStyle->{
+               "Columns" -> {{Automatic}}, 
+                "ColumnsIndexed" -> {2 -> GrayLevel[1]}, 
+                "Rows" -> {{Automatic}}}}],
+             Alignment->Center,
+             BaseStyle->{LineBreakWithin -> False},
+             ImageSize->Full,
+             ImageSizeAction->"ShrinkToFit"], 
+            GraphicsBox[
+             {Opacity[0.005], 
+              TagBox[
+               
+               TagBox[RectangleBox[Scaled[{0, 0}], NCache[
+                 Scaled[{Rational[1, 3], 1}], 
+                  Scaled[{0.3333333333333333, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 1), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]]},
+             ImageSize->{541, 41},
+             PlotRange->{{0, 541}, {0, 41}}]}, All, 3,
+            Alignment->Center,
+            ImageSize->{541, 41}], 3->
+           OverlayBox[{
+            DynamicBox[FEPrivate`ImportImage[
+              
+              FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+               "StandaloneProgress-Step3.png"]]], 
+            PaneBox[
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "Steps3Header"]],
+               StripOnInput->False,
+               LineSpacing->{1, 2}], "DialogStyle",
+              StripOnInput->False,
+              GridBoxOptions->{
+              GridBoxItemStyle->{
+               "Columns" -> {{Automatic}}, 
+                "ColumnsIndexed" -> {3 -> GrayLevel[1]}, 
+                "Rows" -> {{Automatic}}}}],
+             Alignment->Center,
+             BaseStyle->{LineBreakWithin -> False},
+             ImageSize->Full,
+             ImageSizeAction->"ShrinkToFit"], 
+            GraphicsBox[
+             {Opacity[0.005], 
+              TagBox[
+               
+               TagBox[RectangleBox[NCache[
+                 Scaled[{Rational[1, 3], 0}], 
+                  Scaled[{0.3333333333333333, 0}]], NCache[
+                 Scaled[{Rational[2, 3], 1}], 
+                  Scaled[{0.6666666666666666, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 2), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]], 
+              TagBox[
+               
+               TagBox[RectangleBox[Scaled[{0, 0}], NCache[
+                 Scaled[{Rational[1, 3], 1}], 
+                  Scaled[{0.3333333333333333, 1}]]],
+                MouseAppearanceTag["LinkHand"]],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> ($CellContext`step$$ = 1), PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]]},
+             ImageSize->{541, 41},
+             PlotRange->{{0, 541}, {0, 41}}]}, All, 3,
+            Alignment->Center,
+            ImageSize->{541, 41}]}, Dynamic[$CellContext`step$$]]}, 
+          Dynamic[$CellContext`embed$$]],
+         Alignment->Center,
+         StripOnInput->False], "\[SpanFromLeft]"},
+       {
+        PaneBox[
+         PaneSelectorBox[{False->
+          DynamicBox[FEPrivate`ImportImage[
+            
+            FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, 
+             "StandaloneIcon.png"]],
+           ImageSizeCache->{82., {93., 98.}}], True->
+          DynamicBox[FEPrivate`ImportImage[
+            FrontEnd`ToFileName[{"Dialogs", "DeployCDF"}, "EmbedIcon.png"]],
+           ImageSizeCache->{99., {92., 97.}}]}, Dynamic[$CellContext`embed$$],
+          
+          Alignment->Center,
+          ImageMargins->0,
+          ImageSize->All],
+         Alignment->Center,
+         ImageSize->130], ""},
+       {"\[SpanFromAbove]", 
+        PaneSelectorBox[{1->
+         PaneSelectorBox[{True->
+          TagBox[GridBox[{
+             {
+              PaneSelectorBox[{True->
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "IntroTitleWeb"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}], False->
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "IntroTitle"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}]}, Dynamic[$CellContext`embed$$],
+               BaseStyle->{Bold, Larger}]},
+             {
+              TagBox[GridBox[{
+                 {
+                  FrameBox[
+                   PaneSelectorBox[{True->
+                    TagBox[GridBox[{
+                    {
+                    
+                    RadioButtonBox[Dynamic[$CellContext`enhancedSigning$$], {
+                    True}], 
+                    StyleBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "IntroEnterpriseHeaderChoice1"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                    StripOnInput->False,
+                    FontWeight->Bold]},
+                    {"\<\"\"\>", 
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "IntroEnterpriseTextChoice1"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}]}
+                    },
+                    AutoDelete->False,
+                    
+                    GridBoxAlignment->{
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{Automatic}}}],
+                    "Grid"], False->
+                    TagBox[GridBox[{
+                    {
+                    
+                    RadioButtonBox[Dynamic[$CellContext`enhancedSigning$$], {
+                    True}], 
+                    TagBox[
+                    TagBox[
+                    StyleBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "IntroEnterpriseHeaderChoice1"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                    StripOnInput->False,
+                    FontWeight->Bold],
+                    MouseAppearanceTag["Arrow"]],
+                    
+                    EventHandlerTag[{
+                    "MouseDown" :> ($CellContext`enhancedSigning$$ = True), 
+                    PassEventsDown -> Automatic, PassEventsUp -> True}]]}
+                    },
+                    AutoDelete->False,
+                    
+                    GridBoxAlignment->{
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{Automatic}}}],
+                    "Grid"]}, Dynamic[$CellContext`enhancedSigning$$],
+                    ImageSize->Full],
+                   Background->Dynamic[
+                    If[
+                    If[True, $CellContext`enhancedSigning$$, 
+                    Not[$CellContext`enhancedSigning$$]], 
+                    GrayLevel[0.9453125], None]],
+                   FrameMargins->5,
+                   FrameStyle->Dynamic[
+                    If[
+                    If[True, $CellContext`enhancedSigning$$, 
+                    Not[$CellContext`enhancedSigning$$]], Automatic, None]],
+                   StripOnInput->False]},
+                 {
+                  FrameBox[
+                   PaneSelectorBox[{False->
+                    TagBox[GridBox[{
+                    {
+                    
+                    RadioButtonBox[Dynamic[$CellContext`enhancedSigning$$], {
+                    False}], 
+                    StyleBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "IntroEnterpriseHeaderChoice2"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                    StripOnInput->False,
+                    FontWeight->Bold]},
+                    {"\<\"\"\>", 
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "IntroSubtitle"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}]},
+                    {"\<\"\"\>", 
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "IntroText"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}]}
+                    },
+                    AutoDelete->False,
+                    
+                    GridBoxAlignment->{
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{Automatic}}}],
+                    "Grid"], True->
+                    TagBox[GridBox[{
+                    {
+                    
+                    RadioButtonBox[Dynamic[$CellContext`enhancedSigning$$], {
+                    False}], 
+                    TagBox[
+                    TagBox[
+                    StyleBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "IntroEnterpriseHeaderChoice2"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                    StripOnInput->False,
+                    FontWeight->Bold],
+                    MouseAppearanceTag["Arrow"]],
+                    
+                    EventHandlerTag[{
+                    "MouseDown" :> ($CellContext`enhancedSigning$$ = False), 
+                    PassEventsDown -> Automatic, PassEventsUp -> True}]]}
+                    },
+                    AutoDelete->False,
+                    
+                    GridBoxAlignment->{
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{Automatic}}}],
+                    "Grid"]}, Dynamic[$CellContext`enhancedSigning$$],
+                    ImageSize->Full],
+                   Background->Dynamic[
+                    If[
+                    If[False, $CellContext`enhancedSigning$$, 
+                    Not[$CellContext`enhancedSigning$$]], 
+                    GrayLevel[0.9453125], None]],
+                   FrameMargins->5,
+                   FrameStyle->Dynamic[
+                    If[
+                    If[False, $CellContext`enhancedSigning$$, 
+                    Not[$CellContext`enhancedSigning$$]], Automatic, None]],
+                   StripOnInput->False]}
+                },
+                DefaultBaseStyle->"Column",
+                GridBoxAlignment->{"Columns" -> {{Left}}},
+                
+                GridBoxItemSize->{
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+               "Column"]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            
+            GridBoxSpacings->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{0.5}}, 
+              "RowsIndexed" -> {2 -> 1.5, 3 -> 1, 4 -> 1}}],
+           "Column"], False->
+          TagBox[GridBox[{
+             {
+              PaneSelectorBox[{True->
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "IntroTitleWeb"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}], False->
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "IntroTitle"],
+                 ImageSizeCache->{382., {21.953125, 13.53515625}}],
+                StripOnInput->False,
+                LineSpacing->{1, 2}]}, Dynamic[$CellContext`embed$$],
+               BaseStyle->{Bold, Larger}]},
+             {
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "IntroSubtitle"],
+                ImageSizeCache->{376., {3., 13.}}],
+               StripOnInput->False,
+               LineSpacing->{1, 2}]},
+             {
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "IntroText"],
+                ImageSizeCache->{376., {21., 12.568359375}}],
+               StripOnInput->False,
+               LineSpacing->{1, 2}]},
+             {
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "IntroContactText"],
+                ImageSizeCache->{355., {21., 12.568359375}}],
+               StripOnInput->False,
+               LineSpacing->{1, 2}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            
+            GridBoxSpacings->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{0.5}}, 
+              "RowsIndexed" -> {2 -> 1.5, 3 -> 1, 4 -> 1}}],
+           "Column"]}, Dynamic[$CellContext`enterprise$$]], 2->
+         TagBox[GridBox[{
+            {
+             PaneSelectorBox[{False->
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "SaveSubtitle"],
+                ImageSizeCache->{217., {3., 11.}}],
+               StripOnInput->False,
+               LineSpacing->{1, 2}], True->
+              TagBox[GridBox[{
+                 {
+                  StyleBox[
+                   
+                   DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "SaveTitle"]],
+                   StripOnInput->False,
+                   LineSpacing->{1, 2}]},
+                 {
+                  StyleBox[
+                   
+                   DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "SaveSubtitle"]],
+                   StripOnInput->False,
+                   LineSpacing->{1, 2}]}
+                },
+                DefaultBaseStyle->"Column",
+                GridBoxAlignment->{"Columns" -> {{Left}}},
+                
+                GridBoxItemSize->{
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                
+                GridBoxSpacings->{
+                 "Columns" -> {{Automatic}}, "Rows" -> {{2}}}],
+               "Column"]}, Dynamic[$CellContext`embed$$],
+              BaseStyle->{Bold, Larger}]},
+            {
+             RowBox[{
+              TagBox[
+               TagBox[GridBox[{
+                  {
+                   
+                   RadioButtonBox[Dynamic[$CellContext`source$$, None], {
+                    Identity}], 
+                   PaneBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "SaveAll"],
+                    ImageSizeCache->{103., {1., 10.}}],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}]]}
+                 },
+                 AutoDelete->False,
+                 BaseStyle->{StripOnInput -> True},
+                 
+                 GridBoxAlignment->{
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Bottom}}},
+                 
+                 GridBoxItemSize->{
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                 GridBoxSpacings->{"Columns" -> {{0.2}}}],
+                "Grid"],
+               EventHandlerTag[{"MouseClicked" :> If[
+                   Not[$CellContext`entire$$], $CellContext`source$$ = 
+                   Identity], PassEventsDown -> True, PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]], 
+              "\[InvisibleSpace]", "\<\"\\t\"\>", "\[InvisibleSpace]", 
+              TagBox[
+               TagBox[GridBox[{
+                  {
+                   
+                   RadioButtonBox[Dynamic[$CellContext`source$$, None], {
+                    NotebookSelection},
+                    Enabled->Dynamic[
+                    Not[$CellContext`entire$$]]], 
+                   StyleBox[
+                    PaneBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "SaveSelection"],
+                    ImageSizeCache->{108., {1., 10.}}],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}]],
+                    StripOnInput->False,
+                    FontColor->Dynamic[
+                    If[$CellContext`entire$$, 
+                    CurrentValue[{"SystemColor", "DialogTextDisabled"}], 
+                    Automatic]]]}
+                 },
+                 AutoDelete->False,
+                 BaseStyle->{StripOnInput -> True},
+                 GridBoxAlignment->{
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Bottom}}},
+                 
+                 GridBoxItemSize->{
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                 GridBoxSpacings->{"Columns" -> {{0.2}}}],
+                "Grid"],
+               EventHandlerTag[{"MouseClicked" :> If[
+                   Not[$CellContext`entire$$], $CellContext`source$$ = 
+                   NotebookSelection], PassEventsDown -> True, PassEventsDown -> 
+                 Automatic, PassEventsUp -> True}]]}]},
+            {
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "SaveLocation"],
+                ImageSizeCache->{288., {3., 11.}}],
+               StripOnInput->False,
+               LineSpacing->{1, 2}],
+              StripOnInput->False,
+              FontSize->Larger,
+              FontWeight->Bold]},
+            {
+             TagBox[GridBox[{
+                {
+                 TemplateBox[{InputFieldBox[
+                    Dynamic[$CellContext`target$$], String, FieldSize -> {
+                    DirectedInfinity[1], 1}, ImageSize -> Scaled[1], 
+                    FieldHint -> "...", ContinuousAction -> True]},
+                  "RowDefault"], 
+                 ButtonBox[
+                  PaneBox[
+                   StyleBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "Browse"],
+                    ImageSizeCache->{51., {1., 10.}}],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                    StripOnInput->False,
+                    LineColor->GrayLevel[1],
+                    FrontFaceColor->GrayLevel[1],
+                    BackFaceColor->GrayLevel[1],
+                    GraphicsColor->GrayLevel[1],
+                    FontColor->GrayLevel[1]],
+                   ImageMargins->{{10, 10}, {0, 0}}],
+                  Appearance->{
+                   "Default" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "RedButton-Default.9.png"], "Hover" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "RedButton-Hover.9.png"], "Pressed" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "RedButton-Pressed.9.png"]},
+                  
+                  ButtonFunction:>(
+                   If[# =!= $Canceled, $CellContext`target$$ = #]& )[
+                    SystemDialogInput["FileSave", {
+                    If[
+                    StringQ[$CellContext`target$$], $CellContext`target$$, 
+                    "Untitled.cdf"], {
+                    FrontEndResource["DeployCDFDialog", "SaveFormat"] -> {
+                    "*.cdf"}}}, WindowTitle -> 
+                    FrontEndResource["DeployCDFDialog", "SaveLocation"]]],
+                  Evaluator->Automatic,
+                  Method->"Queued"]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Grid"]}
+           },
+           DefaultBaseStyle->"Column",
+           GridBoxAlignment->{"Columns" -> {{Left}}},
+           
+           GridBoxItemSize->{
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+           
+           GridBoxSpacings->{
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}, 
+             "RowsIndexed" -> {3 -> 2}}],
+          "Column"], 3->
+         PaneSelectorBox[{True->
+          TagBox[GridBox[{
+             {
+              StyleBox[
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "UploadTitle"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}],
+               StripOnInput->False,
+               FontSize->Larger,
+               FontWeight->Bold]},
+             {
+              TagBox[GridBox[{
+                 {"\<\"\"\>", 
+                  DynamicBox[ToBoxes[
+                    $CellContext`getFileName$$[$CellContext`embedFiles$$], 
+                    StandardForm]]}
+                },
+                AutoDelete->False,
+                GridBoxAlignment->{"Columns" -> {{Left}}},
+                
+                GridBoxItemSize->{
+                 "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {1 -> 1}, 
+                  "Rows" -> {{Automatic}}}],
+               "Grid"]},
+             {
+              StyleBox[
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "UploadSubtitle"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}],
+               StripOnInput->False,
+               FontSize->Larger,
+               FontWeight->Bold]},
+             {
+              StyleBox[
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "UploadSelectionTitle"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}],
+               StripOnInput->False,
+               FontSize->Larger,
+               FontWeight->Bold]},
+             {
+              TagBox[
+               TagBox[GridBox[{
+                  {
+                   
+                   RadioButtonBox[
+                    Dynamic[$CellContext`directory$$ === Null, None], {True},
+                    BoxID -> "dummy"], 
+                   PaneBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "UploadSame"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}]]}
+                 },
+                 AutoDelete->False,
+                 
+                 GridBoxAlignment->{
+                  "Columns" -> {{Left}}, "Rows" -> {{Bottom}}},
+                 
+                 GridBoxItemSize->{
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                 GridBoxSpacings->{"Columns" -> {{0.2}}}],
+                "Grid"],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> (FrontEnd`MoveCursorToInputField[
+                    InputNotebook[], "dummy"]; $CellContext`directory$$ = 
+                   Null), PassEventsDown -> True, PassEventsDown -> Automatic,
+                  PassEventsUp -> True}]]},
+             {
+              TagBox[
+               TagBox[GridBox[{
+                  {
+                   
+                   RadioButtonBox[
+                    Dynamic[$CellContext`directory$$ === Null, None], {
+                    False}], 
+                   PaneBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "UploadDifferent"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}]]}
+                 },
+                 AutoDelete->False,
+                 
+                 GridBoxAlignment->{
+                  "Columns" -> {{Left}}, "Rows" -> {{Bottom}}},
+                 
+                 GridBoxItemSize->{
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                 GridBoxSpacings->{"Columns" -> {{0.2}}}],
+                "Grid"],
+               
+               EventHandlerTag[{
+                "MouseClicked" :> 
+                 If[$CellContext`directory$$ === Null, 
+                   FrontEnd`MoveCursorToInputField[
+                    InputNotebook[]]; $CellContext`directory$$ = ""], 
+                 PassEventsDown -> True, PassEventsDown -> Automatic, 
+                 PassEventsUp -> True}]]},
+             {
+              TagBox[GridBox[{
+                 {
+                  StyleBox[
+                   RadioButtonBox[False, {True}],
+                   StripOnInput->False,
+                   ShowContents->False], 
+                  PaneBox[
+                   InputFieldBox[Dynamic[$CellContext`directory$$], String,
+                    BoxID -> "inputfield",
+                    ContinuousAction->True,
+                    FieldHint->"http://",
+                    FieldSize->Automatic,
+                    ImageSize->Scaled[0.85]],
+                   AppearanceElements->{},
+                   ImageSize->{Automatic, 70},
+                   Scrollbars->{False, Automatic}]}
+                },
+                AutoDelete->False,
+                
+                GridBoxAlignment->{
+                 "Columns" -> {{Left}}, "Rows" -> {{Bottom}}},
+                GridBoxItemSize->{
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                GridBoxSpacings->{"Columns" -> {{0.2}}}],
+               "Grid"]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            
+            GridBoxSpacings->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}, 
+              "RowsIndexed" -> {
+               2 -> 0.2, 3 -> 0.7, 4 -> 0.7, 5 -> 0.5, 6 -> 0.5}}],
+           "Column"], False->
+          StyleBox[
+           StyleBox[
+            
+            DynamicBox[FEPrivate`FrontEndResource[
+             "DeployCDFDialog", "FileSaved"],
+             ImageSizeCache->{303., {3., 11.}}],
+            StripOnInput->False,
+            LineSpacing->{1, 2}],
+           StripOnInput->False,
+           FontSize->Larger,
+           FontWeight->Bold]}, Dynamic[$CellContext`embed$$],
+          Alignment->Center], 4->
+         TagBox[GridBox[{
+            {
+             StyleBox[
+              StyleBox[
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "DeployCDFDialog", "CodeTitle"],
+                ImageSizeCache->{475., {22., 13.53515625}}],
+               StripOnInput->False,
+               LineSpacing->{1, 2}],
+              StripOnInput->False,
+              FontSize->Larger,
+              FontWeight->Bold]},
+            {
+             FrameBox[
+              PaneBox[
+               TagBox[
+                InputFieldBox[Dynamic[$CellContext`code$$, None], String,
+                 Appearance->None,
+                 BaseStyle->{FontFamily -> "Courier"},
+                 ContinuousAction->True,
+                 ImageSize->{
+                   Scaled[1], Automatic}],
+                EventHandlerTag[{{"MenuCommand", "Copy"} :> CopyToClipboard[
+                    Cell[$CellContext`code$$]], PassEventsDown -> Automatic, 
+                  PassEventsUp -> True}]],
+               AppearanceElements->{},
+               ImageSize->{Full, 90},
+               Scrollbars->{False, Automatic}],
+              FrameMargins->None,
+              FrameStyle->GrayLevel[0.5],
+              StripOnInput->False]},
+            {
+             StyleBox[
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "DeployCDFDialog", "CodeSubtitle"],
+               ImageSizeCache->{475., {20.7421875, 12.568359375}}],
+              StripOnInput->False,
+              LineSpacing->{1, 2}]},
+            {
+             PaneBox[
+              TagBox[
+               DynamicModuleBox[{Typeset`var$$ = False}, 
+                InterpretationBox[
+                 StyleBox[
+                  PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], 
+                    StyleBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "CDFDimensions"],
+                    ImageSizeCache->{111., {1., 10.}}],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                    StripOnInput->False,
+                    FontWeight->Bold]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}], True->
+                   GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], 
+                    StyleBox[
+                    StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "CDFDimensions"]],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                    StripOnInput->False,
+                    FontWeight->Bold]},
+                    {"", 
+                    PaneBox[
+                    FrameBox[
+                    
+                    InputFieldBox[Dynamic[$CellContext`cdfdimensions$$, None],
+                     String,
+                    Appearance->None,
+                    BaseStyle->{FontFamily -> "Courier"},
+                    ContinuousAction->True,
+                    ImageSize->{
+                    Scaled[1], Automatic}],
+                    FrameMargins->None,
+                    FrameStyle->GrayLevel[0.5],
+                    StripOnInput->False],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+                   Typeset`var$$],
+                   Alignment->Automatic,
+                   BaselinePosition->Baseline,
+                   DefaultBaseStyle->"OpenerView",
+                   ImageMargins->0,
+                   ImageSize->Automatic],
+                  Deployed->False,
+                  StripOnInput->False],
+                 OpenerView[{
+                   Style[
+                    Style[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "CDFDimensions"]]], 
+                    LineSpacing -> {1, 2}], Bold], 
+                   Framed[
+                    InputField[
+                    Dynamic[$CellContext`cdfdimensions$$, None], String, 
+                    ContinuousAction -> True, Appearance -> None, ImageSize -> {
+                    Scaled[1], Automatic}, 
+                    BaseStyle -> {FontFamily -> "Courier"}], FrameStyle -> 
+                    GrayLevel[0.5], FrameMargins -> None]}, False]],
+                DynamicModuleValues:>Automatic],
+               Setting[#, {0}]& ],
+              AppearanceElements->{},
+              ImageSize->{Full, 60},
+              Scrollbars->{False, Automatic}]}
+           },
+           DefaultBaseStyle->"Column",
+           GridBoxAlignment->{"Columns" -> {{Left}}},
+           
+           GridBoxItemSize->{
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+           
+           GridBoxSpacings->{
+            "Columns" -> {{Automatic}}, 
+             "Rows" -> {Automatic, 2 -> 0.5, 3 -> 1, 3 -> 0.5}}],
+          "Column"]}, Dynamic[$CellContext`step$$],
+         Alignment->{Left, Center},
+         BaseStyle->{"ControlStyle", "TextStyleInputField"},
+         ImageMargins->{{0, 20}, {0, 0}},
+         ImageSize->{Full, All}]},
+       {"\[SpanFromAbove]", 
+        PaneSelectorBox[{"fileopen"->
+         DynamicModuleBox[{$CellContext`flPath$$ = $CellContext`embedFiles$$}, 
+          PaneBox[
+           TagBox[GridBox[{
+              {
+               ButtonBox[
+                PaneBox[
+                 StyleBox[
+                  
+                  DynamicBox[FEPrivate`FrontEndResource[
+                   "DeployCDFDialog", "OpenFile"],
+                   ImageSizeCache->{58., {3., 10.}}],
+                  StripOnInput->False,
+                  LineSpacing->{1, 2}],
+                 ImageMargins->{{10, 10}, {0, 0}}],
+                
+                Appearance->{
+                 "Default" -> 
+                  FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Default.9.png"], "Hover" -> 
+                  FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Hover.9.png"], "Pressed" -> 
+                  FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Pressed.9.png"]},
+                ButtonFunction:>FrontEndExecute[
+                  FrontEnd`NotebookOpen[$CellContext`flPath$$]],
+                Evaluator->Automatic,
+                Method->"Preemptive"], 
+               ButtonBox[
+                PaneBox[
+                 StyleBox[
+                  
+                  DynamicBox[FEPrivate`FrontEndResource[
+                   "DeployCDFDialog", "OpenDirectory"],
+                   ImageSizeCache->{146., {3., 10.}}],
+                  StripOnInput->False,
+                  LineSpacing->{1, 2}],
+                 ImageMargins->{{10, 10}, {0, 0}}],
+                
+                Appearance->{
+                 "Default" -> 
+                  FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Default.9.png"], "Hover" -> 
+                  FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Hover.9.png"], "Pressed" -> 
+                  FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Pressed.9.png"]},
+                ButtonFunction:>SystemOpen[
+                  DirectoryName[$CellContext`flPath$$]],
+                Evaluator->Automatic,
+                Method->"Preemptive"]}
+             },
+             AutoDelete->False,
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Grid"]],
+          DynamicModuleValues:>{}], "preview"->
+         PaneBox[
+          TagBox[GridBox[{
+             {
+              ButtonBox[
+               PaneBox[
+                StyleBox[
+                 
+                 DynamicBox[FEPrivate`FrontEndResource[
+                  "DeployCDFDialog", "Preview"],
+                  ImageSizeCache->{47., {1., 10.}}],
+                 StripOnInput->False,
+                 LineSpacing->{1, 2}],
+                ImageMargins->{{10, 10}, {0, 0}}],
+               
+               Appearance->{
+                "Default" -> 
+                 FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                   "WhiteButton-Default.9.png"], "Hover" -> 
+                 FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                   "WhiteButton-Hover.9.png"], "Pressed" -> 
+                 FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                   "WhiteButton-Pressed.9.png"]},
+               
+               ButtonFunction:>
+                Module[{$CellContext`outputFileList$ = 
+                  Flatten[{$CellContext`embedFiles$$}], \
+$CellContext`codeWithFullFilePaths$, $CellContext`cdfFilePath$, \
+$CellContext`imgFilePath$, $CellContext`tempFilePath$ = FE`Evaluate[
+                    
+                    FEPrivate`GetTemporaryFileName[]], \
+$CellContext`tempFileName$, $CellContext`tempDirectory$, \
+$CellContext`tempCDFName$, $CellContext`tempPNGName$, \
+$CellContext`tempHTMLName$}, $CellContext`tempFileName$ = 
+                  FileNameTake[$CellContext`tempFilePath$]; \
+{$CellContext`tempCDFName$, $CellContext`tempPNGName$, \
+$CellContext`tempHTMLName$} = 
+                  Map[StringJoin[$CellContext`tempFileName$, #]& , {
+                    ".cdf", ".png", ".html"}]; $CellContext`tempDirectory$ = 
+                  FileNameDrop[$CellContext`tempFilePath$, -1]; Catch[If[
+                    
+                    Or[$CellContext`outputFileList$ === {}, \
+$CellContext`embedFiles$$ === $Failed], 
+                    Throw[
+                    Quiet[Null]]]; $CellContext`cdfFilePath$ = First[
+                    
+                    Select[$CellContext`outputFileList$, 
+                    StringMatchQ[#, "*.cdf"]& ]]; 
+                   If[CopyFile[$CellContext`cdfFilePath$, 
+                    
+                    FileNameJoin[{$CellContext`tempDirectory$, \
+$CellContext`tempCDFName$}]] === $Failed, 
+                    Throw[
+                    Quiet[Null]]]; $CellContext`imgFilePath$ = 
+                    Select[$CellContext`outputFileList$, 
+                    StringMatchQ[#, "*.png"]& ]; 
+                   If[Length[$CellContext`imgFilePath$] > 
+                    0, $CellContext`imgFilePath$ = 
+                    First[$CellContext`imgFilePath$]; 
+                    If[CopyFile[$CellContext`imgFilePath$, 
+                    
+                    FileNameJoin[{$CellContext`tempDirectory$, \
+$CellContext`tempPNGName$}]] === $Failed, 
+                    Throw[
+                    Quiet[Null]]]]; $CellContext`codeWithFullFilePaths$ = 
+                    StringReplace[$CellContext`code$$, FileBaseName[
+                    
+                    FileNameTake[$CellContext`cdfFilePath$]] :> \
+$CellContext`tempFileName$]; $CellContext`htmlTempFile$$ = 
+                    FileNameJoin[{$CellContext`tempDirectory$, \
+$CellContext`tempHTMLName$}]; 
+                   If[Export[$CellContext`htmlTempFile$$, \
+$CellContext`codeWithFullFilePaths$, "Text"] === $Failed, 
+                    Throw[
+                    Quiet[Null]]]; NotebookLocate[{
+                    URL[
+                    StringExpression["file://", $CellContext`htmlTempFile$$]],
+                     None}]]],
+               Evaluator->Automatic,
+               Method->"Preemptive"], 
+              ButtonBox[
+               PaneBox[
+                StyleBox[
+                 
+                 DynamicBox[FEPrivate`FrontEndResource[
+                  "DeployCDFDialog", "OpenDirectory"],
+                  ImageSizeCache->{146., {3., 10.}}],
+                 StripOnInput->False,
+                 LineSpacing->{1, 2}],
+                ImageMargins->{{10, 10}, {0, 0}}],
+               
+               Appearance->{
+                "Default" -> 
+                 FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                   "WhiteButton-Default.9.png"], "Hover" -> 
+                 FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                   "WhiteButton-Hover.9.png"], "Pressed" -> 
+                 FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                   "WhiteButton-Pressed.9.png"]},
+               ButtonFunction:>SystemOpen[
+                 DirectoryName[
+                  First[
+                   Flatten[{$CellContext`embedFiles$$}]]]],
+               Evaluator->Automatic,
+               Method->"Preemptive"]}
+            },
+            AutoDelete->False,
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           "Grid"]], "default"->
+         StyleBox[
+          StyleBox[
+           
+           DynamicModuleBox[{$CellContext`flPath$$ = \
+$CellContext`embedFiles$$}, 
+            PaneBox[
+             TagBox[GridBox[{
+                {
+                 ButtonBox[
+                  PaneBox[
+                   StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "OpenFile"],
+                    ImageSizeCache->{58., {3., 10.}}],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                   ImageMargins->{{10, 10}, {0, 0}}],
+                  
+                  Appearance->{
+                   "Default" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Default.9.png"], "Hover" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Hover.9.png"], "Pressed" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Pressed.9.png"]},
+                  ButtonFunction:>FrontEndExecute[
+                    FrontEnd`NotebookOpen[$CellContext`flPath$$]],
+                  Evaluator->Automatic,
+                  Method->"Preemptive"], 
+                 ButtonBox[
+                  PaneBox[
+                   StyleBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "OpenDirectory"],
+                    ImageSizeCache->{146., {3., 10.}}],
+                    StripOnInput->False,
+                    LineSpacing->{1, 2}],
+                   ImageMargins->{{10, 10}, {0, 0}}],
+                  
+                  Appearance->{
+                   "Default" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Default.9.png"], "Hover" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Hover.9.png"], "Pressed" -> 
+                    FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                    "WhiteButton-Pressed.9.png"]},
+                  ButtonFunction:>SystemOpen[
+                    DirectoryName[$CellContext`flPath$$]],
+                  Evaluator->Automatic,
+                  Method->"Preemptive"]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Grid"]],
+            DynamicModuleValues:>{}],
+           Enabled->False,
+           StripOnInput->False],
+          StripOnInput->False,
+          ShowContents->False]}, Dynamic[
+          Which[
+           And[$CellContext`step$$ == 3, $CellContext`embed$$ === False], 
+           "fileopen", $CellContext`step$$ == 4, "preview", True, "default"]],
+         
+         ImageSize->All]},
+       {
+        PaneBox[
+         DynamicBox[ToBoxes[$CellContext`init$$[]; "", StandardForm],
+          ImageSizeCache->{0., {0., 6.}}],
+         ImageSize->{Automatic, 20}], "\[SpanFromLeft]"},
+       {
+        PaneSelectorBox[{True->"\<\"\"\>", False->
+         RowBox[{
+          ButtonBox[
+           PaneBox[
+            StyleBox[
+             
+             DynamicBox[FEPrivate`FrontEndResource[
+              "DeployCDFDialog", "Cancel"],
+              ImageSizeCache->{51., {1., 10.}}],
+             StripOnInput->False,
+             LineSpacing->{1, 2}],
+            ImageMargins->{{10, 10}, {0, 0}}],
+           
+           Appearance->{
+            "Default" -> 
+             FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+               "WhiteButton-Default.9.png"], "Hover" -> 
+             FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+               "WhiteButton-Hover.9.png"], "Pressed" -> 
+             FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+               "WhiteButton-Pressed.9.png"]},
+           ButtonFunction:>DialogReturn[],
+           Evaluator->Automatic,
+           Method->"Preemptive"], "\[InvisibleSpace]", 
+          PaneBox[
+           StyleBox[
+            ButtonBox[
+             DynamicBox[FEPrivate`FrontEndResourceString["cancelButtonText"],
+              ImageSizeCache->{16.58642578125, {102.7421875, 12.568359375}}],
+             Appearance->"CancelButton",
+             ButtonFunction:>DialogReturn[$Canceled],
+             Evaluator->Automatic,
+             ImageSize->Dynamic[
+               CurrentValue["DefaultButtonSize"]],
+             Method->"Preemptive"],
+            StripOnInput->False,
+            ShowContents->False],
+           ImageSize->{1, 1},
+           ScrollPosition->{0., 0.}]}]}, Dynamic[
+         If[$CellContext`step$$ == 3, 
+            If[$CellContext`embed$$, 3, 4], $CellContext`step$$] == 4]], 
+        ItemBox[
+         RowBox[{
+          StyleBox[
+           ButtonBox[
+            PaneBox[
+             StyleBox[
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "DeployCDFDialog", "Previous"],
+               ImageSizeCache->{61., {1., 10.}}],
+              StripOnInput->False,
+              LineSpacing->{1, 2}],
+             ImageMargins->{{10, 10}, {0, 0}}],
+            
+            Appearance->{
+             "Default" -> 
+              FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                "WhiteButton-Default.9.png"], "Hover" -> 
+              FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                "WhiteButton-Hover.9.png"], "Pressed" -> 
+              FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                "WhiteButton-Pressed.9.png"]},
+            ButtonFunction:>Decrement[$CellContext`step$$],
+            Evaluator->Automatic,
+            Method->"Preemptive"],
+           StripOnInput->False,
+           ShowContents->Dynamic[$CellContext`step$$ != 1]], "  ", 
+          PaneSelectorBox[{1->
+           RowBox[{
+            PaneSelectorBox[{1->
+             ButtonBox[
+              PaneBox[
+               StyleBox[
+                StyleBox[
+                 
+                 DynamicBox[FEPrivate`FrontEndResource[
+                  "DeployCDFDialog", "Continue"],
+                  ImageSizeCache->{66., {1., 10.}}],
+                 StripOnInput->False,
+                 LineSpacing->{1, 2}],
+                StripOnInput->False,
+                LineColor->GrayLevel[1],
+                FrontFaceColor->GrayLevel[1],
+                BackFaceColor->GrayLevel[1],
+                GraphicsColor->GrayLevel[1],
+                FontColor->GrayLevel[1]],
+               ImageMargins->{{10, 10}, {0, 0}}],
+              
+              Appearance->{
+               "Default" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Default.9.png"], "Hover" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Hover.9.png"], "Pressed" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Pressed.9.png"]},
+              ButtonFunction:>FE`Evaluate[
+                FEPrivate`FindAndClickDefaultButton[]],
+              Evaluator->Automatic,
+              Method->"Preemptive"], 2->
+             ButtonBox[
+              PaneBox[
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "Continue"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}],
+               ImageMargins->{{10, 10}, {0, 0}}],
+              
+              Appearance->{
+               "Default" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Default.9.png"], "Hover" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Hover.9.png"], "Pressed" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Pressed.9.png"]},
+              ButtonFunction:>Null,
+              Enabled->False,
+              Evaluator->Automatic,
+              Method->"Preemptive"]}, Dynamic[Boole[False] + 1]], 
+            "\[InvisibleSpace]", 
+            PaneBox[
+             ButtonBox["\<\"\"\>",
+              Appearance->"DefaultButton",
+              ButtonFunction:>If[
+                Not[
+                 TrueQ[False]], $CellContext`step$$ = 2],
+              Evaluator->Automatic,
+              Method->"Preemptive"],
+             ImageSize->{1, 1},
+             ScrollPosition->{0., 0.}]}], 2->
+           RowBox[{
+            PaneSelectorBox[{1->
+             ButtonBox[
+              PaneBox[
+               StyleBox[
+                StyleBox[
+                 
+                 DynamicBox[FEPrivate`FrontEndResource[
+                  "DeployCDFDialog", "Continue"]],
+                 StripOnInput->False,
+                 LineSpacing->{1, 2}],
+                StripOnInput->False,
+                LineColor->GrayLevel[1],
+                FrontFaceColor->GrayLevel[1],
+                BackFaceColor->GrayLevel[1],
+                GraphicsColor->GrayLevel[1],
+                FontColor->GrayLevel[1]],
+               ImageMargins->{{10, 10}, {0, 0}}],
+              
+              Appearance->{
+               "Default" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Default.9.png"], "Hover" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Hover.9.png"], "Pressed" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Pressed.9.png"]},
+              ButtonFunction:>FE`Evaluate[
+                FEPrivate`FindAndClickDefaultButton[]],
+              Evaluator->Automatic,
+              Method->"Preemptive"], 2->
+             ButtonBox[
+              PaneBox[
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "Continue"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}],
+               ImageMargins->{{10, 10}, {0, 0}}],
+              
+              Appearance->{
+               "Default" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Default.9.png"], "Hover" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Hover.9.png"], "Pressed" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Pressed.9.png"]},
+              ButtonFunction:>Null,
+              Enabled->False,
+              Evaluator->Automatic,
+              Method->"Preemptive"]}, Dynamic[Boole[
+                MemberQ[{Null, ""}, $CellContext`target$$]] + 1]], 
+            "\[InvisibleSpace]", 
+            PaneBox[
+             ButtonBox["\<\"\"\>",
+              Appearance->"DefaultButton",
+              ButtonFunction:>If[
+                Not[
+                 TrueQ[
+                  
+                  MemberQ[{
+                   Null, ""}, $CellContext`target$$]]], \
+$CellContext`embedFiles$$ = CDFDeploy[$CellContext`target$$, 
+                   $CellContext`source$$[$CellContext`nb$$], Method -> If[
+                    TrueQ[FrontEnd`Private`$CDFWebDeploy], "Embedded", 
+                    "Standalone"], "Target" -> If[
+                    
+                    And[$CellContext`enterprise$$, \
+$CellContext`enhancedSigning$$], "PlayerPro", "CDFPlayer"]]; 
+                If[$CellContext`embedFiles$$ === $Failed, 
+                  ((SetOptions[#, WindowFrame -> "ModalDialog"]; 
+                  SetSelectedNotebook[#])& )[
+                   MessageDialog[
+                    Style[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "DeployCDFDialog", "SaveError"]]], 
+                    LineSpacing -> {1, 2}]]], $CellContext`step$$ = If[
+                    CurrentValue["ShiftKey"], 1, 3]]],
+              Evaluator->Automatic,
+              Method->"Preemptive"],
+             ImageSize->{1, 1}]}], 3->
+           RowBox[{
+            PaneSelectorBox[{1->
+             ButtonBox[
+              PaneBox[
+               StyleBox[
+                StyleBox[
+                 
+                 DynamicBox[FEPrivate`FrontEndResource[
+                  "DeployCDFDialog", "Continue"]],
+                 StripOnInput->False,
+                 LineSpacing->{1, 2}],
+                StripOnInput->False,
+                LineColor->GrayLevel[1],
+                FrontFaceColor->GrayLevel[1],
+                BackFaceColor->GrayLevel[1],
+                GraphicsColor->GrayLevel[1],
+                FontColor->GrayLevel[1]],
+               ImageMargins->{{10, 10}, {0, 0}}],
+              
+              Appearance->{
+               "Default" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Default.9.png"], "Hover" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Hover.9.png"], "Pressed" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "RedButton-Pressed.9.png"]},
+              ButtonFunction:>FE`Evaluate[
+                FEPrivate`FindAndClickDefaultButton[]],
+              Evaluator->Automatic,
+              Method->"Preemptive"], 2->
+             ButtonBox[
+              PaneBox[
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "Continue"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}],
+               ImageMargins->{{10, 10}, {0, 0}}],
+              
+              Appearance->{
+               "Default" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Default.9.png"], "Hover" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Hover.9.png"], "Pressed" -> 
+                FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                  "WhiteButton-Pressed.9.png"]},
+              ButtonFunction:>Null,
+              Enabled->False,
+              Evaluator->Automatic,
+              Method->"Preemptive"]}, Dynamic[
+             Boole[$CellContext`directory$$ === ""] + 1]], 
+            "\[InvisibleSpace]", 
+            PaneBox[
+             ButtonBox["\<\"\"\>",
+              Appearance->"DefaultButton",
+              ButtonFunction:>If[
+                Not[
+                 TrueQ[$CellContext`directory$$ === ""]], $CellContext`code$$ = 
+                 If[
+                   StringQ[$CellContext`directory$$], 
+                   StringJoin[$CellContext`directory$$, 
+                    If[
+                    StringMatchQ[
+                    StringTake[$CellContext`directory$$, -1], "/"], "", "/"]],
+                    ""]; $CellContext`pngfile$561 = Select[
+                   Flatten[{$CellContext`embedFiles$$}], 
+                   StringMatchQ[#, "*.png"]& ]; $CellContext`code$$ = 
+                 If[CDFInformation[
+                    $CellContext`source$$[$CellContext`nb$$]] === 
+                   Null, $CellContext`cdfdimensions$$ = ""; 
+                   "", $CellContext`cdfinfo$561 = 
+                    If[Length[$CellContext`pngfile$561] > 0, 
+                    FrontEndExecute[
+                    FrontEnd`CDFInformation[
+                    $CellContext`source$$[$CellContext`nb$$], 
+                    "AlternateImage" -> First[$CellContext`pngfile$561]]], 
+                    FrontEndExecute[
+                    FrontEnd`CDFInformation[
+                    $CellContext`source$$[$CellContext`nb$$]]]]; \
+$CellContext`cdfdimensions$$ = 
+                    Replace[
+                    "Size", $CellContext`cdfinfo$561]; \
+$CellContext`cdfdimensions$$ = StringExpression["width=\"", 
+                    ToString[
+                    Part[$CellContext`cdfdimensions$$, 1]], "px\" height=\"", 
+                    
+                    ToString[
+                    Part[$CellContext`cdfdimensions$$, 2]], "px\""]; 
+                   StringReplace[
+                    Replace["EmbeddingScript", $CellContext`cdfinfo$561], 
+                    "`1`" -> StringJoin[$CellContext`code$$, 
+                    FileNameTake[$CellContext`target$$]]]]; CopyToClipboard[
+                  Cell[$CellContext`code$$]]; $CellContext`step$$ = If[
+                   CurrentValue["ShiftKey"], 2, 4]],
+              Evaluator->Automatic,
+              Method->"Preemptive"],
+             ImageSize->{1, 1}]}], 4->
+           RowBox[{
+            ButtonBox[
+             PaneBox[
+              StyleBox[
+               StyleBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "DeployCDFDialog", "Close"]],
+                StripOnInput->False,
+                LineSpacing->{1, 2}],
+               StripOnInput->False,
+               LineColor->GrayLevel[1],
+               FrontFaceColor->GrayLevel[1],
+               BackFaceColor->GrayLevel[1],
+               GraphicsColor->GrayLevel[1],
+               FontColor->GrayLevel[1]],
+              ImageMargins->{{10, 10}, {0, 0}}],
+             
+             Appearance->{
+              "Default" -> 
+               FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                 "RedButton-Default.9.png"], "Hover" -> 
+               FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                 "RedButton-Hover.9.png"], "Pressed" -> 
+               FrontEnd`FileName[{"Dialogs", "DeployCDF"}, 
+                 "RedButton-Pressed.9.png"]},
+             ButtonFunction:>FE`Evaluate[
+               FEPrivate`FindAndClickDefaultButton[]],
+             Evaluator->Automatic,
+             Method->"Preemptive"], "\[InvisibleSpace]", 
+            PaneBox[
+             ButtonBox["\<\"\"\>",
+              Appearance->"DefaultButton",
+              ButtonFunction:>If[
+                Not[
+                 TrueQ[Null]], 
+                If[
+                 CurrentValue["ShiftKey"], $CellContext`step$$ = 
+                 If[$CellContext`embed$$, 3, 2], 
+                 DialogReturn[]]],
+              Evaluator->Automatic,
+              Method->"Preemptive"],
+             ImageSize->{1, 1}]}]}, Dynamic[
+            If[$CellContext`step$$ == 3, 
+             If[$CellContext`embed$$, 3, 4], $CellContext`step$$]]]}],
+         Alignment->Right,
+         StripOnInput->False]}
+      },
+      AutoDelete->False,
+      BaselinePosition->{{1, 1}, Baseline},
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Center}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Grid"],
+    DynamicModuleValues:>{{DownValues[$CellContext`init$$] = {HoldPattern[
+           $CellContext`init$$[]] :> $CellContext`init$$[
+           TrueQ[FrontEnd`Private`$CDFWebDeploy]], HoldPattern[
+           $CellContext`init$$[
+            Pattern[$CellContext`bool$, 
+             Blank[]]]] :> 
+         If[$CellContext`embed$$ =!= $CellContext`bool$, $CellContext`step$$ = 
+            1; $CellContext`embed$$ = $CellContext`bool$]}}},
+    Initialization:>(
+     If[($CellContext`nb$$ = InputNotebook[]) === 
+       EvaluationNotebook[], $CellContext`nb$$ = CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "InputNotebook"}], 
+       CurrentValue[
+         EvaluationNotebook[], {
+         TaggingRules, 
+          "InputNotebook"}] = $CellContext`nb$$]; $CellContext`entire$$ = 
+      And[CurrentValue[$CellContext`nb$$, {"CellCount", True}] < 2, 
+        NotebookRead[$CellContext`nb$$] === {}]; $CellContext`source$$ = 
+      If[$CellContext`entire$$, Identity, 
+        NotebookSelection]; $CellContext`enterprise$$ = FE`Evaluate[
+        FEPrivate`SupportsEnhancedSigning[]]; $CellContext`getFileName$$[
+        Pattern[$CellContext`embedFiles$, 
+         Blank[List]]] := StringJoin[
+        Riffle[
+         Map[$CellContext`getFileName$$[#]& , $CellContext`embedFiles$], 
+         ", "]]; $CellContext`getFileName$$[
+        PatternTest[
+         Pattern[$CellContext`embedFiles, 
+          Blank[]], Head[#] =!= List& ]] := If[
+        And[$CellContext`embedFiles =!= $Failed, 
+         Head[$CellContext`embedFiles] === String], 
+        Last[
+         StringSplit[$CellContext`embedFiles, $PathnameSeparator]], 
+        ""]; $CellContext`init$$[]),
+    UnsavedVariables:>{$CellContext`nb$$, $CellContext`embed$$, \
+$CellContext`source$$, $CellContext`code$$, $CellContext`enterprise$$, \
+$CellContext`cdfdimensions$$, $CellContext`getFileName$$}],
+   ImageMargins->{{10, 10}, {7, 10}},
+   ImageSize->{550, Automatic}]}, {1, 2}, 2,
+  Alignment->{Center, Bottom}]],
+ CellMargins->0,
+ CellBracketOptions->{"Color"->RGBColor[0.269993, 0.308507, 0.6]},
+ CellHorizontalScrolling->True,
+ PageBreakAbove->True,
+ PageBreakWithin->False,
+ ShowAutoStyles->True,
+ LineSpacing->{1.25, 0},
+ AutoItalicWords->{},
+ ScriptMinSize->9,
+ ShowStringCharacters->False,
+ FontFamily:>CurrentValue["PanelFontFamily"],
+ FontSize:>CurrentValue["PanelFontSize"]]
+},
+Evaluator->"Local",
+NotebookEventActions->{{"MenuCommand", "New"} :> 
+  Null, {"MenuCommand", "Open"} :> Null, {"MenuCommand", "EvaluateCells"} :> 
+  FE`Evaluate[
+    FEPrivate`FindAndClickDefaultButton[]], {
+   "MenuCommand", "HandleShiftReturn"} :> FE`Evaluate[
+    FEPrivate`FindAndClickDefaultButton[]], {
+   "MenuCommand", "EvaluateNextCell"} :> FE`Evaluate[
+    FEPrivate`FindAndClickDefaultButton[]], "ReturnKeyDown" :> FE`Evaluate[
+    FEPrivate`FindAndClickDefaultButton[]], "EscapeKeyDown" :> FE`Evaluate[
+    FEPrivate`FindAndClickCancelButton[]], "WindowClose" :> FE`Evaluate[
+    FEPrivate`FindAndClickCancelButton[]]},
+WindowSize->All,
+WindowMargins->Automatic,
+WindowFrame->"ModalDialog",
+TaggingRules->{
+ "NotebookID" -> "WelcomeScreen", "NewPopupMouseover" -> False, 
+  "NewPopupMousedown" -> False, 
+  "DAHPreferences" -> {
+   "DefaultUSERCVSDIR" -> 
+    "/Users/larrya/cvs_checkouts_DAHDefault/Pubs/Internal/larrya"}, 
+  "SlideshowSettings" -> {"Toolbar" -> False}},
+CellContext->"Global`",
+Background->GrayLevel[1],
+PaneSelectorBoxOptions->{ContentPadding->False,
+FrameMargins->0,
+ImageMargins->0,
+ImageSize->Automatic},
+RadioButtonBoxOptions->{Appearance->Small,
+ImageMargins->{{0, 5}, {0, 0}}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (August 10, \
+2014)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "SystemDialog.nb"]], 
+   Cell[
+    StyleData["Hyperlink"], FontColor -> RGBColor[1, 0, 0]]}, Visible -> 
+  False, FrontEndVersion -> 
+  "10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (August 10, 2014)", 
+  StyleDefinitions -> "Default.nb"],
+Modal -> True
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[563, 20, 73238, 1785, 403, InheritFromParent,
+ PageBreakAbove->True,
+ PageBreakWithin->False]
+}
+]
+*)
+
+(* End of internal cache information *)
+

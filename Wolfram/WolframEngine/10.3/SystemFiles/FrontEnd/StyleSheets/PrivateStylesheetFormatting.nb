@@ -1,0 +1,67 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      1509,         58]
+NotebookOptionsPosition[      1032,         39]
+NotebookOutlinePosition[      1397,         55]
+CellTagsIndexPosition[      1354,         52]
+MenuPosition->0
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[StyleData[StyleDefinitions -> "StylesheetFormatting.nb"]],
+
+Cell[CellGroupData[{
+
+Cell["Notebook Options Settings", "Section"],
+
+Cell["\<\
+The options defined for the style below will be used at the Notebook level.\
+\>", "Text"],
+
+Cell[StyleData["Notebook"],
+ Editable->True,
+ GhostCellInEmptyNotebook->False,
+ CellInsertionPointCell->False,
+ DockedCells->FEPrivate`FrontEndResource["FEExpressions", "StylesheetToolbar"],
+ ShowStringCharacters->True]
+}, Open  ]]
+},
+WindowSize->{607, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+MenuSortingValue->None,
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 21, 62, 0, 40, 62, 0, "StyleData", "StyleDefinitions", ""],
+Cell[CellGroupData[{
+Cell[648, 25, 44, 0, 71, "Section"],
+Cell[695, 27, 99, 2, 29, "Text"],
+Cell[797, 31, 219, 5, 56, 27, 0, "StyleData", "Notebook", "All"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

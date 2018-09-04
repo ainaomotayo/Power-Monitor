@@ -1,0 +1,22 @@
+%Filename: omswcry.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omswcry.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OMS/wcry.]
+
+\DeclareFontFamily{OMS}{wcry}{}
+
+\DeclareFontShape{OMS}{wcry}{m}{n}{
+   <-> wcrym
+}{}
+
+\DeclareFontShape{OMS}{wcry}{b}{n}{
+   <-> wcryb
+}{}
+
+\DeclareFontShape{OMS}{wcry}{bx}{n}{<->ssub * wcry/b/n}{}
+
+\endinput

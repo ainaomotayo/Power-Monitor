@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2014-10-20: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20141020 at Mon Oct 20 15:34:37 2014
+ By Riccardo Di Virgilio
+Copyright (c) 2014, Riccardo Di Virgilio
+</metadata>
+<defs>
+<font id="wolframicons" horiz-adv-x="477" >
+  <font-face 
+    font-family="wolframicons"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -59 477 443"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+F100-F101"
+  />
+    <missing-glyph />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" 
+d="M477 114l-14 -3l-87 -19l9 -89l1 -14l-13 6l-82 36l-45 -78l-7 -12l-8 12l-45 78l-82 -36l-13 -6l2 14l8 89l-87 19l-14 3l9 11l60 67l-60 67l-9 10l14 3l87 19l-9 90l-1 14l13 -6l82 -36l45 77l7 13l8 -13l45 -77l82 36l13 6l-2 -14l-8 -90l87 -19l14 -3l-9 -10l-60 -67
+l60 -67zM179 48v63l-58 -20l-8 -71zM182 334l-45 20l29 -37l41 -17zM274 343l-36 62l-35 -62l35 -49zM342 355l-47 -21l-25 -35l43 18zM228 -2v53l-27 40v-47zM203 126l35 -52l35 52l-35 47zM126 158l60 -19l35 47l-55 21zM115 346l6 -57l29 -36l-2 51zM228 207v61l-57 23
+l2 -63zM249 268v-61l60 21v64zM331 255l25 34l6 55l-31 -40v-49zM316 207l-60 -21l35 -47l63 19zM372 140l-49 -14l44 -16l55 12zM379 161l45 -16l-33 38l-39 14zM394 205l47 53l-70 15l-33 -47zM106 273l-70 -15l47 -53l61 21zM86 182l-34 -38l49 17l29 37zM108 140
+l-53 -18l55 -12l45 16zM276 91l-27 -39v-54l27 46v47zM356 91l-58 20v-63l66 -28z" />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" horiz-adv-x="411" 
+d="M0 315h411v-40l-206 -209l-205 209v40z" />
+  </font>
+</defs></svg>

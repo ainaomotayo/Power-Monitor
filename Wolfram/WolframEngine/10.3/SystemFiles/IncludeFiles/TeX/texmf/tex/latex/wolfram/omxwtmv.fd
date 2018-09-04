@@ -1,0 +1,22 @@
+%Filename: omxwtmv.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omxwtmv.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OMX/wtmv.]
+
+\DeclareFontFamily{OMX}{wtmv}{}
+
+\DeclareFontShape{OMX}{wtmv}{m}{n}{
+   <-> wtmvm
+}{}
+
+\DeclareFontShape{OMX}{wtmv}{b}{n}{
+   <-> wtmvb
+}{}
+
+\DeclareFontShape{OMX}{wtmv}{bx}{n}{<->ssub * wtmv/b/n}{}
+
+\endinput

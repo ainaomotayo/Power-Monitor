@@ -1,0 +1,100 @@
+Math1 Math1  <Math1.pfb <Math1.enc
+Math1-Bold Math1-Bold  <Math1-Bold.pfb <Math1.enc
+Math1Mono Math1Mono  <Math1Mono.pfb <Math1.enc
+Math1Mono-Bold Math1Mono-Bold  <Math1Mono-Bold.pfb <Math1.enc
+Math2 Math2  <Math2.pfb <Math2.enc
+Math2-Bold Math2-Bold  <Math2-Bold.pfb <Math2.enc
+Math2Mono Math2Mono  <Math2Mono.pfb <Math2.enc
+Math2Mono-Bold Math2Mono-Bold  <Math2Mono-Bold.pfb <Math2.enc
+Math3 Math3  <Math3.pfb <Math3.enc
+Math3-Bold Math3-Bold  <Math3-Bold.pfb <Math3.enc
+Math3Mono Math3Mono  <Math3Mono.pfb <Math3.enc
+Math3Mono-Bold Math3Mono-Bold  <Math3Mono-Bold.pfb <Math3.enc
+Math4 Math4  <Math4.pfb <Math4.enc
+Math4-Bold Math4-Bold  <Math4-Bold.pfb <Math4.enc
+Math4Mono Math4Mono  <Math4Mono.pfb <Math4.enc
+Math4Mono-Bold Math4Mono-Bold  <Math4Mono-Bold.pfb <Math4.enc
+Math5 Math5  <Math5.pfb <Math5.enc
+Math5-Bold Math5-Bold  <Math5-Bold.pfb <Math5.enc
+Math5Mono Math5Mono  <Math5Mono.pfb <Math5.enc
+Math5Mono-Bold Math5Mono-Bold  <Math5Mono-Bold.pfb <Math5.enc
+#---------------------------------------------------------------
+Mathematica1 Mathematica1 <Mathematica1.pfb 
+Mathematica2 Mathematica2 <Mathematica2.pfb 
+Mathematica3 Mathematica3 <Mathematica3.pfb 
+Mathematica4 Mathematica4 <Mathematica4.pfb 
+Mathematica5 Mathematica5 <Mathematica5.pfb 
+Mathematica6 Mathematica6 <Mathematica6.pfb 
+Mathematica7 Mathematica7 <Mathematica7.pfb 
+Mathematica1-Bold Mathematica1-Bold <Mathematica1-Bold.pfb  
+Mathematica2-Bold Mathematica2-Bold <Mathematica2-Bold.pfb  
+Mathematica3-Bold Mathematica3-Bold <Mathematica3-Bold.pfb  
+Mathematica4-Bold Mathematica4-Bold <Mathematica4-Bold.pfb  
+Mathematica5-Bold Mathematica5-Bold <Mathematica5-Bold.pfb  
+Mathematica6-Bold Mathematica6-Bold <Mathematica6-Bold.pfb  
+Mathematica7-Bold Mathematica7-Bold <Mathematica7-Bold.pfb  
+Mathematica1Mono Mathematica1Mono <Mathematica1Mono.pfb	 
+Mathematica2Mono Mathematica2Mono <Mathematica2Mono.pfb	 
+Mathematica3Mono Mathematica3Mono <Mathematica3Mono.pfb	 
+Mathematica4Mono Mathematica4Mono <Mathematica4Mono.pfb	 
+Mathematica5Mono Mathematica5Mono <Mathematica5Mono.pfb	 
+Mathematica6Mono Mathematica6Mono <Mathematica6Mono.pfb	 
+Mathematica7Mono Mathematica7Mono <Mathematica7Mono.pfb	 
+Mathematica1Mono-Bold Mathematica1Mono-Bold <Mathematica1Mono-Bold.pfb	
+Mathematica2Mono-Bold Mathematica2Mono-Bold <Mathematica2Mono-Bold.pfb	
+Mathematica3Mono-Bold Mathematica3Mono-Bold <Mathematica3Mono-Bold.pfb	
+Mathematica4Mono-Bold Mathematica4Mono-Bold <Mathematica4Mono-Bold.pfb	
+Mathematica5Mono-Bold Mathematica5Mono-Bold <Mathematica5Mono-Bold.pfb	
+Mathematica6Mono-Bold Mathematica6Mono-Bold <Mathematica6Mono-Bold.pfb	
+Mathematica7Mono-Bold Mathematica7Mono-Bold <Mathematica7Mono-Bold.pfb	
+Mathematica1CMTT Mathematica1CMTT <Mathematica1CMTT.pfb	  
+Mathematica2CMTT Mathematica2CMTT <Mathematica2CMTT.pfb	  
+Mathematica3CMTT Mathematica3CMTT <Mathematica3CMTT.pfb	  
+Mathematica4CMTT Mathematica4CMTT <Mathematica4CMTT.pfb	  
+Mathematica5CMTT Mathematica5CMTT <Mathematica5CMTT.pfb	  
+Mathematica6CMTT Mathematica6CMTT <Mathematica6CMTT.pfb	  
+Mathematica7CMTT Mathematica7CMTT <Mathematica7CMTT.pfb	  
+Mathematica1CMTT-Bold Mathematica1CMTT-Bold <Mathematica1CMTT-Bold.pfb	
+Mathematica2CMTT-Bold Mathematica2CMTT-Bold <Mathematica2CMTT-Bold.pfb	
+Mathematica3CMTT-Bold Mathematica3CMTT-Bold <Mathematica3CMTT-Bold.pfb	
+Mathematica4CMTT-Bold Mathematica4CMTT-Bold <Mathematica4CMTT-Bold.pfb	
+Mathematica5CMTT-Bold Mathematica5CMTT-Bold <Mathematica5CMTT-Bold.pfb	
+Mathematica6CMTT-Bold Mathematica6CMTT-Bold <Mathematica6CMTT-Bold.pfb	
+Mathematica7CMTT-Bold Mathematica7CMTT-Bold <Mathematica7CMTT-Bold.pfb	
+wttr8a  Wttr8a   <wttr8a.pfb
+wttro8a  Wttro8a <wttro8a.pfb	 
+wttb8a  Wttb8a   <wttb8a.pfb    
+wttbo8a  Wttbo8a <wttbo8a.pfb 
+wttr8r  Wttr8a   <wttr8a.pfb  8r.enc 
+wttro8r  Wttro9a <wttro8a.pfb 8r.enc 
+wttb8r  Wttb8r   <wttb8a.pfb  8r.enc 
+wttbo8r  Wttbo8r <wttbo8a.pfb 8r.enc 
+#---------------------------------------------------------
+# Janson Text
+#---------------------------------------------------------
+pjnbi8r JansonText-BoldItalic <pjnbi8a.pfb  8r.enc 
+pjnb8r JansonText-Bold        <pjnb8a.pfb   8r.enc 
+pjnr8r JansonText-Roman       <pjnr8a.pfb   8r.enc 
+pjnri8r JansonText-Italic     <pjnri8a.pfb  8r.enc 
+#----------------------------------------------------------
+# Adobe Garamond
+#----------------------------------------------------------
+padbi8r AGaramond-BoldItalic <padbi8a.pfb   8r.enc 
+padb8r AGaramond-Bold        <padb8a.pfb    8r.enc 
+padr8r AGaramond-Regular     <padr8a.pfb    8r.enc 
+padri8r AGaramond-Italic     <padri8a.pfb   8r.enc 
+#----------------------------------------------------------
+# Linotype Optima
+#----------------------------------------------------------
+lopr8r   Optima              <lopr8a.pfb    8r.enc 
+lopri8r	 Optima-Italic       <lopri8a.pfb   8r.enc 
+lopb8r   Optima-Bold         <lopb8a.pfb    8r.enc 
+lopbi8r	 Optima-BoldItalic   <lopbi8a.pfb   8r.enc 
+#----------------------------------------------------------
+# Futura
+#----------------------------------------------------------
+pfur8r   Futura              <pfur8a.pfb    8r.enc 
+pfuro8r	 Futura-Oblique      <pfuro8a.pfb   8r.enc 
+pfub8r   Futura-Bold         <pfub8a.pfb    8r.enc 
+pfubo8r	 Futura-BoldOblique  <pfubo8a.pfb   8r.enc 
+

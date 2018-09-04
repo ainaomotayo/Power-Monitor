@@ -1,0 +1,43 @@
+%Filename: ot1wtt.fd
+%Created by: tex cmttbase
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1wtt.fd}
+   [2001/10/12 Fontinst v1.914 font definitions for OT1/wtt.]
+
+\DeclareFontFamily{OT1}{wtt}{}
+
+\DeclareFontShape{OT1}{wtt}{m}{n}{
+   <-> wttr7t
+}{}
+
+\DeclareFontShape{OT1}{wtt}{m}{sc}{
+   <-> wttrc7t
+}{}
+
+\DeclareFontShape{OT1}{wtt}{m}{sl}{
+   <-> wttro7t
+}{}
+
+\DeclareFontShape{OT1}{wtt}{b}{n}{
+   <-> wttb7t
+}{}
+
+\DeclareFontShape{OT1}{wtt}{b}{sc}{
+   <-> wttbc7t
+}{}
+
+\DeclareFontShape{OT1}{wtt}{b}{sl}{
+   <-> wttbo7t
+}{}
+
+\DeclareFontShape{OT1}{wtt}{m}{it}{<->ssub * wtt/m/sl}{}
+\DeclareFontShape{OT1}{wtt}{bx}{n}{<->ssub * wtt/b/n}{}
+\DeclareFontShape{OT1}{wtt}{bx}{sc}{<->ssub * wtt/b/sc}{}
+\DeclareFontShape{OT1}{wtt}{bx}{sl}{<->ssub * wtt/b/sl}{}
+\DeclareFontShape{OT1}{wtt}{b}{it}{<->ssub * wtt/b/sl}{}
+\DeclareFontShape{OT1}{wtt}{bx}{it}{<->ssub * wtt/b/it}{}
+
+\endinput

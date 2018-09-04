@@ -1,0 +1,22 @@
+%Filename: omlwadm.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omlwadm.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OML/wadm.]
+
+\DeclareFontFamily{OML}{wadm}{\skewchar \font =127}
+
+\DeclareFontShape{OML}{wadm}{m}{n}{
+   <-> wadmm
+}{}
+
+\DeclareFontShape{OML}{wadm}{b}{n}{
+   <-> wadmb
+}{}
+
+\DeclareFontShape{OML}{wadm}{bx}{n}{<->ssub * wadm/b/n}{}
+
+\endinput

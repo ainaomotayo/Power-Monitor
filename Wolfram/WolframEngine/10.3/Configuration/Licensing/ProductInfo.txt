@@ -1,0 +1,2 @@
+ProductFrontEndName	"Wolfram Mathematica"
+ProductIDName		"WolframEngine"

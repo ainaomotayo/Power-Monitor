@@ -1,0 +1,18 @@
+/* XPM */
+static char * go_back_xpm[] = {
+"17 11 4 1",
+" 	s None	c None",
+".	c #00008F8FFFFF",
+"X	c #00000000FFFF",
+"o	c #000000009B9B",
+"     .           ",
+"    ..           ",
+"   .X.           ",
+"  .XX........... ",
+" .XXXXXXXXXXXXXX ",
+".XXXXXXXXXXXXXXX ",
+" oXXXXXXXXXXXXXX ",
+"  oXXXoXoXoXoXoX ",
+"   oXo           ",
+"    oo           ",
+"     o           "};

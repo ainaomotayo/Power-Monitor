@@ -1,0 +1,22 @@
+%Filename: ot1wjnr.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1wjnr.fd}
+   [2002/02/24 Fontinst v1.914 font definitions for OT1/wjnr.]
+
+\DeclareFontFamily{OT1}{wjnr}{}
+
+\DeclareFontShape{OT1}{wjnr}{m}{n}{
+   <-> wjnrm
+}{}
+
+\DeclareFontShape{OT1}{wjnr}{b}{n}{
+   <-> wjnrb
+}{}
+
+\DeclareFontShape{OT1}{wjnr}{bx}{n}{<->ssub * wjnr/b/n}{}
+
+\endinput

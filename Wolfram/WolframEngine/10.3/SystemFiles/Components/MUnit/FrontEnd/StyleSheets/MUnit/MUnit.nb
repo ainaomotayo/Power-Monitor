@@ -1,0 +1,475 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15826,        466]
+NotebookOptionsPosition[     13211,        401]
+NotebookOutlinePosition[     13571,        416]
+CellTagsIndexPosition[     13528,        413]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Style Definitions", "Title"],
+
+Cell[CellGroupData[{
+
+Cell["Inherited Style Definitions", "Section"],
+
+Cell[StyleData[StyleDefinitions -> "Default.nb"]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Notebook Options", "Section"],
+
+Cell[StyleData["Notebook"],
+ DockedCells->FEPrivate`FrontEndResource[
+  "MUnitExpressions", "MUnitStaticToolbar"],
+ CreateCellID->True,
+ ShowCellTags->False,
+ DefaultNewCellStyle->"Input",
+ DefaultDuplicateCellStyle->"Input",
+ TrackCellChangeTimes->True,
+ StyleMenuListing->1]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Summary docked cell style", "Section",
+ CellChangeTimes->{{3.603137334811892*^9, 3.603137339442477*^9}, 
+   3.603137439322942*^9}],
+
+Cell[StyleData["SummaryDockedCell"],
+ CellFrame->1,
+ CellMargins->{{0, 0}, {0, 0}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellFrameMargins->{{10, 0}, {15, 15}},
+ CellFrameColor->RGBColor[0.6, 0.6, 0.6],
+ FontFamily->"Helvetica",
+ FontSize->16,
+ FontColor->GrayLevel[0.1],
+ Background->GrayLevel[0.8]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["ButtonText", "Section",
+ CellChangeTimes->{{3.605890258328685*^9, 3.605890265128685*^9}}],
+
+Cell[StyleData["ButtonText"],
+ FontFamily->"Sans Serif",
+ FontSize->11,
+ FontWeight->Bold,
+ FontColor->RGBColor[0.458824, 0.458824, 0.458824]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["TestInsertion", "Section",
+ CellChangeTimes->{{3.601229570464679*^9, 3.601229572629532*^9}, {
+  3.60502931618476*^9, 3.6050293212547603`*^9}}],
+
+Cell[StyleData["TestInsertion", StyleDefinitions -> StyleData["Text"]],
+ CellDynamicExpression:>Block[{$ContextPath}, Needs["MUnit`"]; NotebookWrite[
+     EvaluationCell[], 
+     Cell[
+      CellGroupData[{
+        Cell[
+         BoxData[""], "VerificationTest"], 
+        Cell[
+         BoxData[""], "ExpectedOutput"], 
+        Cell[
+         BoxData[
+          ToBoxes[
+           MUnit`bottomCell[]]], "BottomCell"]}, Open]], All]; SelectionMove[
+     First[
+      SelectedCells[
+       EvaluationNotebook[]]], Before, CellContents]]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+VerificationTest, TestOptions, ExpectedMessages, ExpectedOutput\
+\>", "Section",
+ CellChangeTimes->{{3.601229570464679*^9, 3.601229572629532*^9}}],
+
+Cell[StyleData["VerificationTest", StyleDefinitions -> StyleData["Input"]],
+ CellFrame->{{1, 1}, {0.5, 1}},
+ CellMargins->{{64, 2}, {0, 8}},
+ StyleKeyMapping->{},
+ CellGroupingRules->{"InputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellEvaluationFunction->
+  Block[{$ContextPath}, Needs["MUnit`"]; MUnit`TestCellEvaluationFunction],
+ CellEventActions->{{"KeyDown", "\t"} :> 
+   Block[{$ContextPath}, Needs["MUnit`"]; MUnit`goInsideNextTabbingCell[]]},
+ CellDynamicExpression:>Refresh[
+   FE`AC[
+    EvaluationCell[], 
+    Cell[
+     BoxData[
+      DynamicBox[
+       FEPrivate`FrontEndResource["MUnitStrings", "Input-Label"]]], "Text", 
+     FontFamily -> "Arial", FontSize -> 8, FontColor -> GrayLevel[0.6]], {
+     Offset[{-4, -2}, 0], {Left, Top}}, {Left, Top}], None],
+ ShowCellLabel->False,
+ CellLabelMargins->{{23, Inherited}, {Inherited, Inherited}},
+ CellFrameMargins->{{Inherited, Inherited}, {Inherited, 14}},
+ CellFrameColor->GrayLevel[0.85],
+ CounterIncrements->"VerificationTest",
+ Background->RGBColor[1, 1, 1.]],
+
+Cell[StyleData["ExpectedOutput", StyleDefinitions -> StyleData["Input"]],
+ CellFrame->{{1, 1}, {1, 0.5}},
+ CellMargins->{{64, 2}, {0, 0}},
+ Evaluatable->False,
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellEventActions->{{"KeyDown", "\t"} :> 
+   Block[{$ContextPath}, Needs["MUnit`"]; MUnit`goInsideNextTabbingCell[]]},
+ CellDynamicExpression:>Refresh[
+   FE`AC[
+    EvaluationCell[], 
+    Cell[
+     BoxData[
+      DynamicBox[
+       FEPrivate`FrontEndResource["MUnitStrings", "ExpectedOutput-Label"]]], 
+     "Text", FontFamily -> "Arial", FontSize -> 8, FontColor -> 
+     GrayLevel[0.6]], {
+     Offset[{-4, -2}, 0], {Left, Top}}, {Left, Top}], None],
+ ShowCellLabel->False,
+ CellLabelMargins->{{23, Inherited}, {Inherited, Inherited}},
+ CellFrameMargins->{{Inherited, Inherited}, {Inherited, 14}},
+ CellFrameColor->GrayLevel[0.85],
+ ShowCursorTracker->False,
+ Background->RGBColor[1, 1, 1.]],
+
+Cell[StyleData["ActualOutput", StyleDefinitions -> StyleData["Input"]],
+ Editable->False,
+ CellFrame->{{1, 1}, {1, 0.5}},
+ CellMargins->{{64, 2}, {0, 0}},
+ Evaluatable->False,
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellEventActions->{{"KeyDown", "\t"} :> 
+   Block[{$ContextPath}, Needs["MUnit`"]; MUnit`goInsideNextTabbingCell[]]},
+ CellDynamicExpression:>Refresh[
+   FE`AC[
+    EvaluationCell[], 
+    Cell[
+     BoxData[
+      DynamicBox[
+       FEPrivate`FrontEndResource["MUnitStrings", "ActualOutput-Label"]]], 
+     "Text", FontFamily -> "Arial", FontSize -> 8, FontColor -> 
+     GrayLevel[0.6]], {
+     Offset[{-4, -2}, 0], {Left, Top}}, {Left, Top}], None],
+ ShowCellLabel->False,
+ CellLabelMargins->{{23, Inherited}, {Inherited, Inherited}},
+ CellFrameMargins->{{Inherited, Inherited}, {Inherited, 14}},
+ CellFrameColor->GrayLevel[0.85],
+ ShowCursorTracker->False,
+ Background->RGBColor[0.980392, 0.937255, 0.921569]],
+
+Cell[StyleData["ExpectedMessage", StyleDefinitions -> StyleData["Input"]],
+ Editable->True,
+ CellFrame->{{1, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {0, 0}},
+ Evaluatable->False,
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellEventActions->{{"KeyDown", "\t"} :> 
+   Block[{$ContextPath}, Needs["MUnit`"]; MUnit`goInsideNextTabbingCell[]]},
+ CellDynamicExpression:>Refresh[
+   FE`AC[
+    EvaluationCell[], 
+    Cell[
+     BoxData[
+      DynamicBox[
+       FEPrivate`FrontEndResource["MUnitStrings", "ExpectedMessages-Label"]]],
+      "Text", FontFamily -> "Arial", FontSize -> 8, FontColor -> 
+     GrayLevel[0.6]], {
+     Offset[{-4, -2}, 0], {Left, Top}}, {Left, Top}], None],
+ ShowCellLabel->False,
+ CellLabelMargins->{{23, Inherited}, {Inherited, Inherited}},
+ CellFrameMargins->{{Inherited, Inherited}, {Inherited, 14}},
+ CellFrameColor->GrayLevel[0.85],
+ ShowCursorTracker->False,
+ AutoStyleOptions->{"StringStyle"->None},
+ FontFamily:>CurrentValue["PanelFontFamily"],
+ FontSize->11,
+ FontWeight->"Plain",
+ FontColor->RGBColor[0.5072, 0.16933, 0.15221],
+ Background->RGBColor[1, 1, 1.]],
+
+Cell[StyleData["ActualMessage", StyleDefinitions -> StyleData["Input"]],
+ Editable->False,
+ CellFrame->{{1, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {0, 0}},
+ Evaluatable->False,
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellEventActions->{{"KeyDown", "\t"} :> 
+   Block[{$ContextPath}, Needs["MUnit`"]; MUnit`goInsideNextTabbingCell[]]},
+ CellDynamicExpression:>Refresh[
+   FE`AC[
+    EvaluationCell[], 
+    Cell[
+     BoxData[
+      DynamicBox[
+       FEPrivate`FrontEndResource["MUnitStrings", "ActualMessages-Label"]]], 
+     "Text", FontFamily -> "Arial", FontSize -> 8, FontColor -> 
+     GrayLevel[0.6]], {
+     Offset[{-4, -2}, 0], {Left, Top}}, {Left, Top}], None],
+ ShowCellLabel->False,
+ CellLabelMargins->{{23, Inherited}, {Inherited, Inherited}},
+ CellFrameMargins->{{Inherited, Inherited}, {Inherited, 14}},
+ CellFrameColor->GrayLevel[0.85],
+ ShowCursorTracker->False,
+ AutoStyleOptions->{"StringStyle"->None},
+ FontFamily:>CurrentValue["PanelFontFamily"],
+ FontSize->11,
+ FontWeight->"Plain",
+ FontColor->RGBColor[0.5072, 0.16933, 0.15221],
+ Background->RGBColor[0.99, 0.91, 0.82]],
+
+Cell[StyleData["TestOptions", StyleDefinitions -> StyleData["Input"]],
+ CellFrame->{{1, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {0, 0}},
+ Evaluatable->False,
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellEventActions->{{"KeyDown", "\t"} :> 
+   Block[{$ContextPath}, Needs["MUnit`"]; MUnit`goInsideNextTabbingCell[]]},
+ CellDynamicExpression:>Refresh[
+   FE`AC[
+    EvaluationCell[], 
+    Cell[
+     BoxData[
+      DynamicBox[
+       FEPrivate`FrontEndResource["MUnitStrings", "TestOptions-Label"]]], 
+     "Text", FontFamily -> "Arial", FontSize -> 8, FontColor -> 
+     GrayLevel[0.6]], {
+     Offset[{-4, -2}, 0], {Left, Top}}, {Left, Top}], None],
+ ShowCellLabel->False,
+ CellLabelMargins->{{23, Inherited}, {Inherited, Inherited}},
+ CellFrameMargins->{{Inherited, Inherited}, {Inherited, 14}},
+ CellFrameColor->GrayLevel[0.85],
+ ShowCursorTracker->False,
+ Background->RGBColor[1, 1, 1.]],
+
+Cell[StyleData["TestSuccess", StyleDefinitions -> StyleData["ToolbarCell"]],
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{1, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {0, 0}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellFrameMargins->{{15, 11}, {2, 2}},
+ CellFrameColor->RGBColor[0.380392, 0.603922, 0.384314],
+ FontFamily->"Arial",
+ FontWeight->"Bold",
+ Background->RGBColor[0.380392, 0.603922, 0.384314]],
+
+Cell[StyleData["TestFailure", StyleDefinitions -> StyleData["ToolbarCell"]],
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{1, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {0, 0}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellFrameMargins->{{15, 11}, {2, 2}},
+ CellFrameColor->RGBColor[0.74902, 0.403922, 0.4],
+ FontFamily->"Arial",
+ FontWeight->"Bold",
+ Background->RGBColor[0.74902, 0.403922, 0.4]],
+
+Cell[StyleData["TestMessageFailure", StyleDefinitions -> StyleData[
+ "ToolbarCell"]],
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{1, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {0, 0}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellFrameMargins->{{15, 11}, {2, 2}},
+ CellFrameColor->RGBColor[0.921569, 0.678431, 0.337255],
+ FontFamily->"Arial",
+ FontWeight->"Bold",
+ Background->RGBColor[0.921569, 0.678431, 0.337255]],
+
+Cell[StyleData["TestError", StyleDefinitions -> StyleData["ToolbarCell"]],
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{1, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {0, 0}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellFrameMargins->{{15, 11}, {2, 2}},
+ CellFrameColor->RGBColor[0.945, 0.81, 0.314],
+ FontFamily->"Arial",
+ FontWeight->"Bold",
+ Background->RGBColor[0.945, 0.81, 0.314]],
+
+Cell[StyleData["BottomCell", StyleDefinitions -> StyleData["ToolbarCell"]],
+ Editable->False,
+ Selectable->False,
+ CellFrame->False,
+ CellMargins->{{64, 2}, {8, 0}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellHorizontalScrolling->False,
+ CellFrameMargins->{{15, 10}, {2, 2}},
+ CellFrameColor->RGBColor[0.6, 0.6, 0.6],
+ Background->RGBColor[0.835294, 0.835294, 0.835294]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["TestMessage, TestFatal, TestMessagesFailure", "Section",
+ CellChangeTimes->{{3.607112439212716*^9, 3.607112462269491*^9}}],
+
+Cell[StyleData["TestMessage1", StyleDefinitions -> StyleData["Text"]],
+ CellFrame->{{10, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {2, 2}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellFrameColor->RGBColor[0.85, 0.85, 0.85],
+ Background->RGBColor[1, 1, 1]],
+
+Cell[StyleData["TestFatal", StyleDefinitions -> StyleData["Text"]],
+ CellFrame->{{10, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {2, 2}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellFrameColor->RGBColor[1, 0, 0],
+ Background->RGBColor[1, 0.9, 0.9]],
+
+Cell[StyleData["TestSuccess1", StyleDefinitions -> StyleData["Output"]],
+ CellFrame->{{10, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {2, 2}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellAutoOverwrite->False,
+ CellFrameColor->RGBColor[0, 1, 0],
+ Background->RGBColor[0.9, 1, 0.9]],
+
+Cell[StyleData["TestMessagesFailure1", StyleDefinitions -> StyleData["Output"]
+ ],
+ CellFrame->{{10, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {2, 2}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellAutoOverwrite->False,
+ CellFrameColor->RGBColor[1, 1, 0],
+ Background->RGBColor[1, 1, 0.9]],
+
+Cell[StyleData["TestFailure1", StyleDefinitions -> StyleData["Output"]],
+ CellFrame->{{10, 1}, {1, 1}},
+ CellMargins->{{64, 2}, {2, 2}},
+ CellGroupingRules->{"OutputGrouping", 20100},
+ CellAutoOverwrite->False,
+ CellFrameColor->RGBColor[1, 0, 0],
+ Background->RGBColor[1, 0.9, 0.9]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["TestRunSuccess, TestRunFailure", "Section"],
+
+Cell[StyleData["TestRunSuccess", StyleDefinitions -> StyleData["Text"]],
+ CellFrame->{{10, False}, {False, False}},
+ CellMargins->{{0, 2}, {2, 2}},
+ CellFrameColor->RGBColor[0, 1, 0],
+ FontWeight->"Bold",
+ Background->RGBColor[0, 1, 0]],
+
+Cell[StyleData["TestRunFailure", StyleDefinitions -> StyleData["Text"]],
+ CellFrame->{{10, False}, {False, False}},
+ CellMargins->{{0, 2}, {2, 2}},
+ CellFrameColor->RGBColor[1, 0, 0],
+ FontWeight->"Bold",
+ Background->RGBColor[1, 0, 0]]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{907, 805},
+WindowMargins->{{251, Automatic}, {61, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (November 11, 2014)",
+StyleDefinitions->"StylesheetFormatting.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 34, 0, 73, "Title"],
+Cell[CellGroupData[{
+Cell[639, 26, 46, 0, 51, "Section"],
+Cell[688, 28, 49, 0, 40, 49, 0, "StyleData", "StyleDefinitions", ""]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[774, 33, 35, 0, 35, "Section"],
+Cell[812, 35, 276, 8, 40, 27, 0, "StyleData", "Notebook", "All",
+ StyleMenuListing->1]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1125, 48, 136, 2, 35, "Section"],
+Cell[1264, 52, 310, 9, 67, 36, 0, "StyleData", "SummaryDockedCell", "All"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1611, 66, 95, 1, 35, "Section"],
+Cell[1709, 69, 142, 4, 39, 29, 0, "StyleData", "ButtonText", "All"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1888, 78, 148, 2, 35, "Section"],
+Cell[2039, 82, 537, 15, 47, 71, 0, "StyleData", "TestInsertion", "All"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2613, 102, 156, 3, 35, "Section"],
+Cell[2772, 107, 1037, 24, 63, 75, 0, "StyleData", "VerificationTest", "All",
+ CounterIncrements->"VerificationTest"],
+Cell[3812, 133, 935, 23, 55, 73, 0, "StyleData", "ExpectedOutput", "All"],
+Cell[4750, 158, 969, 24, 55, 71, 0, "StyleData", "ActualOutput", "All"],
+Cell[5722, 184, 1126, 29, 54, 74, 0, "StyleData", "ExpectedMessage", "All"],
+Cell[6851, 215, 1131, 29, 54, 72, 0, "StyleData", "ActualMessage", "All"],
+Cell[7985, 246, 927, 23, 56, 70, 0, "StyleData", "TestOptions", "All"],
+Cell[8915, 271, 449, 11, 38, 76, 0, "StyleData", "TestSuccess", "All"],
+Cell[9367, 284, 437, 11, 38, 76, 0, "StyleData", "TestFailure", "All"],
+Cell[9807, 297, 458, 12, 38, 85, 1, "StyleData", "TestMessageFailure", "All"],
+Cell[10268, 311, 427, 11, 38, 74, 0, "StyleData", "TestError", "All"],
+Cell[10698, 324, 379, 9, 44, 75, 0, "StyleData", "BottomCell", "All"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[11114, 338, 128, 1, 35, "Section"],
+Cell[11245, 341, 258, 5, 55, 70, 0, "StyleData", "TestMessage1", "All"],
+Cell[11506, 348, 250, 5, 55, 67, 0, "StyleData", "TestFatal", "All"],
+Cell[11759, 355, 282, 6, 54, 72, 0, "StyleData", "TestSuccess1", "All"],
+Cell[12044, 363, 290, 7, 54, 82, 1, "StyleData", "TestMessagesFailure1", \
+"All"],
+Cell[12337, 372, 282, 6, 54, 72, 0, "StyleData", "TestFailure1", "All"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[12656, 383, 49, 0, 35, "Section"],
+Cell[12708, 385, 236, 5, 53, 72, 0, "StyleData", "TestRunSuccess", "All"],
+Cell[12947, 392, 236, 5, 53, 72, 0, "StyleData", "TestRunFailure", "All"]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

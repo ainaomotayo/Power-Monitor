@@ -1,0 +1,22 @@
+%Filename: ot1wttr.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1wttr.fd}
+   [2002/02/24 Fontinst v1.914 font definitions for OT1/wttr.]
+
+\DeclareFontFamily{OT1}{wttr}{}
+
+\DeclareFontShape{OT1}{wttr}{m}{n}{
+   <-> wttrm
+}{}
+
+\DeclareFontShape{OT1}{wttr}{b}{n}{
+   <-> wttrb
+}{}
+
+\DeclareFontShape{OT1}{wttr}{bx}{n}{<->ssub * wttr/b/n}{}
+
+\endinput

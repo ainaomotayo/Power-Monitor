@@ -1,0 +1,22 @@
+%Filename: omxwcrv.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omxwcrv.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OMX/wcrv.]
+
+\DeclareFontFamily{OMX}{wcrv}{}
+
+\DeclareFontShape{OMX}{wcrv}{m}{n}{
+   <-> wcrvm
+}{}
+
+\DeclareFontShape{OMX}{wcrv}{b}{n}{
+   <-> wcrvb
+}{}
+
+\DeclareFontShape{OMX}{wcrv}{bx}{n}{<->ssub * wcrv/b/n}{}
+
+\endinput

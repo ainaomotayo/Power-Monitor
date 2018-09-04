@@ -1,0 +1,22 @@
+%Filename: ot1wcrr.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1wcrr.fd}
+   [2002/02/24 Fontinst v1.914 font definitions for OT1/wcrr.]
+
+\DeclareFontFamily{OT1}{wcrr}{}
+
+\DeclareFontShape{OT1}{wcrr}{m}{n}{
+   <-> wcrrm
+}{}
+
+\DeclareFontShape{OT1}{wcrr}{b}{n}{
+   <-> wcrrb
+}{}
+
+\DeclareFontShape{OT1}{wcrr}{bx}{n}{<->ssub * wcrr/b/n}{}
+
+\endinput

@@ -1,0 +1,13 @@
+%Filename: 8rwtt.fd
+%Created by: tex cmttbase
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{8rwtt.fd}
+   [2001/10/12 Fontinst v1.914 font definitions for 8r/wtt.]
+
+\DeclareFontFamily{8r}{wtt}{}
+
+
+\endinput

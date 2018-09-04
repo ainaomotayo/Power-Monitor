@@ -1,0 +1,22 @@
+%Filename: omlwtmm.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omlwtmm.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OML/wtmm.]
+
+\DeclareFontFamily{OML}{wtmm}{\skewchar \font =127}
+
+\DeclareFontShape{OML}{wtmm}{m}{n}{
+   <-> wtmmm
+}{}
+
+\DeclareFontShape{OML}{wtmm}{b}{n}{
+   <-> wtmmb
+}{}
+
+\DeclareFontShape{OML}{wtmm}{bx}{n}{<->ssub * wtmm/b/n}{}
+
+\endinput

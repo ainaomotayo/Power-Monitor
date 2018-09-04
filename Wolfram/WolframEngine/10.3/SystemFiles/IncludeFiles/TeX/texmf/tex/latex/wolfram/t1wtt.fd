@@ -1,0 +1,43 @@
+%Filename: t1wtt.fd
+%Created by: tex cmttbase
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1wtt.fd}
+   [2001/10/12 Fontinst v1.914 font definitions for T1/wtt.]
+
+\DeclareFontFamily{T1}{wtt}{}
+
+\DeclareFontShape{T1}{wtt}{m}{n}{
+   <-> wttr8t
+}{}
+
+\DeclareFontShape{T1}{wtt}{m}{sc}{
+   <-> wttrc8t
+}{}
+
+\DeclareFontShape{T1}{wtt}{m}{sl}{
+   <-> wttro8t
+}{}
+
+\DeclareFontShape{T1}{wtt}{b}{n}{
+   <-> wttb8t
+}{}
+
+\DeclareFontShape{T1}{wtt}{b}{sc}{
+   <-> wttbc8t
+}{}
+
+\DeclareFontShape{T1}{wtt}{b}{sl}{
+   <-> wttbo8t
+}{}
+
+\DeclareFontShape{T1}{wtt}{m}{it}{<->ssub * wtt/m/sl}{}
+\DeclareFontShape{T1}{wtt}{bx}{n}{<->ssub * wtt/b/n}{}
+\DeclareFontShape{T1}{wtt}{bx}{sc}{<->ssub * wtt/b/sc}{}
+\DeclareFontShape{T1}{wtt}{bx}{sl}{<->ssub * wtt/b/sl}{}
+\DeclareFontShape{T1}{wtt}{b}{it}{<->ssub * wtt/b/sl}{}
+\DeclareFontShape{T1}{wtt}{bx}{it}{<->ssub * wtt/b/it}{}
+
+\endinput

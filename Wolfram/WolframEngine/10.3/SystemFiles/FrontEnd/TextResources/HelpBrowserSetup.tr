@@ -1,0 +1,7 @@
+@@resource HelpBrowserSetup
+BrowserCategory["HelpBrowser", None,
+	{
+		BrowserCategory["AddOns", None, {HelpDirectoryListing[AddOnHelpPath]}],
+		BrowserCategory["Master Index", None, {HelpMasterIndex[]}]
+	}
+]

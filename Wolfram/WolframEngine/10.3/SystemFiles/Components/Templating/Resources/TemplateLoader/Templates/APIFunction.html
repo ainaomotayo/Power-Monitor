@@ -1,0 +1,39 @@
+<wolfram:get path="Templates/Clean.html">
+  <wolfram:slot id="Content">
+    <wolfram:get path="Templates/Includes/Title.html"/>
+    <div class="panel panel-default panel-main panel-form">
+        <div class="panel-heading text-center">
+          <h2>Wolfram Cloud <small>API Web Error Report</small></h2>
+          <wolfram:if test="TrueQ[$CloudEvaluation]">
+          <div class="text-center small text-muted">
+            API method URL: <wolfram:expr>HTTPRequestData["PathString"]</wolfram:expr>
+          </div>
+          </wolfram:if>
+        </div>
+      <div class="panel-body">
+        <h4>Input parameters:</h4>
+        <div class="well">
+          <code style="white-space:pre-wrap;background-color:transparent"><wolfram:expr inserter="Composition[ToString, InputForm]">#FormObject[All, "Input"]</wolfram:expr></code>
+        </div>
+        <wolfram:if test="TrueQ[$CloudEvaluation]">
+        <h4>Request Data:</h4>
+        <div class="well">
+        <code style="white-space:pre-wrap;background-color:transparent"><wolfram:expr inserter="Composition[ToString, InputForm]">HTTPRequestData["FormRules"]</wolfram:expr></code>    
+        </div>
+        </wolfram:if>    
+
+        <h4>Parameters:</h4>
+        <hr/>
+
+        <wolfram:slot id="Expression"/>
+      </div>
+      <wolfram:if test="Not @ MatchQ[#FormSubmitLabel, _Missing|None]">
+        <div class="panel-footer text-right">
+          <button type="submit" class="btn btn-primary form-submit" autocomplete="off">
+            <wolfram:slot id="FormSubmitLabel">Submit</wolfram:slot>
+          </button>
+        </div>
+      </wolfram:if>
+    </div>
+  </wolfram:slot>
+</wolfram:get>

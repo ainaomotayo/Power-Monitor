@@ -1,0 +1,1271 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     35821,       1262]
+NotebookOptionsPosition[     27968,        968]
+NotebookOutlinePosition[     28448,        986]
+CellTagsIndexPosition[     28405,        983]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Tutorial", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["XXXX", "Categorization",
+ CellLabel->"URI"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Synonyms", "SynonymsSection",
+ CellID->1427418553],
+
+Cell["XXXX", "Synonyms",
+ CellID->1251652828]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1427428552],
+
+Cell["XXXX", "Keywords",
+ CellID->1251852827]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->115134701],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->787641479],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->489188983],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->267986155],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->55052072],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->125741376],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->31040295],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Unit Testing", "Title",
+ CellChangeTimes->{{3.594470255783002*^9, 3.5944702770702667`*^9}},
+ CellID->509267359],
+
+Cell["\<\
+The Wolfram Language provides a first class built-in unit testing framework \
+to facilitate writing regression test cases for your code and development \
+packages. Unit testing provides simple accounting tools to quickly locate \
+what code changes lead to functional regressions. Writing copious amounts of \
+regression test cases along with your code development increases the quality \
+of your code and improves your development productivity.\
+\>", "Text",
+ CellChangeTimes->{{3.594470278766884*^9, 3.594470326534359*^9}, {
+  3.594470626299738*^9, 3.5944708025235043`*^9}, {3.5944708506353054`*^9, 
+  3.594470898578949*^9}},
+ CellID->1534169418],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{"Test", "[", 
+     RowBox[{
+      StyleBox["in", "TI"], ",", 
+      StyleBox["out", "TI"]}], "]"}], Cell[TextData[{
+     "test whether ",
+     StyleBox["in", "TI"],
+     " evaluates to ",
+     StyleBox["out", "TI"],
+     " and return a test result object"
+    }], "TableText"]},
+   {
+    RowBox[{"Test", "[", 
+     RowBox[{
+      StyleBox["in", "TI"], ",", 
+      StyleBox["out", "TI"], ",", 
+      StyleBox["msg", "TI"]}], "]"}], Cell[
+    "specify which messages are expected during evaluation", "TableText"]},
+   {
+    RowBox[{"TestRun", "[", 
+     StyleBox["file", "TI"], "]"}], Cell[TextData[{
+     "run the test cases present in ",
+     StyleBox["file", "TI"]
+    }], "TableText"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.5944703051600103`*^9, 3.5944703121586723`*^9}, {
+  3.594470372096735*^9, 3.594470374720231*^9}, {3.5944704167021985`*^9, 
+  3.594470537116832*^9}, {3.5944746094569163`*^9, 3.5944746094569163`*^9}},
+ CellID->2096742444],
+
+Cell["Basic unit testing commands.", "Caption",
+ CellChangeTimes->{{3.5944705626051006`*^9, 3.5944705672204943`*^9}},
+ CellID->1891092685],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+This loads the package [[should be not needed when built into WL]]\
+\>", "MathCaption",
+ CellChangeTimes->{{3.594470592691743*^9, 3.594470595108043*^9}, {
+  3.5944710235689416`*^9, 3.594471039457065*^9}},
+ CellID->836781195],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<MUnit`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.5944705997104235`*^9, 3.594470606332729*^9}},
+ CellLabel->"In[32]:=",
+ CellID->2058623809]
+}, Closed]],
+
+Cell[TextData[{
+ "Evaluated test cases return a ",
+ Cell[BoxData["TestResultObject"], "InlineFormula",
+  FormatType->"StandardForm"],
+ " which contains all pertinent information of the test case, such as the \
+actual and expected output, actual and expected messages, ...??"
+}], "Text",
+ CellChangeTimes->{{3.594471078248995*^9, 3.594471115000986*^9}, {
+  3.5944711564324293`*^9, 3.594471198961914*^9}, {3.594471468757762*^9, 
+  3.594471536037815*^9}},
+ CellID->158894207],
+
+Cell[CellGroupData[{
+
+Cell["Execute a simple test case", "MathCaption",
+ CellChangeTimes->{{3.594470613843878*^9, 3.594470617899741*^9}},
+ CellID->85849199],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"result", "=", 
+  RowBox[{"Test", "[", 
+   RowBox[{
+    RowBox[{"1", "+", "1"}], ",", "2"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.594471043163596*^9, 3.5944710469642134`*^9}, {
+  3.5944712074750214`*^9, 3.5944712081326475`*^9}},
+ CellLabel->"In[34]:=",
+ CellID->562765416],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   "\[SkeletonIndicator]",
+    TemplateBox[{"TestResultObject", "[", "\"Success\"", "]"}, "RowDefault"],
+    "\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObjectc765d8696756f92f0000308f]], "Output",
+ CellChangeTimes->{3.5944710476068225`*^9, 3.594471212128452*^9},
+ CellLabel->"Out[34]=",
+ CellID->302801257]
+}, Closed]]
+}, Closed]],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{"ActualOutput", "[", "result", "]"}], Cell[
+    "returns the actual output from the input evaluation", "TableText"]},
+   {
+    RowBox[{"ExpectedOutput", "[", "result", "]"}], Cell[
+    "returns the expected output from the test case", "TableText"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.59447129260907*^9, 3.594471359863096*^9}},
+ CellID->623517949],
+
+Cell["\<\
+Selector functions used to compare actual and expected outputs.\
+\>", "Caption",
+ CellChangeTimes->{{3.59447136994269*^9, 3.594471386774716*^9}, {
+  3.5944716651647463`*^9, 3.5944716661967244`*^9}},
+ CellID->215684888],
+
+Cell[CellGroupData[{
+
+Cell["Compare the actual output against the expected output.", "MathCaption",
+ CellChangeTimes->{{3.5944714234546347`*^9, 3.5944714406219797`*^9}},
+ CellID->28754913],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ActualOutput", "[", "result", "]"}]], "Input",
+ CellChangeTimes->{
+  3.5944710668881817`*^9, {3.5944712138651037`*^9, 3.5944712309323535`*^9}},
+ CellLabel->"In[36]:=",
+ CellID->84142092],
+
+Cell[BoxData[
+ TagBox["2",
+  HoldForm]], "Output",
+ CellChangeTimes->{3.5944712312096148`*^9},
+ CellLabel->"Out[36]=",
+ CellID->416925851]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ExpectedOutput", "[", "result", "]"}]], "Input",
+ CellChangeTimes->{
+  3.5944710668881817`*^9, {3.5944712138651037`*^9, 3.594471242711564*^9}},
+ CellLabel->"In[37]:=",
+ CellID->198643229],
+
+Cell[BoxData[
+ TagBox["2",
+  HoldForm]], "Output",
+ CellChangeTimes->{3.594471243350172*^9},
+ CellLabel->"Out[37]=",
+ CellID->148744096]
+}, Closed]]
+}, Closed]],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{"ActualMessages", "[", "result", "]"}], Cell[
+    "returns the actual messages from the input evaluation", "TableText"]},
+   {
+    RowBox[{"ExpectedMessages", "[", "result", "]"}], Cell[
+    "returns the expected messages from the test case", "TableText"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.5944715586713624`*^9, 3.5944716042057133`*^9}, {
+  3.5944716379888725`*^9, 3.594471649206553*^9}},
+ CellID->739024846],
+
+Cell["\<\
+Selector functions used to compare actual and expected messages.\
+\>", "Caption",
+ CellChangeTimes->{{3.5944716582141294`*^9, 3.5944716708691764`*^9}},
+ CellID->811419420],
+
+Cell[CellGroupData[{
+
+Cell["Evaluate a test case which generates an expected message", "MathCaption",
+ CellChangeTimes->{{3.5944716865320883`*^9, 3.5944717135808353`*^9}},
+ CellID->393672746],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"result", "=", 
+  RowBox[{"Test", "[", 
+   RowBox[{
+    RowBox[{"1", "/", "0"}], ",", "ComplexInfinity", ",", 
+    RowBox[{"{", 
+     RowBox[{"Power", "::", "infy"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.5944717168699665`*^9, 3.5944717360222025`*^9}},
+ CellLabel->"In[39]:=",
+ CellID->54557595],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   "\[SkeletonIndicator]",
+    TemplateBox[{"TestResultObject", "[", "\"Success\"", "]"}, "RowDefault"],
+    "\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObject54cb7b4e6756f92f000030b5]], "Output",
+ CellChangeTimes->{3.594471736340506*^9},
+ CellLabel->"Out[39]=",
+ CellID->263870034]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ActualMessages", "[", "result", "]"}]], "Input",
+ CellChangeTimes->{{3.5944717456974134`*^9, 3.594471748375963*^9}},
+ CellLabel->"In[40]:=",
+ CellID->171381266],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  TagBox[
+   RowBox[{"Message", "[", 
+    RowBox[{
+     StyleBox[
+      RowBox[{"Power", "::", "infy"}], "MessageName"], ",", 
+     TagBox[
+      FractionBox["1", "0"],
+      HoldForm]}], "]"}],
+   HoldForm], "}"}]], "Output",
+ CellChangeTimes->{3.5944717489164753`*^9},
+ CellLabel->"Out[40]=",
+ CellID->210917778]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ExpectedMessages", "[", "result", "]"}]], "Input",
+ CellChangeTimes->{{3.594471750586068*^9, 3.5944717545278196`*^9}},
+ CellLabel->"In[41]:=",
+ CellID->344226475],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  TagBox[
+   StyleBox[
+    RowBox[{"Power", "::", "infy"}], "MessageName"],
+   HoldForm], "}"}]], "Output",
+ CellChangeTimes->{3.5944717549001713`*^9},
+ CellLabel->"Out[41]=",
+ CellID->654175291]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Common Test options", "Subsection",
+ CellChangeTimes->{{3.594473790046652*^9, 3.594473792477965*^9}, {
+  3.5944744197533174`*^9, 3.5944744208653746`*^9}},
+ CellID->459659129],
+
+Cell[TextData[{
+ "The ",
+ Cell[BoxData["Test"], "InlineFormula",
+  FormatType->"StandardForm"],
+ " function comes with a number of options to control evaluation and logging"
+}], "Text",
+ CellChangeTimes->{{3.5944744316726627`*^9, 3.5944744719530106`*^9}, {
+  3.5944745217364035`*^9, 3.5944745245600924`*^9}},
+ CellID->30483862],
+
+Cell[BoxData[GridBox[{
+   {"TestID", "0", Cell["\<\
+A string or number which uniquely identifies the test case for logging \
+purposes\
+\>", "TableText"]},
+   {"TestComment", "\"\<\>\"", Cell[
+    "A string documenting the test case", "TableText"]},
+   {"TestTags", 
+    RowBox[{"{", "}"}], Cell["\<\
+A list of tags to define what areas of functionality a test case belongs to\
+\>", "TableText"]}
+  }]], "DefinitionBox3Col",
+ CellChangeTimes->{{3.59447390290209*^9, 3.5944740249993277`*^9}, {
+  3.5944740756525483`*^9, 3.5944741504757814`*^9}, {3.594474181249077*^9, 
+  3.594474216387535*^9}, {3.594474269338941*^9, 3.594474328666421*^9}, {
+  3.5944745739841447`*^9, 3.594474580161025*^9}, {3.594474613008296*^9, 
+  3.594474614304532*^9}},
+ CellID->558468695],
+
+Cell["Common options used for logging and administrative purposes.", "Caption",
+ CellChangeTimes->{{3.594474382833167*^9, 3.5944743911771126`*^9}, {
+  3.5944745354484577`*^9, 3.594474549583915*^9}},
+ CellID->498495019],
+
+Cell[BoxData[GridBox[{
+   {"EquivalenceFunction", "SameQ", Cell[
+    "Function used to compare expected and actual output", "TableText"]},
+   {"MemoryConstraint", "None", Cell["\<\
+Maximum memory (in bytes) allowed during test evaluation (uses \
+MemoryConstrained)\
+\>", "TableText"]},
+   {"TimeConstraint", "None", Cell["\<\
+Maximum time (in seconds) allowed for test evaluation (uses TimeConstrained)\
+\>", "TableText"]}
+  }]], "DefinitionBox3Col",
+ CellChangeTimes->{3.594474503221779*^9},
+ CellID->494801428],
+
+Cell["Common options for evaluation control.", "Caption",
+ CellChangeTimes->{{3.594474552711893*^9, 3.5944745583362455`*^9}},
+ CellID->229349]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Different types of tests", "Subsection",
+ CellChangeTimes->{{3.5944722623212433`*^9, 3.5944722659366846`*^9}},
+ CellID->60716682],
+
+Cell["\<\
+There are different types of tests to accommodate common testing scenarios.\
+\>", "Text",
+ CellChangeTimes->{{3.594471831643235*^9, 3.5944718419070034`*^9}, {
+  3.5944722695291047`*^9, 3.5944722948482103`*^9}, {3.594473302025051*^9, 
+  3.59447330369664*^9}, {3.5944737128301387`*^9, 3.5944737260377145`*^9}},
+ CellID->33740854],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{"NTest", "[", 
+     RowBox[{
+      StyleBox["in", "TI"], ",", 
+      StyleBox["out", "TI"]}], "]"}], Cell[TextData[{
+     "Numerically test ",
+     StyleBox["in", "TI"],
+     " to a desired numerical precision or accuracy"
+    }], "TableText"]},
+   {
+    RowBox[{"ExactTest", "[", 
+     RowBox[{
+      StyleBox["in", "TI"], ",", 
+      StyleBox["out", "TI"]}], "]"}], Cell[TextData[{
+     "Only use the unevaluated form of ",
+     StyleBox["out", "TI"],
+     " for comparison"
+    }], "TableText"]},
+   {
+    RowBox[{"OrTest", "[", 
+     RowBox[{
+      StyleBox["in", "TI"], ",", 
+      StyleBox["list", "TI"]}], "]"}], Cell[
+    "Test against multiple allowed expected results", "TableText"]},
+   {
+    RowBox[{"ConditionalTest", "[", 
+     RowBox[{"type", ",", "in", ",", "conditions"}], "]"}], Cell[TextData[{
+     "Use a test of ",
+     StyleBox["type", "TI"],
+     " to test ",
+     StyleBox["in", "TI"],
+     " against different conditional expected results"
+    }], "TableText"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.5944718558933215`*^9, 3.5944718568302126`*^9}, {
+  3.594471889508322*^9, 3.5944718909657097`*^9}, {3.594472060331948*^9, 
+  3.5944720645669775`*^9}, {3.5944723130155025`*^9, 3.5944723171544456`*^9}, {
+  3.5944733185537863`*^9, 3.59447333162823*^9}, {3.59447340250671*^9, 
+  3.594473681231057*^9}, {3.5944746178479023`*^9, 3.594474620255193*^9}},
+ CellID->230841514],
+
+Cell["Different types of tests.", "Caption",
+ CellChangeTimes->{{3.5944733803526154`*^9, 3.5944733835286407`*^9}},
+ CellID->145753824],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Numerically test up to a given precision using ",
+ Cell[BoxData["PrecisionGoal"], "InlineFormula",
+  FormatType->"StandardForm"],
+ "."
+}], "MathCaption",
+ CellChangeTimes->{{3.594472532902837*^9, 3.594472536822572*^9}, {
+   3.5944726402139993`*^9, 3.5944726648934927`*^9}, 3.5944727008377156`*^9, {
+   3.594472779941021*^9, 3.5944727869006453`*^9}, {3.5944746601111403`*^9, 
+   3.594474660199222*^9}},
+ CellID->469243952],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NTest", "[", 
+  RowBox[{"4.000001", ",", "4.0", ",", 
+   RowBox[{"PrecisionGoal", "\[Rule]", "4"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.594472541920424*^9, 3.5944726502725773`*^9}, 
+   3.5944726858154144`*^9, {3.594472817015316*^9, 3.59447281959077*^9}},
+ CellLabel->"In[66]:=",
+ CellID->413977353],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   "\[SkeletonIndicator]",
+    TemplateBox[{"TestResultObject", "[", "\"Success\"", "]"}, "RowDefault"],
+    "\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObject9d5d7e8e6756f92f00003441]], "Output",
+ CellChangeTimes->{{3.5944725904596343`*^9, 3.594472636583542*^9}, 
+   3.59447268663319*^9, {3.5944728172315207`*^9, 3.5944728202564006`*^9}},
+ CellLabel->"Out[66]=",
+ CellID->312871371]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NTest", "[", 
+  RowBox[{"4.000001", ",", "4.0", ",", 
+   RowBox[{"PrecisionGoal", "\[Rule]", "8"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.594472541920424*^9, 3.5944726843840513`*^9}},
+ CellLabel->"In[60]:=",
+ CellID->118200709],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{"\[SkeletonIndicator]",TemplateBox[{"TestResultObject", "[", 
+      TemplateBox[{"\"Failure:\"", "\" \"", 
+        TagBox["4.000001`", HoldForm]}, "RowDefault"], "  ", 
+      ButtonBox[
+      "\"Compare ExpectedOutput with ActualOutput\"", 
+       Appearance -> {Automatic, "DialogBox"}, ButtonFunction :> 
+       MUnit`Buttons`Private`compareOutputButtonFunction[
+        Null, MUnit`TestResultObjects`\
+TestResultObjectc157b3826756f92f000031d3], Evaluator -> Automatic, Method -> 
+       "Queued"], "]"}, "RowDefault"],"\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObjectc157b3826756f92f000031d3]], "Output",
+ CellChangeTimes->{{3.594472671072376*^9, 3.594472687445964*^9}},
+ CellLabel->"Out[60]=",
+ CellID->205556194]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["ExactTest only compares to the unevaluated expected result.", \
+"MathCaption",
+ CellChangeTimes->{{3.59447235602345*^9, 3.5944724187191343`*^9}, {
+  3.594474657719864*^9, 3.594474657807946*^9}},
+ CellID->287262452],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ExactTest", "[", 
+  RowBox[{
+   RowBox[{"2", "+", "2"}], ",", 
+   RowBox[{"8", "-", "4"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.594472328601343*^9, 3.5944723350184517`*^9}},
+ CellLabel->"In[47]:=",
+ CellID->121858171],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{"\[SkeletonIndicator]",TemplateBox[{"TestResultObject", "[", 
+      TemplateBox[{"\"Failure:\"", "\" \"", 
+        TagBox["4", HoldForm]}, "RowDefault"], "  ", 
+      ButtonBox[
+      "\"Compare ExpectedOutput with ActualOutput\"", 
+       Appearance -> {Automatic, "DialogBox"}, ButtonFunction :> 
+       MUnit`Buttons`Private`compareOutputButtonFunction[
+        Null, MUnit`TestResultObjects`\
+TestResultObjecteb84c6c96756f92f0000310b], Evaluator -> Automatic, Method -> 
+       "Queued"], "]"}, "RowDefault"],"\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObjecteb84c6c96756f92f0000310b]], "Output",
+ CellChangeTimes->{3.594472337749052*^9},
+ CellLabel->"Out[47]=",
+ CellID->289052305]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ExactTest", "[", 
+  RowBox[{
+   RowBox[{"2", "+", "2"}], ",", "4"}], "]"}]], "Input",
+ CellChangeTimes->{{3.594472328601343*^9, 3.5944723413624926`*^9}},
+ CellLabel->"In[48]:=",
+ CellID->552381537],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   "\[SkeletonIndicator]",
+    TemplateBox[{"TestResultObject", "[", "\"Success\"", "]"}, "RowDefault"],
+    "\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObject33e4fc8f6756f92f00003119]], "Output",
+ CellChangeTimes->{3.594472341548667*^9},
+ CellLabel->"Out[48]=",
+ CellID->444980907]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+OrTest is a simple way to write test cases which can have multiple valid \
+results.\
+\>", "MathCaption",
+ CellChangeTimes->{{3.5944724260631275`*^9, 3.5944724617671156`*^9}, {
+  3.5944746515279694`*^9, 3.594474651624059*^9}},
+ CellID->449693134],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OrTest", "[", 
+  RowBox[{
+   RowBox[{"RandomInteger", "[", "1", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.594471906883863*^9, 3.5944719218641233`*^9}},
+ CellLabel->"In[43]:=",
+ CellID->180365528],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   "\[SkeletonIndicator]",
+    TemplateBox[{"TestResultObject", "[", "\"Success\"", "]"}, "RowDefault"],
+    "\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObject0d546a946756f92f000030d4]], "Output",
+ CellChangeTimes->{{3.594471922126377*^9, 3.594471926813838*^9}},
+ CellLabel->"Out[43]=",
+ CellID->137844652]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["This is another, more complicated way, to write an OrTest.", \
+"MathCaption",
+ CellChangeTimes->{{3.5944724825909433`*^9, 3.594472502767151*^9}, {
+  3.594474653231591*^9, 3.594474653279632*^9}},
+ CellID->98069130],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Test", "[", 
+  RowBox[{
+   RowBox[{"MemberQ", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1"}], "}"}], ",", 
+     RowBox[{"RandomInteger", "[", "1", "]"}]}], "]"}], ",", "True"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.594471935227848*^9, 3.594471990406377*^9}},
+ CellLabel->"In[44]:=",
+ CellID->300727274],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   "\[SkeletonIndicator]",
+    TemplateBox[{"TestResultObject", "[", "\"Success\"", "]"}, "RowDefault"],
+    "\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObject4aefc8456756f92f000030e2]], "Output",
+ CellChangeTimes->{3.594471996117817*^9},
+ CellLabel->"Out[44]=",
+ CellID->112758536]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+A conditional test which passes correctly on all supported platforms.\
+\>", "MathCaption",
+ CellChangeTimes->{{3.594473204258974*^9, 3.5944732607697754`*^9}, {
+  3.5944746551193857`*^9, 3.594474655223485*^9}},
+ CellID->44430615],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConditionalTest", "[", "\[IndentingNewLine]", 
+  RowBox[{
+  "Test", ",", "\[IndentingNewLine]", "$PathnameSeparator", ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"$OperatingSystem", "===", "\"\<Windows\>\""}], ",", 
+     "\"\<\\\\\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"$OperatingSystem", "===", "\"\<MacOSX\>\""}], ",", 
+     "\"\</\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"$OperatingSystem", "===", "\"\<Unix\>\""}], ",", "\"\</\>\""}], 
+    "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.59447289511567*^9, 3.5944729345432053`*^9}, {
+  3.5944729687107334`*^9, 3.594473051245307*^9}, {3.5944730948057756`*^9, 
+  3.594473188580048*^9}},
+ CellLabel->"In[80]:=",
+ CellID->20041694],
+
+Cell[BoxData[
+ InterpretationBox[
+  TemplateBox[{
+   "\[SkeletonIndicator]",
+    TemplateBox[{"TestResultObject", "[", "\"Success\"", "]"}, "RowDefault"],
+    "\[SkeletonIndicator]"},
+   "RowDefault"],
+  MUnit`TestResultObjects`TestResultObjecta7071f0a6756f92f00004588]], "Output",
+ CellChangeTimes->{{3.594472921718993*^9, 3.5944729348905334`*^9}, {
+   3.594472975446146*^9, 3.5944730343422112`*^9}, 3.594473192850116*^9},
+ CellLabel->"Out[80]=",
+ CellID->638564027]
+}, Closed]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Running tests", "Subsection",
+ CellChangeTimes->{{3.5944748187671814`*^9, 3.5944748244225664`*^9}},
+ CellID->679413706],
+
+Cell["Test", "Text",
+ CellChangeTimes->{{3.594474851865691*^9, 3.594474852342143*^9}},
+ CellID->373460801],
+
+Cell[CellGroupData[{
+
+Cell["This is an example test file", "MathCaption",
+ CellChangeTimes->{{3.5944748854216337`*^9, 3.5944749542851963`*^9}},
+ CellID->430770844],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FilePrint", "[", "\"\<test.mt\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.5944749081632876`*^9, 3.594474913293172*^9}},
+ CellLabel->"In[84]:=",
+ CellID->332307316],
+
+Cell["\<\
+Test[2, 2, TestID -> \"1\"]
+Test[4, 4, TestID -> \"2\"]
+Test[8, 8, TestID -> \"3\"]
+Test[16, 16, TestID -> \"4\"]\
+\>", "Print",
+ CellChangeTimes->{3.5944749134883547`*^9},
+ CellLabel->"During evaluation of In[84]:=",
+ CellID->287207446]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Run a test file using the default logging method.", "MathCaption",
+ CellChangeTimes->{{3.5944748854216337`*^9, 3.5944749286057496`*^9}},
+ CellID->674097097],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TestRun", "[", "\"\<test.mt\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.594474869159154*^9, 3.594474875576264*^9}},
+ CellLabel->"In[85]:=",
+ CellID->150496151],
+
+Cell["\<\
+Starting test run \"Test Results test.mt\"
+....
+Tests run: 4
+Failures: 0
+Messages Failures: 0
+Skipped Tests: 0
+Errors: 0
+Fatal: False
+\
+\>", "Print",
+ CellChangeTimes->{3.594474917608277*^9},
+ CellLabel->"During evaluation of In[85]:=",
+ CellID->213845808],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.5944749178655205`*^9},
+ CellLabel->"Out[85]=",
+ CellID->117951403]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["This is a notebook containing test cases.", "MathCaption",
+ CellChangeTimes->{{3.5944752658027616`*^9, 3.5944752750916057`*^9}},
+ CellID->80241874],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"file", "=", "\"\<c:/users/arnoudb.wri/test.nb\>\""}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"NotebookOpen", "[", "file", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.594475148887459*^9, 3.5944751621821165`*^9}, {
+  3.594475258438753*^9, 3.5944752612374163`*^9}},
+ CellLabel->"In[93]:=",
+ CellID->226871973]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["You can run the test notebook directly.", "MathCaption",
+ CellChangeTimes->{{3.5944752807790194`*^9, 3.5944752866586194`*^9}},
+ CellID->26028720],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TestRun", "[", "file", "]"}]], "Input",
+ CellChangeTimes->{{3.5944750826754246`*^9, 3.5944751133826575`*^9}, {
+  3.5944751441039047`*^9, 3.594475165418194*^9}},
+ CellLabel->"In[91]:=",
+ CellID->533307810],
+
+Cell["\<\
+Starting test run \"Test Results test.nb\"
+Starting test section Title
+Starting test section Section
+Starting test section TestSection
+..
+Ending test section
+
+Ending test section
+
+Ending test section
+
+Tests run: 2
+Failures: 0
+Messages Failures: 0
+Skipped Tests: 0
+Errors: 0
+Fatal: False
+\
+\>", "Print",
+ CellChangeTimes->{{3.594475086458026*^9, 3.5944751139241714`*^9}, 
+   3.594475165758518*^9},
+ CellLabel->"During evaluation of In[91]:=",
+ CellID->55137602],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.5944750867793293`*^9, 3.5944751141153517`*^9}, 
+   3.5944751659517*^9},
+ CellLabel->"Out[91]=",
+ CellID->934801644]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Logging", "Subsection",
+ CellChangeTimes->{{3.594474810559366*^9, 3.5944748121268606`*^9}},
+ CellID->51174460],
+
+Cell[CellGroupData[{
+
+Cell["Internal section for sample code", "Subsection", "ExcludedMaterial",
+ CellChangeTimes->{{3.5944749751820908`*^9, 3.594475004605101*^9}},
+ CellID->784019650],
+
+Cell[BoxData[
+ RowBox[{"Block", "[", 
+  RowBox[{
+   RowBox[{"{", "Test", "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Export", "[", 
+    RowBox[{"\"\<test.mt\>\"", ",", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Test", "[", 
+        RowBox[{
+         RowBox[{"1", "+", "1"}], ",", "2", ",", 
+         RowBox[{"TestID", "\[Rule]", "\"\<1\>\""}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Test", "[", 
+        RowBox[{
+         RowBox[{"2", "+", "2"}], ",", "4", ",", 
+         RowBox[{"TestID", "\[Rule]", "\"\<2\>\""}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Test", "[", 
+        RowBox[{
+         RowBox[{"4", "+", "4"}], ",", "8", ",", 
+         RowBox[{"TestID", "\[Rule]", "\"\<3\>\""}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Test", "[", 
+        RowBox[{
+         RowBox[{"8", "+", "8"}], ",", "16", ",", 
+         RowBox[{"TestID", "\[Rule]", "\"\<4\>\""}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], ",", "\"\<Lines\>\""}], "]"}]}], 
+  "]"}]], "Input", "ExcludedMaterial",
+ CellChangeTimes->{3.594474984881324*^9},
+ CellID->769922221]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "TutorialMoreAboutSection",
+ CellID->23220180],
+
+Cell["XXXX", "TutorialMoreAbout",
+ CellID->1567025153]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Related Tutorials", "RelatedTutorialsSection",
+ CellID->415694126],
+
+Cell["XXXX", "RelatedTutorials",
+ CellID->806871991]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Related Wolfram Training Courses", "TutorialRelatedLinksSection",
+ CellChangeTimes->{{3.545139239709342*^9, 3.545139240396411*^9}},
+ CellID->415694148],
+
+Cell["XXXX", "TutorialRelatedLinks",
+ CellID->415694149]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{996, 881},
+WindowMargins->{{260, Automatic}, {Automatic, 25}},
+ShowSelection->True,
+Magnification:>1.5 Inherited,
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (November 10, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TutorialPageStyles.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 324, 14, 34, "History",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[907, 38, 68, 1, 41, "CategorizationSection",
+ CellID->1122911449],
+Cell[978, 41, 81, 2, 105, "Categorization",
+ CellID->686433507],
+Cell[1062, 45, 73, 2, 105, "Categorization",
+ CellID->605800465],
+Cell[1138, 49, 69, 2, 105, "Categorization",
+ CellID->468444828],
+Cell[1210, 53, 49, 1, 105, "Categorization"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1296, 59, 56, 1, 25, "SynonymsSection",
+ CellID->1427418553],
+Cell[1355, 62, 45, 1, 105, "Synonyms",
+ CellID->1251652828]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1437, 68, 56, 1, 25, "KeywordsSection",
+ CellID->1427428552],
+Cell[1496, 71, 45, 1, 105, "Keywords",
+ CellID->1251852827]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1578, 77, 53, 1, 25, "DetailsSection",
+ CellID->307771771],
+Cell[1634, 80, 63, 2, 105, "Details",
+ CellID->115134701],
+Cell[1700, 84, 69, 2, 105, "Details",
+ CellID->350963985],
+Cell[1772, 88, 66, 2, 105, "Details",
+ CellID->787641479],
+Cell[1841, 92, 71, 2, 105, "Details",
+ CellID->489188983],
+Cell[1915, 96, 61, 2, 105, "Details",
+ CellID->267986155],
+Cell[1979, 100, 60, 2, 105, "Details",
+ CellID->55052072],
+Cell[2042, 104, 63, 2, 105, "Details",
+ CellID->125741376],
+Cell[2108, 108, 77, 2, 105, "Details",
+ CellID->31040295],
+Cell[2188, 112, 67, 2, 105, "Details",
+ CellID->240026365]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2292, 119, 117, 2, 120, "Title",
+ CellID->509267359],
+Cell[2412, 123, 657, 11, 124, "Text",
+ CellID->1534169418],
+Cell[3072, 136, 992, 29, 116, "DefinitionBox",
+ CellID->2096742444],
+Cell[4067, 167, 138, 2, 40, "Caption",
+ CellID->1891092685],
+Cell[CellGroupData[{
+Cell[4230, 173, 234, 5, 46, "MathCaption",
+ CellID->836781195],
+Cell[4467, 180, 184, 4, 37, "Input",
+ CellID->2058623809]
+}, Closed]],
+Cell[4666, 187, 472, 10, 57, "Text",
+ CellID->158894207],
+Cell[CellGroupData[{
+Cell[5163, 201, 134, 2, 46, "MathCaption",
+ CellID->85849199],
+Cell[CellGroupData[{
+Cell[5322, 207, 299, 8, 37, "Input",
+ CellID->562765416],
+Cell[5624, 217, 391, 10, 35, "Output",
+ CellID->302801257]
+}, Closed]]
+}, Closed]],
+Cell[6042, 231, 397, 9, 83, "DefinitionBox",
+ CellID->623517949],
+Cell[6442, 242, 228, 5, 40, "Caption",
+ CellID->215684888],
+Cell[CellGroupData[{
+Cell[6695, 251, 166, 2, 46, "MathCaption",
+ CellID->28754913],
+Cell[CellGroupData[{
+Cell[6886, 257, 210, 5, 37, "Input",
+ CellID->84142092],
+Cell[7099, 264, 138, 5, 35, "Output",
+ CellID->416925851]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[7274, 274, 211, 5, 37, "Input",
+ CellID->198643229],
+Cell[7488, 281, 136, 5, 35, "Output",
+ CellID->148744096]
+}, Closed]]
+}, Closed]],
+Cell[7651, 290, 461, 10, 83, "DefinitionBox",
+ CellID->739024846],
+Cell[8115, 302, 181, 4, 40, "Caption",
+ CellID->811419420],
+Cell[CellGroupData[{
+Cell[8321, 310, 169, 2, 46, "MathCaption",
+ CellID->393672746],
+Cell[CellGroupData[{
+Cell[8515, 316, 330, 9, 37, "Input",
+ CellID->54557595],
+Cell[8848, 327, 367, 10, 35, "Output",
+ CellID->263870034]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9252, 342, 184, 4, 37, "Input",
+ CellID->171381266],
+Cell[9439, 348, 343, 13, 55, "Output",
+ CellID->210917778]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9819, 366, 186, 4, 37, "Input",
+ CellID->344226475],
+Cell[10008, 372, 224, 8, 35, "Output",
+ CellID->654175291]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[10281, 386, 180, 3, 55, "Subsection",
+ CellID->459659129],
+Cell[10464, 391, 327, 8, 34, "Text",
+ CellID->30483862],
+Cell[10794, 401, 758, 17, 159, "DefinitionBox3Col",
+ CellID->558468695],
+Cell[11555, 420, 218, 3, 40, "Caption",
+ CellID->498495019],
+Cell[11776, 425, 512, 12, 182, "DefinitionBox3Col",
+ CellID->494801428],
+Cell[12291, 439, 142, 2, 40, "Caption",
+ CellID->229349]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12470, 446, 135, 2, 58, "Subsection",
+ CellID->60716682],
+Cell[12608, 450, 337, 6, 32, "Text",
+ CellID->33740854],
+Cell[12948, 458, 1438, 40, 172, "DefinitionBox",
+ CellID->230841514],
+Cell[14389, 500, 134, 2, 40, "Caption",
+ CellID->145753824],
+Cell[CellGroupData[{
+Cell[14548, 506, 439, 10, 48, "MathCaption",
+ CellID->469243952],
+Cell[CellGroupData[{
+Cell[15012, 520, 327, 7, 37, "Input",
+ CellID->413977353],
+Cell[15342, 529, 468, 11, 35, "Output",
+ CellID->312871371]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[15847, 545, 254, 6, 37, "Input",
+ CellID->118200709],
+Cell[16104, 553, 802, 16, 54, "Output",
+ CellID->205556194]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[16955, 575, 220, 4, 56, "MathCaption",
+ CellID->287262452],
+Cell[CellGroupData[{
+Cell[17200, 583, 245, 7, 37, "Input",
+ CellID->121858171],
+Cell[17448, 592, 770, 16, 54, "Output",
+ CellID->289052305]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[18255, 613, 221, 6, 37, "Input",
+ CellID->552381537],
+Cell[18479, 621, 367, 10, 35, "Output",
+ CellID->444980907]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[18895, 637, 255, 6, 56, "MathCaption",
+ CellID->449693134],
+Cell[CellGroupData[{
+Cell[19175, 647, 284, 8, 37, "Input",
+ CellID->180365528],
+Cell[19462, 657, 391, 10, 35, "Output",
+ CellID->137844652]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[19902, 673, 219, 4, 56, "MathCaption",
+ CellID->98069130],
+Cell[CellGroupData[{
+Cell[20146, 681, 352, 11, 37, "Input",
+ CellID->300727274],
+Cell[20501, 694, 367, 10, 35, "Output",
+ CellID->112758536]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[20917, 710, 238, 5, 56, "MathCaption",
+ CellID->44430615],
+Cell[CellGroupData[{
+Cell[21180, 719, 856, 21, 200, "Input",
+ CellID->20041694],
+Cell[22039, 742, 467, 11, 35, "Output",
+ CellID->638564027]
+}, Closed]]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[22567, 760, 125, 2, 55, "Subsection",
+ CellID->679413706],
+Cell[22695, 764, 106, 2, 32, "Text",
+ CellID->373460801],
+Cell[CellGroupData[{
+Cell[22826, 770, 141, 2, 46, "MathCaption",
+ CellID->430770844],
+Cell[CellGroupData[{
+Cell[22992, 776, 188, 4, 37, "Input",
+ CellID->332307316],
+Cell[23183, 782, 247, 8, 94, "Print",
+ CellID->287207446]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23479, 796, 162, 2, 56, "MathCaption",
+ CellID->674097097],
+Cell[CellGroupData[{
+Cell[23666, 802, 184, 4, 37, "Input",
+ CellID->150496151],
+Cell[23853, 808, 266, 13, 201, "Print",
+ CellID->213845808],
+Cell[24122, 823, 119, 3, 35, "Output",
+ CellID->117951403]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24290, 832, 153, 2, 56, "MathCaption",
+ CellID->80241874],
+Cell[24446, 836, 340, 8, 65, "Input",
+ CellID->226871973]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24823, 849, 151, 2, 56, "MathCaption",
+ CellID->26028720],
+Cell[CellGroupData[{
+Cell[24999, 855, 228, 5, 37, "Input",
+ CellID->533307810],
+Cell[25230, 862, 470, 23, 395, "Print",
+ CellID->55137602],
+Cell[25703, 887, 169, 4, 35, "Output",
+ CellID->934801644]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[25911, 896, 116, 2, 58, "Subsection",
+ CellID->51174460],
+Cell[CellGroupData[{
+Cell[26052, 902, 162, 2, 67, "Subsection",
+ CellID->784019650],
+Cell[26217, 906, 1147, 30, 212, "Input",
+ CellID->769922221]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27401, 941, 65, 1, 106, "TutorialMoreAboutSection",
+ CellID->23220180],
+Cell[27469, 944, 54, 1, 30, "TutorialMoreAbout",
+ CellID->1567025153]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[27560, 950, 72, 1, 82, "RelatedTutorialsSection",
+ CellID->415694126],
+Cell[27635, 953, 52, 1, 30, "RelatedTutorials",
+ CellID->806871991]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[27724, 959, 157, 2, 82, "TutorialRelatedLinksSection",
+ CellID->415694148],
+Cell[27884, 963, 56, 1, 30, "TutorialRelatedLinks",
+ CellID->415694149]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

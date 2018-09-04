@@ -1,0 +1,13 @@
+%Filename: uwsm.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{uwsm.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for U/wsm.]
+
+\DeclareFontFamily{U}{wsm}{}
+
+
+\endinput

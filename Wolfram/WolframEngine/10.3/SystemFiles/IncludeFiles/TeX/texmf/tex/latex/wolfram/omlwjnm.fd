@@ -1,0 +1,22 @@
+%Filename: omlwjnm.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omlwjnm.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OML/wjnm.]
+
+\DeclareFontFamily{OML}{wjnm}{\skewchar \font =127}
+
+\DeclareFontShape{OML}{wjnm}{m}{n}{
+   <-> wjnmm
+}{}
+
+\DeclareFontShape{OML}{wjnm}{b}{n}{
+   <-> wjnmb
+}{}
+
+\DeclareFontShape{OML}{wjnm}{bx}{n}{<->ssub * wjnm/b/n}{}
+
+\endinput

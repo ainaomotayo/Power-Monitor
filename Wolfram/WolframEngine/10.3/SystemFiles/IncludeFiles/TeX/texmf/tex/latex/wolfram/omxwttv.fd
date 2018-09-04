@@ -1,0 +1,22 @@
+%Filename: omxwttv.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omxwttv.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OMX/wttv.]
+
+\DeclareFontFamily{OMX}{wttv}{}
+
+\DeclareFontShape{OMX}{wttv}{m}{n}{
+   <-> wttvm
+}{}
+
+\DeclareFontShape{OMX}{wttv}{b}{n}{
+   <-> wttvb
+}{}
+
+\DeclareFontShape{OMX}{wttv}{bx}{n}{<->ssub * wttv/b/n}{}
+
+\endinput

@@ -1,0 +1,42 @@
+@@resource thisSoftwareIssuedToString
+This software issued to:
+@|
+@@resource thisSoftwareIssuedToColor
+RGBColor[0.5, 0.463, 0.415]
+@|
+@@resource thisSoftwareIssuedToLocation
+{61, 192}
+@|
+@@resource registeredNameColor
+RGBColor[0.9, 0.235, 0.195]
+@|
+@@resource registeredNameLocation
+{61, 207}
+@|
+@@resource registeredCompanyColor
+RGBColor[0.9, 0.235, 0.195]
+@|
+@@resource registeredCompanyLocation
+{61, 222}
+@|
+@@resource progressTextColor
+RGBColor[255,255,255]
+@|
+@@resource progressTextBackColor
+RGBColor[0,0,0]
+@|
+@@resource progressTextLocation
+{273, 288}
+@|
+@@resource introHelpFile
+AboutBox.nb
+@|
+@@resource aboutBoxFile
+AboutBox.nb
+@|
+@@resource personalizeProduct
+Product Activation
+@|
+@@resource licenseInformationText
+Please enter your password.
+@|

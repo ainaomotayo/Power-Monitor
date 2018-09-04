@@ -1,0 +1,8 @@
+.font-face-shortcut(@fontName, @fileName) {
+    font-family:~"@{fontName}";
+    src:url(~"@{media-file-path}fonts/@{fileName}.eot");
+    src:url(~"@{media-file-path}fonts/@{fileName}.eot?#iefix") format("embedded-opentype"),
+        url(~"@{media-file-path}fonts/@{fileName}.woff") format("woff"),
+        url(~"@{media-file-path}fonts/@{fileName}.ttf") format("truetype"),
+        url(~"@{media-file-path}fonts/@{fileName}.svg#@{fileName}") format("svg");
+}

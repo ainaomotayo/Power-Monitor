@@ -1,0 +1,77 @@
+#!/bin/sh
+#
+#  MathLink compiler command file
+#  Copyright 1988-2016 Wolfram Research, Inc.
+
+#  Make certain that ${PATH} includes /usr/bin and /bin
+PATH="${PATH}:/usr/bin:/bin"
+
+#  Determine the SystemID by examining the output of `uname -s` and 
+#  `uname -m`. Failsafe to SystemIDList=Unknown.
+case `uname -s` in
+	Linux)
+		case `uname -m` in
+			ia64)
+				SystemIDList="Linux-IA64";;
+			i?86)
+				SystemIDList="Linux";;
+			x86_64)
+				SystemIDList="Linux-x86-64 Linux";;
+			armv?l)
+				SystemIDList="Linux-ARM";;
+			*)
+				SystemIDList="Unknown";;
+		esac;;
+	*)
+		SystemIDList="Unknown";;
+esac
+
+#  Find the full pathname and name of this script.
+Script="${0}"
+ProgramName=`basename "${0}"`
+
+#  If ${SystemIDList} = Unknown, print an error message and exit
+if [ "${SystemIDList}" = "Unknown" ]; then
+	echo "${ProgramName} cannot determine operating system."
+	exit 1
+fi
+
+#  Test to see if the script is being called via a symlink, if so, examine
+#  the output of ls -l on the symlink to find the link target. Reset
+#  ${Script}.
+LinkDirectory=`pwd`
+while `exec test -L "${Script}"`; do
+        ScriptDirectory=`dirname "${Script}"`
+        Script=`ls -l "${Script}" | sed -e 's/.*-> //g'`
+        cd "${ScriptDirectory}"
+done
+ScriptDirectory=`dirname "${Script}"`
+ScriptDirectory=`cd "${ScriptDirectory}"; pwd`
+cd "${LinkDirectory}"
+
+#  Determine $TopDirectory by removing "Executables" from
+#  "${ScriptDirectory}".
+ScriptLeafDirectory="Executables"
+TopDirectory=`cd "${ScriptDirectory}"; pwd | \
+	sed -e 's/\/'"${ScriptLeafDirectory}"'//g'`
+
+for SystemID in $SystemIDList; do
+	MCCPath="SystemFiles/Links/MathLink/DeveloperKit/${SystemID}/CompilerAdditions"
+	MathLinkCC="${TopDirectory}/${MCCPath}/${ProgramName}"
+	if [ ! -x "${MathLinkCC}" ]; then
+		fail=1
+		continue
+	else
+		fail=0
+		break
+	fi
+done
+
+if [ ! "${fail}" = "0" ]; then
+	echo "MathLink Developers Kit not found. Check that you have"
+	echo "installed the MathLink Developers kit for the system"
+	echo "you are running on."
+ 	exit 1
+fi
+
+exec "${MathLinkCC}" "$@"

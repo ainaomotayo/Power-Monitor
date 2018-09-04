@@ -1,0 +1,49 @@
+%Filename: t1pad.fd
+%Created by: tex basefnt
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1pad.fd}
+   [2001/10/19 Fontinst v1.914 font definitions for T1/pad.]
+
+\DeclareFontFamily{T1}{pad}{}
+
+\DeclareFontShape{T1}{pad}{m}{n}{
+   <-> padr8t
+}{}
+
+\DeclareFontShape{T1}{pad}{m}{sc}{
+   <-> padrc8t
+}{}
+
+\DeclareFontShape{T1}{pad}{m}{sl}{
+   <-> padro8t
+}{}
+
+\DeclareFontShape{T1}{pad}{m}{it}{
+   <-> padri8t
+}{}
+
+\DeclareFontShape{T1}{pad}{b}{n}{
+   <-> padb8t
+}{}
+
+\DeclareFontShape{T1}{pad}{b}{sc}{
+   <-> padbc8t
+}{}
+
+\DeclareFontShape{T1}{pad}{b}{sl}{
+   <-> padbo8t
+}{}
+
+\DeclareFontShape{T1}{pad}{b}{it}{
+   <-> padbi8t
+}{}
+
+\DeclareFontShape{T1}{pad}{bx}{n}{<->ssub * pad/b/n}{}
+\DeclareFontShape{T1}{pad}{bx}{sc}{<->ssub * pad/b/sc}{}
+\DeclareFontShape{T1}{pad}{bx}{sl}{<->ssub * pad/b/sl}{}
+\DeclareFontShape{T1}{pad}{bx}{it}{<->ssub * pad/b/it}{}
+
+\endinput

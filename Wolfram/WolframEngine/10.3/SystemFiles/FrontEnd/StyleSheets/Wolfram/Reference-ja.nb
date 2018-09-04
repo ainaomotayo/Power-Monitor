@@ -1,0 +1,646 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     19445,        637]
+NotebookOptionsPosition[     14284,        506]
+NotebookOutlinePosition[     14812,        528]
+CellTagsIndexPosition[     14769,        525]
+MenuPosition->0
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[StyleData[StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, 
+  "Reference.nb", CharacterEncoding -> "ShiftJIS"]]],
+
+Cell[StyleData["ScreencastMarker"],
+ Deletable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{72, 24}, {12, 4}},
+ CellElementSpacings->{"ClosedGroupTopMargin"->8},
+ ReturnCreatesNewCell->True,
+ DefaultNewCellStyle->"HowToAbstract",
+ FontFamily->"Verdana",
+ FontSize->22,
+ Magnification->0.5],
+
+Cell[CellGroupData[{
+
+Cell["Root Guide Page styles", "Section"],
+
+Cell[StyleData["RootHeading", "Printout"],
+ PageBreakBelow->False,
+ FontSize->10,
+ FontColor->GrayLevel[0]],
+
+Cell[StyleData["RootFooter", StyleDefinitions -> StyleData["RootCell"]],
+ CellMargins->FEPrivate`If[
+  FEPrivate`$OperatingSystem === "MacOSX", {{0, 0}, {0, -1}}, {{0, 0}, {0, 
+   0}}],
+ GridBoxOptions->{GridBoxDividers->{"Columns" -> {
+     GrayLevel[0.88], {None}, 
+     GrayLevel[0.88]}, "Rows" -> {{None}, 
+     GrayLevel[0.88]}}}],
+
+Cell[StyleData["RootFooterLink", StyleDefinitions -> StyleData["RootLink"]],
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontWeight->"Normal",
+ FontColor->GrayLevel[0.3]],
+
+Cell[StyleData["RootFooterHyperlink", StyleDefinitions -> StyleData[
+ "Hyperlink"]],
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.3]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Function Page Styles", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[StyleData["DockedLinkTrail", StyleDefinitions -> StyleData["DockedCell"]],
+ Editable->False,
+ ShowCellBracket->False,
+ Deployed->True,
+ CellFrameMargins->{{24, 0}, {3, 3}},
+ LineIndent->0,
+ LinebreakAdjustments->{1, 10, 0, 100, 0},
+ StyleMenuListing->None,
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontWeight->"Plain",
+ FontColor->RGBColor[
+  0.5211108567940795, 0.5246814679179065, 0.577126726176852]],
+
+Cell[StyleData["DockedLinkTrail", "Presentation"],
+ FontSize->18],
+
+Cell[StyleData["DockedLinkTrail", "SlideShow"],
+ StyleMenuListing->None]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[StyleData["PacletNameCell"],
+ Editable->False,
+ StyleMenuListing->None,
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontTracking->"Wide",
+ FontColor->GrayLevel[0.6]],
+
+Cell[StyleData["DockedLinkTrail", "Printout"],
+ CellElementSpacings->{"CellMinHeight"->1,
+ "ClosedCellHeight"->0},
+ CellOpen->False]
+}, Open  ]],
+
+Cell[StyleData["Usage", StyleDefinitions -> None],
+ Editable->False,
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {12, 6}},
+ CellGroupingRules->{"SectionGrouping", 40},
+ CellFrameMargins->{{0, 0}, {0, 0}},
+ Hyphenation->False,
+ ParagraphSpacing->{0, 9},
+ ParagraphIndent->-16,
+ StyleMenuListing->None,
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontWeight->"Plain",
+ Background->RGBColor[1, 0.993332, 0.899718],
+ GridBoxOptions->{BaseStyle->{FontFamily -> "Verdana"},
+ GridBoxAlignment->{
+  "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+   "RowsIndexed" -> {}},
+ GridBoxDividers->{"Columns" -> {{None}}, "Rows" -> {{
+      Directive[
+       RGBColor[0.8627450980392162, 0.858823529411765, 0.8156862745098041], 
+       Thickness[1]]}}, "RowsIndexed" -> {1 -> Directive[
+       RGBColor[1, 0.6000000000000001, 0], 
+       Thickness[3]], -1 -> Directive[
+       RGBColor[0.8627450980392162, 0.858823529411765, 0.8156862745098041], 
+       Thickness[1]]}},
+ GridBoxItemSize->{"Columns" -> {
+     Scaled[0.025], {
+      Scaled[0.98]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}},
+ GridBoxSpacings->{"Rows" -> {{
+      Offset[2.5]}}, "RowsIndexed" -> {}}}],
+
+Cell[StyleData["Notes", StyleDefinitions -> None],
+ Editable->False,
+ CellDingbat->StyleBox[
+  "\[FilledSmallSquare]", FontColor -> 
+   RGBColor[0.6000000000000001, 0.6000000000000001, 0.6000000000000001]],
+ ShowCellBracket->Automatic,
+ CellMargins->{{40, 24}, {9, 7}},
+ CellFrameMargins->0,
+ MenuSortingValue->None,
+ MenuCommandKey->"8",
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontWeight->"Plain"],
+
+Cell[StyleData["FunctionEssay"],
+ Editable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{40, 24}, {9, 7}},
+ ParagraphSpacing->0.5,
+ FontFamily->"Verdana",
+ FontSize->12],
+
+Cell[StyleData["TableText"],
+ DefaultInlineFormatType->"DefaultInputInlineFormatType",
+ StyleMenuListing->None,
+ FontFamily->"Verdana",
+ FontSize->11],
+
+Cell[StyleData["MoreAbout", StyleDefinitions -> StyleData["Tutorials"]],
+ Editable->False,
+ MenuSortingValue->None,
+ MenuCommandKey->"12"],
+
+Cell[StyleData["ExampleText"],
+ Editable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{80, 40}, {6, 14}},
+ ParagraphSpacing->{0, 6},
+ MenuSortingValue->None,
+ MenuCommandKey->"7",
+ FontFamily->"Verdana",
+ FontSize->12],
+
+Cell[StyleData["History"],
+ Editable->False,
+ CellFrame->{{0, 0}, {0, 0.1}},
+ ShowCellBracket->False,
+ CellMargins->{{24, 24}, {2, 20}},
+ CellGroupingRules->{"SectionGrouping", 30},
+ CellFrameMargins->{{56, 8}, {8, 8}},
+ CellFrameColor->GrayLevel[0.835294],
+ StyleMenuListing->None,
+ FontFamily->"Verdana",
+ FontSize->11,
+ FontColor->GrayLevel[0.6]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Guide Page Styles", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[StyleData["GuideText"],
+ Editable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{26, 24}, {6, 1}},
+ ParagraphSpacing->{0.7000000000000001, 0},
+ StyleMenuListing->None,
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.360784]],
+
+Cell[StyleData["GuideText", "Presentation"],
+ FontSize->18],
+
+Cell[StyleData["GuideText", "Printout"],
+ CellMargins->{{24, 0}, {5, 0}},
+ Hyphenation->True,
+ HyphenationOptions->{"HyphenationCharacter"->"-"},
+ FontSize->9]
+}, Closed]],
+
+Cell[StyleData["FeaturedExamplesGrid"],
+ TemplateBoxOptions->{
+ DisplayFunction->(
+  DynamicModuleBox[{$CellContext`MakeMouseoverOutline$$, \
+$CellContext`CreateFeaturedExampleGrid$$}, 
+   DynamicModuleBox[{$CellContext`pos$$}, 
+    DynamicBox[$CellContext`pos$$ = 4 (CurrentValue[
+           EvaluationNotebook[], {TaggingRules, "ExampleCounter"}] - 1) + 1; 
+     GridBox[{
+        Part[
+         $CellContext`CreateFeaturedExampleGrid$$[#], 
+         Span[$CellContext`pos$$, $CellContext`pos$$ + 3]]}, 
+       GridBoxAlignment -> {"Rows" -> {{Top}}, "Columns" -> {{Center}}}, 
+       GridBoxSpacings -> {"Rows" -> {{2}}, "Columns" -> {{Automatic}}}, 
+       GridBoxItemSize -> {"Rows" -> {{Full}}, "Columns" -> {{
+            Scaled[0.24]}}}]]], 
+   DynamicModuleValues :> {
+    DownValues[$CellContext`MakeMouseoverOutline$$] = {HoldPattern[
+         $CellContext`MakeMouseoverOutline$$[
+          Pattern[$CellContext`img, 
+           Blank[]]]] :> 
+       Module[{$CellContext`dim = 
+          ImageDimensions[$CellContext`img], $CellContext`crop}, \
+$CellContext`crop = 
+          ImageTrim[$CellContext`img, {{2, 2}, $CellContext`dim - 2}]; 
+         PaneSelectorBox[{False -> ToBoxes[
+              ImagePad[$CellContext`crop, 1, 
+               GrayLevel[0.8]]], True -> ToBoxes[
+              ImagePad[$CellContext`crop, 1, 
+               RGBColor[0.854902, 0.396078, 0.145098]]]}, 
+           Dynamic[
+            CurrentValue["MouseOver"]]]]}, 
+     DownValues[$CellContext`CreateFeaturedExampleGrid$$] = {HoldPattern[
+         $CellContext`CreateFeaturedExampleGrid$$[
+          Pattern[$CellContext`links, 
+           Blank[List]]]] :> 
+       Module[{$CellContext`newlinks, $CellContext`ellipflag = 
+          False}, $CellContext`newlinks = Map[TagBox[
+             ButtonBox[
+              TagBox[
+               GridBox[{{
+                  ItemBox[
+                   $CellContext`MakeMouseoverOutline$$[
+                    Uncompress[
+                    Part[#, 1]]], ItemSize -> Full, StripOnInput -> False, 
+                   Alignment -> Left]}, {
+                  ItemBox[
+                   Cell[
+                    If[StringLength[
+                    Part[#, 2]] <= 45, 
+                    Part[#, 2], $CellContext`ellipflag = True; StringJoin[
+                    StringTake[
+                    Part[#, 2], 42], "\[Ellipsis]"]]], 
+                   BaseStyle -> {
+                    "ExamplePosition", FontSize -> 11, TextAlignment -> Left, 
+                    AutoIndent -> False, LineIndent -> 0, 
+                    LinebreakAdjustments -> {1, 4, 12, 8, 14}}, ItemSize -> {
+                    Scaled[0.95], 3}, Alignment -> {Left, Top}, StripOnInput -> 
+                   False]}}], "Grid"], Tooltip -> If[
+                TrueQ[$CellContext`ellipflag], $CellContext`ellipflag = False; 
+                Part[#, 2], None], BaseStyle -> "Link", Appearance -> None, 
+              ButtonData -> StringJoin["paclet:", 
+                Part[#, 3]]], 
+             MouseAppearanceTag[
+             "LinkHand"]]& , $CellContext`links]; $CellContext`newlinks = 
+          Flatten[
+            Partition[$CellContext`newlinks, 4, 4, {1, 1}, ""], 1]]}}]& )}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorial Page Styles", "Section"],
+
+Cell[StyleData["MathCaption", StyleDefinitions -> None],
+ Editable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{25, 36}, {6, 12}},
+ PageBreakBelow->False,
+ LineSpacing->{1, 1},
+ ParagraphSpacing->{0, 8},
+ StyleMenuListing->None,
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.4]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Format Page Styles", "Section"],
+
+Cell[StyleData["FormatUsage"],
+ Editable->False,
+ ShowCellBracket->False,
+ CellMargins->{{40, 24}, {24, 18}},
+ Hyphenation->False,
+ LineSpacing->{1, 5},
+ StyleMenuListing->None,
+ FontFamily->"Verdana",
+ FontSize->12,
+ GridBoxOptions->{BaseStyle->{FontFamily -> "Verdana"},
+ GridBoxAlignment->{
+  "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+   "RowsIndexed" -> {}},
+ GridBoxItemSize->{"Columns" -> {
+     Scaled[0.003], {
+      Scaled[0.996]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}}],
+
+Cell[StyleData["FormatNotes"],
+ Editable->False,
+ CellDingbat->StyleBox[
+  "\[FilledSmallSquare]", FontColor -> 
+   RGBColor[0.6000000000000001, 0.6000000000000001, 0.6000000000000001]],
+ ShowCellBracket->Automatic,
+ CellMargins->{{40, 24}, {10, 2}},
+ CellFrameMargins->4,
+ MenuSortingValue->None,
+ MenuCommandKey->"8",
+ FontFamily->"Verdana",
+ FontSize->12]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Compatibility Page Styles", "Section",
+ CellID->1492764801],
+
+Cell[StyleData["LegacyInputV10"],
+ Editable->False,
+ PageWidth->650,
+ CellFrame->True,
+ ShowCellBracket->Automatic,
+ CellMargins->{{28, 4}, {3, 8}},
+ Evaluatable->False,
+ GeneratedCellStyles->{"Output"->"LegacyOutput"},
+ ShowCellLabel->False,
+ CellFrameMargins->{{12, 12}, {12, 12}},
+ CellFrameColor->RGBColor[0.55, 0.650000000000003, 0.55],
+ CellFrameLabels->{{
+    Cell[
+     TextData[{
+       StyleBox["Version", FontSize -> 10], "\n  9.0"}], "LegacyInputLabel"], 
+    None}, {None, None}},
+ ShowAutoStyles->False,
+ MenuSortingValue->None,
+ MenuCommandKey->"8",
+ FontColor->GrayLevel[0.5]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Search Result Styles", "Section"],
+
+Cell[StyleData["SearchCountCell"],
+ Selectable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{27, 27}, {6, 10}},
+ CounterIncrements->"SearchCountCell",
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.5]],
+
+Cell[CellGroupData[{
+
+Cell[StyleData["SearchSuggestionsCell"],
+ Selectable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{48, 27}, {24, 8}},
+ ParagraphSpacing->{0.25, 0.},
+ CounterIncrements->"SearchSuggestionsCell",
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.5]],
+
+Cell[StyleData["SearchSuggestionsCell", "Presentation"],
+ FontSize->18],
+
+Cell[StyleData["SearchSuggestionsCell", "Printout"],
+ CellMargins->{{2, 2}, {6, 6}},
+ TextJustification->1,
+ Hyphenation->True,
+ FontSize->10]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[StyleData["SearchAllSites"],
+ Selectable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{27, 27}, {12, 8}},
+ CounterIncrements->"SearchCountCell",
+ FontFamily->"Verdana",
+ FontSize->10],
+
+Cell[StyleData["SearchAllSites", "Presentation"],
+ FontSize->18],
+
+Cell[StyleData["SearchAllSites", "Printout"],
+ CellMargins->{{2, 2}, {6, 6}},
+ TextJustification->1,
+ Hyphenation->True,
+ FontSize->10]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[StyleData["DidYouMean"],
+ Selectable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{48, 27}, {12, 12}},
+ CounterIncrements->"DidYouMean",
+ FontFamily->"Verdana",
+ FontSize->10],
+
+Cell[StyleData["DidYouMean", "Presentation"],
+ FontSize->18],
+
+Cell[StyleData["DidYouMean", "Printout"],
+ CellMargins->{{2, 2}, {6, 6}},
+ TextJustification->1,
+ Hyphenation->True,
+ FontSize->10]
+}, Closed]],
+
+Cell[StyleData["SearchResultPageLinks"],
+ Editable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{27, 27}, {20, 10}},
+ CounterIncrements->"SearchResultPageLinks",
+ FontFamily->"Verdana",
+ FontSize->11],
+
+Cell[StyleData["SearchResultCell"],
+ Editable->False,
+ Deletable->False,
+ ShowCellBracket->Automatic,
+ CellMargins->{{27, 27}, {8, 7}},
+ LineSpacing->{1., 2., 2.},
+ ParagraphSpacing->{0., 1.},
+ CounterIncrements->"SearchResultCell",
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontColor->GrayLevel[0.420813]],
+
+Cell[StyleData["SearchResultSummary"],
+ Editable->False,
+ ShowCellBracket->Automatic,
+ FontFamily->"Verdana",
+ FontSize->11],
+
+Cell[StyleData["SearchResultTitle"],
+ Editable->False,
+ ShowCellBracket->Automatic,
+ FontFamily->"Verdana",
+ FontSize->12],
+
+Cell[StyleData["SearchResultType"],
+ Editable->False,
+ ShowCellBracket->Automatic,
+ FontSize->11,
+ FontWeight->"Plain",
+ FontColor->RGBColor[
+  0.5365987640192263, 0.6407415884641795, 0.7428397039749752]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Inline Formatting", "Section"],
+
+Cell[StyleData["MenuName"],
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontWeight->"Bold",
+ FontColor->GrayLevel[0.286275]],
+
+Cell[StyleData["DialogElementName"],
+ FontFamily->"Verdana",
+ FontSize->12,
+ FontWeight->"Bold"]
+}, Closed]]
+},
+Editable->True,
+Saveable->True,
+WindowSize->{909, 724},
+WindowMargins->{{Automatic, 214}, {113, Automatic}},
+ShowSelection->True,
+TrackCellChangeTimes->False,
+MenuSortingValue->None,
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (2013\:5e742\:670814\
+\:65e5)",
+StyleDefinitions->"StylesheetFormatting.nb",
+PrivateNotebookOptions -> {"NotebookAuthor" -> ""}
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 21, 119, 1, 71, 119, 1, "StyleData", "StyleDefinitions", ""],
+Cell[683, 24, 297, 9, 35, 35, 0, "StyleData", "ScreencastMarker", "All"],
+Cell[CellGroupData[{
+Cell[1005, 37, 41, 0, 51, "Section"],
+Cell[1049, 39, 107, 3, 34, 42, 0, "StyleData", "RootHeading", "Printout"],
+Cell[1159, 44, 335, 7, 29, 72, 0, "StyleData", "RootFooter", "All"],
+Cell[1497, 53, 166, 4, 34, 76, 0, "StyleData", "RootFooterLink", "All"],
+Cell[1666, 59, 151, 4, 34, 84, 1, "StyleData", "RootFooterHyperlink", "All"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1854, 68, 39, 0, 35, "Section"],
+Cell[CellGroupData[{
+Cell[1918, 72, 406, 12, 34, 79, 0, "StyleData", "DockedLinkTrail", "All",
+ StyleMenuListing->None],
+Cell[2327, 86, 65, 1, 42, 50, 0, "StyleData", "DockedLinkTrail", \
+"Presentation"],
+Cell[2395, 89, 72, 1, 37, 47, 0, "StyleData", "DockedLinkTrail", "SlideShow",
+ StyleMenuListing->None]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2504, 95, 166, 6, 34, 33, 0, "StyleData", "PacletNameCell", "All",
+ StyleMenuListing->None],
+Cell[2673, 103, 132, 3, 10, 46, 0, "StyleData", "DockedLinkTrail", "Printout"]
+}, Open  ]],
+Cell[2820, 109, 1200, 31, 46, 50, 0, "StyleData", "Usage", "All",
+ StyleMenuListing->None],
+Cell[4023, 142, 399, 12, 41, 50, 0, "StyleData", "Notes", "All",
+ MenuSortingValue->None,
+ MenuCommandKey->"8"],
+Cell[4425, 156, 176, 6, 44, 32, 0, "StyleData", "FunctionEssay", "All"],
+Cell[4604, 164, 150, 4, 35, 28, 0, "StyleData", "TableText", "All",
+ StyleMenuListing->None],
+Cell[4757, 170, 138, 3, 31, 72, 0, "StyleData", "MoreAbout", "All",
+ MenuSortingValue->None,
+ MenuCommandKey->"12"],
+Cell[4898, 175, 225, 8, 48, 30, 0, "StyleData", "ExampleText", "All",
+ MenuSortingValue->None,
+ MenuCommandKey->"7"],
+Cell[5126, 185, 349, 11, 57, 26, 0, "StyleData", "History", "All",
+ StyleMenuListing->None]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5512, 201, 36, 0, 51, "Section"],
+Cell[CellGroupData[{
+Cell[5573, 205, 250, 8, 35, 28, 0, "StyleData", "GuideText", "All",
+ StyleMenuListing->None],
+Cell[5826, 215, 59, 1, 61, 44, 0, "StyleData", "GuideText", "Presentation"],
+Cell[5888, 218, 159, 4, 61, 40, 0, "StyleData", "GuideText", "Printout"]
+}, Closed]],
+Cell[6062, 225, 3194, 66, 37, 39, 0, "StyleData", "FeaturedExamplesGrid", \
+"All"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9293, 296, 39, 0, 35, "Section"],
+Cell[9335, 298, 303, 10, 46, 56, 0, "StyleData", "MathCaption", "All",
+ StyleMenuListing->None]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9675, 313, 37, 0, 35, "Section"],
+Cell[9715, 315, 540, 16, 85, 30, 0, "StyleData", "FormatUsage", "All",
+ StyleMenuListing->None],
+Cell[10258, 333, 358, 11, 40, 30, 0, "StyleData", "FormatNotes", "All",
+ MenuSortingValue->None,
+ MenuCommandKey->"8"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[10653, 349, 65, 1, 35, "Section",
+ CellID->1492764801],
+Cell[10721, 352, 592, 19, 64, 33, 0, "StyleData", "LegacyInputV10", "All",
+ MenuSortingValue->None,
+ MenuCommandKey->"8"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[11350, 376, 39, 0, 35, "Section"],
+Cell[11392, 378, 224, 7, 42, 34, 0, "StyleData", "SearchCountCell", "All",
+ CounterIncrements->"SearchCountCell"],
+Cell[CellGroupData[{
+Cell[11641, 389, 267, 8, 58, 40, 0, "StyleData", "SearchSuggestionsCell", \
+"All",
+ CounterIncrements->"SearchSuggestionsCell"],
+Cell[11911, 399, 71, 1, 61, 56, 0, "StyleData", "SearchSuggestionsCell", \
+"Presentation"],
+Cell[11985, 402, 142, 4, 61, 52, 0, "StyleData", "SearchSuggestionsCell", \
+"Printout"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[12164, 411, 195, 6, 42, 33, 0, "StyleData", "SearchAllSites", "All",
+ CounterIncrements->"SearchCountCell"],
+Cell[12362, 419, 64, 1, 61, 49, 0, "StyleData", "SearchAllSites", \
+"Presentation"],
+Cell[12429, 422, 135, 4, 61, 45, 0, "StyleData", "SearchAllSites", "Printout"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[12601, 431, 187, 6, 42, 29, 0, "StyleData", "DidYouMean", "All",
+ CounterIncrements->"DidYouMean"],
+Cell[12791, 439, 60, 1, 61, 45, 0, "StyleData", "DidYouMean", "Presentation"],
+Cell[12854, 442, 131, 4, 61, 41, 0, "StyleData", "DidYouMean", "Printout"]
+}, Closed]],
+Cell[13000, 449, 207, 6, 51, 40, 0, "StyleData", "SearchResultPageLinks", \
+"All",
+ CounterIncrements->"SearchResultPageLinks"],
+Cell[13210, 457, 304, 10, 43, 35, 0, "StyleData", "SearchResultCell", "All",
+ CounterIncrements->"SearchResultCell"],
+Cell[13517, 469, 124, 4, 35, 38, 0, "StyleData", "SearchResultSummary", "All"],
+Cell[13644, 475, 122, 4, 36, 36, 0, "StyleData", "SearchResultTitle", "All"],
+Cell[13769, 481, 204, 6, 36, 35, 0, "StyleData", "SearchResultType", "All"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[14010, 492, 36, 0, 35, "Section"],
+Cell[14049, 494, 120, 4, 36, 27, 0, "StyleData", "MenuName", "All"],
+Cell[14172, 500, 96, 3, 36, 36, 0, "StyleData", "DialogElementName", "All"]
+}, Closed]]
+}
+]
+*)
+
+(* End of internal cache information *)

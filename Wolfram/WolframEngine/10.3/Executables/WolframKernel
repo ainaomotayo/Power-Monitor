@@ -1,0 +1,168 @@
+#!/bin/sh
+#
+#  Mathematica 10.3.1 Kernel command file
+#  Copyright 1988-2016 Wolfram Research, Inc.
+
+#  Make certain that ${PATH} includes /usr/bin and /bin
+PATH="${PATH}:/usr/bin:/bin"
+
+# Is systemid being passed on the command-line?
+case "$1" in
+	-s|-systemid|-systemId|-systemID|-SystemId|-SystemID) _SystemID="${2}" ;;
+	*) ;;
+esac
+
+#  Determine the SystemID by examining the output of `uname -s` and 
+#  `uname -m`. Failsafe to SystemID=Unknown.
+if [ -z "${SystemIDList}" ]; then
+	case `uname -s` in
+		Linux)
+			case `uname -m` in
+				i?86)
+					SystemIDList="Linux";;
+				x86_64)
+					if [ "${_SystemID}" = "Linux" ]; then
+						SystemIDList="Linux Linux-x86-64"
+					else
+						SystemIDList="Linux-x86-64 Linux"
+					fi;;
+				armv?l)
+					SystemIDList="Linux-ARM";;
+				*)
+					SystemIDList="Unknown";;
+			esac;;
+		*)
+			SystemIDList="Unknown";;
+	esac
+fi
+
+#  Find the full pathname and name of this script.
+Script="${0}"
+ProgramName=`basename "${0}"`
+
+#  If ${SystemIDList} = Unknown, print an error message and exit
+if [ "${SystemIDList}" = "Unknown" ]; then
+	echo "${ProgramName} cannot determine operating system."
+	exit 1
+fi
+
+#  Test to see if the script is being called via a symlink, if so, examine
+#  the output of ls -l on the symlink to find the link target. Reset
+#  ${Script}.
+LinkDirectory=`pwd`
+while `exec test -L "${Script}"`; do
+        ScriptDirectory=`dirname "${Script}"`
+        Script=`ls -l "${Script}" | sed -e 's/.*-> //g'`
+        cd "${ScriptDirectory}"
+done
+ScriptDirectory=`dirname "${Script}"`
+ScriptDirectory=`cd "${ScriptDirectory}"; pwd`
+cd "${LinkDirectory}"
+
+#  Determine $TopDirectory by removing "Executables" from
+#  "${ScriptDirectory}".
+ScriptLeafDirectory="Executables"
+TopDirectory=`cd "${ScriptDirectory}"; pwd | \
+	sed -e 's/\/'"${ScriptLeafDirectory}"'//g'`
+
+#  Set a few necessary enviroment variables
+M_XFILESEARCHPATH="${TopDirectory}/SystemFiles/Graphics/TextResources/English/%N"
+if [ -z "${XFILESEARCHPATH}" ]; then
+	XFILESEARCHPATH="${M_XFILESEARCHPATH}"
+else
+	XFILESEARCHPATH="${M_XFILESEARCHPATH}:${XFILESEARCHPATH}"
+fi
+export XFILESEARCHPATH
+
+M_PSRESOURCEPATH="${TopDirectory}/SystemFiles/Graphics/SystemResources:${TopDirectory}/SystemFiles/Fonts/Type1"
+if [ -z "${PSRESOURCEPATH}" ]; then
+    PSRESOURCEPATH="${M_PSRESOURCEPATH}"
+else
+    PSRESOURCEPATH="${PSRESOURCEPATH}:${M_PSRESOURCEPATH}"
+fi
+export PSRESOURCEPATH
+
+for SystemID in $SystemIDList; do
+
+    # Check for WolframKernel, fail if the binary cannot be found.
+    KernelPath="SystemFiles/Kernel/Binaries/${SystemID}"
+    WolframKernel="${TopDirectory}/${KernelPath}/WolframKernel"
+    if [ ! -x "${WolframKernel}" ]; then
+	fail=1
+	continue
+    else
+	fail=0
+    fi
+
+    # Munge $PATH to eliminate multiple specification of the same directory.
+    test_PATH=`echo "${PATH}" | sed -e 's/ /_SPACE_/g' | sed -e  's/:/__ __/g'`
+    test_PATH="__${test_PATH}__"
+    new_PATH=""
+    for check_dir in $test_PATH; do
+        check_dir_sed=`echo ${check_dir} | sed -e 's/\//\\\\\\//g'`
+        new_PATH_check=`echo ${new_PATH} | sed -e 's/'${check_dir_sed}'//g'`
+        if [ "${new_PATH_check}" = "${new_PATH}" ]; then
+               new_PATH=`echo "${new_PATH} ${check_dir}" | sed -e 's/^ //g'`
+        fi
+    done
+    new_PATH=`echo ${new_PATH} | sed -e 's/__ __/:/g' | sed -e 's/^__//g' | sed -e 's/__$//g' | sed -e 's/_SPACE_/ /g'`
+    PATH="${new_PATH}"
+
+    #  Reset $PATH to include Mathematica directories
+    PATH="${TopDirectory}/${ScriptLeafDirectory}:${TopDirectory}/SystemFiles/Graphics/Binaries/${SystemID}:${PATH}"
+    export PATH
+
+    # Set up library paths
+    M_LIBRARY_PATH="${TopDirectory}/SystemFiles/Libraries/${SystemID}"
+
+    SED_LIBRARY_PATH=`echo "${M_LIBRARY_PATH}" | sed -e 's/\\//\\\\\//g'`
+
+    LD_LIBRARY_PATH=`echo "${LD_LIBRARY_PATH}" | \
+        sed -e 's/^'"${SED_LIBRARY_PATH}"'://g' | \
+        sed -e 's/:'"${SED_LIBRARY_PATH}"':/:/g' | \
+        sed -e 's/:'"${SED_LIBRARY_PATH}"'$//g' | \
+        sed -e 's/^'"${SED_LIBRARY_PATH}"'$//g' | \
+        sed -e 's/::/:/g' | sed -e 's/:$//'`
+    if [ -z "${LD_LIBRARY_PATH}" ]; then
+        LD_LIBRARY_PATH="${M_LIBRARY_PATH}"
+    else
+        LD_LIBRARY_PATH="${M_LIBRARY_PATH}:${LD_LIBRARY_PATH}"
+    fi
+    export LD_LIBRARY_PATH
+
+    if [ "${SystemID}" = "Linux" -o "${SystemID}" = "Linux-x86-64" ]; then
+        if [ -z "${OMP_NUM_THREADS}" ]; then
+            OMP_NUM_THREADS=`cat /proc/cpuinfo | grep '^processor.: [0-9]*$' | wc -l | tr -d ' '`;
+            export OMP_NUM_THREADS;
+        fi
+    fi
+
+    if [ "${fail}" = "0" ]; then
+	break
+    fi
+done
+
+if [ -f /etc/redhat-release ]; then
+  rhel_check=`cat /etc/redhat-release | awk '{print $1 " " $2 " " $3}'`
+  if [ "${rhel_check}" = "Red Hat Enterprise" ]; then
+    rhel_ver_check=`cat /etc/redhat-release | grep '(Taroon)'`
+    if [ ! -z "${rhel_ver_check}" ]; then
+        LD_ASSUME_KERNEL=2.4.1
+        export LD_ASSUME_KERNEL
+    fi
+  fi
+fi
+
+if [ ! "${fail}" = "0" ]; then
+    for SystemID in $SystemIDList; do
+        KernelPath="SystemFiles/Kernel/Binaries/${SystemID}"
+        WolframKernel="${TopDirectory}/${KernelPath}/WolframKernel"
+	echo "Mathematica kernel executable"
+	echo "${WolframKernel}"
+	echo "not found.  Your Mathematica installation may be incomplete"
+	echo "or corrupted."
+    done
+    exit 1
+fi
+
+exec "${WolframKernel}" "$@" 

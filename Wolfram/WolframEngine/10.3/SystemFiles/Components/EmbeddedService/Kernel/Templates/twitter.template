@@ -1,0 +1,8 @@
+
+<script async src = "https://platform.twitter.com/widgets.js" />
+<iframe 
+	src="https://api.twitter.com/1/statuses/oembed.json?id=`id`&omit_script=true" 
+	width="500" 
+	height="500" 
+	frameborder="0">
+</iframe>

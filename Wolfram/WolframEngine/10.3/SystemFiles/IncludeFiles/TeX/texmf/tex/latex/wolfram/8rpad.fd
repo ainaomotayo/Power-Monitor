@@ -1,0 +1,13 @@
+%Filename: 8rpad.fd
+%Created by: tex basefonts
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{8rpad.fd}
+   [2001/09/10 Fontinst v1.914 font definitions for 8r/pad.]
+
+\DeclareFontFamily{8r}{pad}{}
+
+
+\endinput

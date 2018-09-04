@@ -1,0 +1,22 @@
+%Filename: uwsb.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{uwsb.fd}
+   [2001/08/09 Fontinst v1.914 font definitions for U/wsb.]
+
+\DeclareFontFamily{U}{wsb}{}
+
+\DeclareFontShape{U}{wsb}{m}{n}{
+   <-> wsbm
+}{}
+
+\DeclareFontShape{U}{wsb}{b}{n}{
+   <-> wsbb
+}{}
+
+\DeclareFontShape{U}{wsb}{bx}{n}{<->ssub * wsb/b/n}{}
+
+\endinput

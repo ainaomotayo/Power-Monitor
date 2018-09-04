@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wolfram Cloud | API Web <wolfram:if test='! MatchQ[#StatusCode, 200|_Missing]'>Error</wolfram:if> Report</title>
+<style media="screen" type="text/css">
+body{font-size:12px;color:#262626;font-family:Arial,sans-serif}.site_title{font-size:18px;font-family:Arial;color:#a4a4a4;font-weight:700;padding-bottom:6px}.response_label{color:#468CA5}.header{background-image:-moz-linear-gradient(90deg,#e0e1e1 0,#f0f0f0 22%,#fff 46%);background-image:-webkit-linear-gradient(90deg,#e0e1e1 0,#f0f0f0 22%,#fff 46%);background-image:-ms-linear-gradient(90deg,#e0e1e1 0,#f0f0f0 22%,#fff 46%)}.small_text{font-size:11px;font-family:Arial;color:#817e7e;margin:4px 0}.apimethod.small_text{margin:0}.clickable{cursor:pointer;}.label{font-size:14px;font-family:Arial;color:#498ca4;vertical-align:middle;display:inline-block}.boxed_text{border-width:1px;border-color:#ccc;border-style:solid;background-color:#f5f5f5;padding:5px;margin-top:5px;margin-bottom:20px}.Jason{border-width:1px;border-color:#ccc;border-style:solid;background-color:#f5f5f5;padding:15px;margin-top:5px;margin-bottom:20px;font-family:"Courier New",Courier,monospace}pre{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;margin:0}.content{border-style:solid;border-width:1px;border-color:#e3e3e3;border-radius:9px;background-color:#fff;box-shadow:0 0 2.5px 2.5px #e3e3e3;width:648px;margin:35px auto}.padding{padding:25px 20px 20px}.parameter_table{border:1px solid #bfbfbf;border-collapse:collapse;margin-top:6px}.InputError{background-color:#fad3d3}.Error{font-style:italic;color:#d52121}.button{border-style:solid;border-width:1px;border-color:#5fc3ef;border-radius:5px;background-image:-moz-linear-gradient(90deg,#e0e1e1 0,#f0f0f0 22%,#fff 46%);background-image:-webkit-linear-gradient(90deg,#e0e1e1 0,#f0f0f0 22%,#fff 46%);background-image:-ms-linear-gradient(90deg,#e0e1e1 0,#f0f0f0 22%,#fff 46%);margin:15px 0 30px;color:#0ba5de;font-weight:700;font-size:12px;padding:8px;box-sizing:border-box}.button:hover{color:#5bd0fb}.arrow-down,.arrow-right{width:0;height:0;font-size:0;margin:15px 0;vertical-align:middle;display:inline-block}.arrow-right{border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:5px solid #939393}.arrow-down{border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #939393}.code,.param{font-family:sans-serif}td,th{vertical-align:text-top}.parameter_table{width:100%}.parameter_table td,.parameter_table th{padding:4px;border:1px solid #bfbfbf;font-weight:400}.table_header_row{font-size:10px;font-family:Arial;color:#817e7e;background:#e0e0e0}tbody tr{background:#f6f6f6}.field-hint{font-size:90%;color:red;font-weight:700}.field-hint input{border:1px solid #bfbfbf;background-color:#FBD3D2;color:#000;width:98%}.details{margin:8px 0 15px}.message_block{margin:5px 0}.nomessages,.noparameters{color:#B2B2B2}.json-details-container{border:1px solid #ccc;padding:15px}.noresult{background:#FBD3D2}.json-details-container{background:#f5f5f5}.apiurl{color:#000}
+</style>
+</head>
+<body>
+<div class='content'>
+    <div class='header padding'>
+        <div class='site_title'>Wolfram Cloud | <span class="response_label">API Web <wolfram:if test='! MatchQ[#StatusCode, 200|_Missing]'>Error</wolfram:if> Report</span></div>
+        <wolfram:if test='HTTPRequestData["Properties"] =!= {}'>
+        <div class='apimethod small_text'>
+            API method URL:<span class='apiurl'><wolfram:expr>HTTPRequestData["PathString"]</wolfram:expr></span>
+        </div>
+        </wolfram:if>
+  </div><!-- /#header -->
+  <div id="mainbody" class="padding">
+        <div class="abbreviatable">
+            <!-- Query info -->
+
+            <wolfram:if test="! MatchQ[#InputData, _Missing]">
+            <div class='label'>Input parameter<wolfram:if test='Length[#InputData] =!= 1'>s</wolfram:if>:</div>
+            
+            <wolfram:which>
+            <wolfram:if test='Length[#InputData]===0'>
+                <div class='details noparameters'>(no parameters supplied)</div></wolfram:if>
+            <wolfram:if test='Length[#InputData]>0'>
+            <table id='query_table' class='query_table'>
+                <wolfram:sequence values='Normal[#InputData]'>
+            <tr><td><span class='param'><wolfram:expr>First[#1]</wolfram:expr></span>
+                = <span class='code'><wolfram:expr>Last[#1]</wolfram:expr></span>
+            </tr>
+                </wolfram:sequence>
+            </table>
+            </wolfram:if>
+            </wolfram:which>
+            </wolfram:if>
+        </div><!-- /.abbreviatable -->
+        <!-- StatusCode info -->
+        <div class='label'>Status code:</div>
+        <div class='boxed_text'>
+        <span class='code'><wolfram:slot id='StatusCode'>200</wolfram:slot></span>
+        </div>
+        <!-- Results info -->
+        <div class='label'>Result:</div>
+        <div class='boxed_text <* If[#HideResult, "noresult", ""] *>'>
+            <wolfram:which>
+            <wolfram:if test='! TrueQ[#HideResult]'>
+                <pre><wolfram:expr>#EvaluationData["Result"]</wolfram:expr></pre>
+           </wolfram:if>
+
+            <wolfram:if test='#HideResult'>
+                No result&nbsp;<em>&mdash;at least one parameter could not be interpreted</em>
+            </wolfram:if>
+            </wolfram:which>
+        </div><!-- /.boxed_text -->
+
+        <div class="abbreviatable">
+            <!-- Parameters form -->
+            <form method='get'>
+                <wolfram:if test='MatchQ[#FormObject, _FormObject]'>
+                <div class='label'>Parameters:</div>
+
+                <table id='api-parameters' class='parameter_table'>
+                    <thead>
+                        <tr class='table_header_row'>
+                            <th>Name</th>
+                            <th>Form</th>
+                            <th>Input</th>
+                            <th>Interpretation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <wolfram:which>
+                        <wolfram:if test='Length[First@#FormObject] === 0'>
+                        <!-- special row for no parameters required -->
+                        <tr class='table_body_row'>
+                            <td class='noparameters' colspan='4'>
+                                (no parameters required)
+                            </td>
+                        </tr>
+                        </wolfram:if>
+                        <wolfram:else>
+                            <!-- rows that actually list parameters -->
+                            <wolfram:sequence values='Values @ #FormObject[Flat, {"Key", "Interpreter", "Input", "Failure"}]'>
+                        <tr class='table_body_row'>
+                            <td>
+                                <wolfram:expr>#Key</wolfram:expr>
+                            </td>
+                            <td>
+                                <wolfram:expr>#Interpreter</wolfram:expr>
+                            </td>
+                            <td><span class="field-hint">
+                                <input type='text' name='`Key`' value='`Input`'/>
+                                </span>
+                            </td>
+                            <td>
+                                <wolfram:which>
+                                    <wolfram:if test='MatchQ[#Failure, None]'>
+                                    <span class='interpretation'><wolfram:expr>Setting[#FormObject][#Key]</wolfram:expr></span>
+                                    </wolfram:if>
+                                    <wolfram:else>
+                                    <span class='field-hint'><wolfram:expr>First@#Failure</wolfram:expr></span>
+                                    </wolfram:else>
+                                </wolfram:which>
+                            </td>
+                        </tr><!-- /.table_body_row -->
+                            </wolfram:sequence>
+                        </wolfram:else>
+                        </wolfram:which>
+                    </tbody>
+                </table>
+                </wolfram:if>
+                <input id='submit' class='button clickable' type='submit' value='Re-send API Request' />
+            </form>
+            <!-- query details info -->
+            <div class='label'>Details</div>
+            <div id='details_list' class='details'>
+                <div class='timecpu'>
+                    <div class='small_text'>Engine CPU time taken:</div>
+                    <wolfram:expr>#EvaluationData["Timing"]</wolfram:expr>
+                    sec
+                </div>
+                <div class='timeall'>
+                    <div class='small_text'>Absolute time taken:</div>
+                    <wolfram:expr>#EvaluationData["AbsoluteTiming"]</wolfram:expr>
+                    sec
+                </div>
+                <div class='messages'>
+                    <div class='small_text'>Messages generated:</div>
+                    <div class='message_block'>
+                        <wolfram:if test='#EvaluationData["Messages"] === {}'>
+                        <span class='nomessages'>(none)</span>
+                        </wolfram:if>
+                        <wolfram:sequence values='#EvaluationData["MessagesText"]'>
+                            <wolfram:slot id='1'/><br />
+                        </wolfram:sequence>
+                    
+                    </div>
+                </div> 
+            </div>
+            <!-- JSON object -->
+            <div id="container-hide">
+                <div class="arrow-right"></div>
+                <div class='label clickable' onclick="document.getElementById('container-show').style.display = 'block';document.getElementById('container-hide').style.display = 'none';">JSON object:</div>
+            </div>
+            <div id="container-show" style='display: none;'>
+                <div class="arrow-down"></div>
+                <div class='label clickable' onclick="document.getElementById('container-hide').style.display = 'block';document.getElementById('container-show').style.display = 'none';">JSON object:</div>
+                <div class='json-details-container'>
+                    <pre id='json-details'><wolfram:expr inserter="JSON">
+
+                    ReplaceAll[
+                        #EvaluationData, {
+                        None|_Missing -> Null,
+                        any:_HoldForm|_Hold|_MessageName :> ToString[Unevaluated[any], InputForm]   
+                    }]
+
+                    </wolfram:expr></pre>
+                </div>
+            </div>
+        </div><!-- /.abbreviatable -->
+    </div><!-- /#mainbody -->
+</div><!-- /#content -->
+</body>
+</html>

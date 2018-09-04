@@ -1,0 +1,43 @@
+%Filename: t1pfu.fd
+%Created by: tex basefnt
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1pfu.fd}
+   [2001/10/19 Fontinst v1.914 font definitions for T1/pfu.]
+
+\DeclareFontFamily{T1}{pfu}{}
+
+\DeclareFontShape{T1}{pfu}{m}{n}{
+   <-> pfur8t
+}{}
+
+\DeclareFontShape{T1}{pfu}{m}{sc}{
+   <-> pfurc8t
+}{}
+
+\DeclareFontShape{T1}{pfu}{m}{sl}{
+   <-> pfuro8t
+}{}
+
+\DeclareFontShape{T1}{pfu}{b}{n}{
+   <-> pfub8t
+}{}
+
+\DeclareFontShape{T1}{pfu}{b}{sc}{
+   <-> pfubc8t
+}{}
+
+\DeclareFontShape{T1}{pfu}{b}{sl}{
+   <-> pfubo8t
+}{}
+
+\DeclareFontShape{T1}{pfu}{m}{it}{<->ssub * pfu/m/sl}{}
+\DeclareFontShape{T1}{pfu}{bx}{n}{<->ssub * pfu/b/n}{}
+\DeclareFontShape{T1}{pfu}{bx}{sc}{<->ssub * pfu/b/sc}{}
+\DeclareFontShape{T1}{pfu}{bx}{sl}{<->ssub * pfu/b/sl}{}
+\DeclareFontShape{T1}{pfu}{b}{it}{<->ssub * pfu/b/sl}{}
+\DeclareFontShape{T1}{pfu}{bx}{it}{<->ssub * pfu/b/it}{}
+
+\endinput

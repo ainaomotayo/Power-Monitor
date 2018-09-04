@@ -1,0 +1,25 @@
+<wolfram:get path="Templates/Clean.html">
+  <wolfram:slot id="Content">
+    <wolfram:get path="Templates/Includes/Title.html"/>
+    <div class="panel panel-default panel-main panel-form">
+        <div class="panel-heading text-center">
+          <h2>Wolfram Cloud <small>Response Report</small></h2>
+          <wolfram:if test="TrueQ[$CloudEvaluation]">
+          <div class="text-center small text-muted">
+            API method URL: <wolfram:expr>HTTPRequestData["PathString"]</wolfram:expr>
+          </div>
+          </wolfram:if>
+        </div>
+      <div class="list-group">
+          <wolfram:sequence values="Keys[#Evaluated]">
+            <div class="list-group-item">
+              <div class="row">
+              <div class="col-sm-4"><wolfram:slot inserter="ToString"/>:</div>
+              <div class="col-sm-8"><wolfram:expr inserter="ToString[#1, InputForm] &">#Evaluated[#1]</wolfram:expr></div>
+              </div>
+            </div>
+          </wolfram:sequence>
+      </div>
+    </div>
+  </wolfram:slot>
+</wolfram:get>

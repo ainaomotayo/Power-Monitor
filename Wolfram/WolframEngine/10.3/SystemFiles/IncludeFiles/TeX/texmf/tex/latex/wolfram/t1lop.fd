@@ -1,0 +1,49 @@
+%Filename: t1lop.fd
+%Created by: tex basefnt
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1lop.fd}
+   [2001/10/19 Fontinst v1.914 font definitions for T1/lop.]
+
+\DeclareFontFamily{T1}{lop}{}
+
+\DeclareFontShape{T1}{lop}{m}{n}{
+   <-> lopr8t
+}{}
+
+\DeclareFontShape{T1}{lop}{m}{sc}{
+   <-> loprc8t
+}{}
+
+\DeclareFontShape{T1}{lop}{m}{sl}{
+   <-> lopro8t
+}{}
+
+\DeclareFontShape{T1}{lop}{m}{it}{
+   <-> lopri8t
+}{}
+
+\DeclareFontShape{T1}{lop}{b}{n}{
+   <-> lopb8t
+}{}
+
+\DeclareFontShape{T1}{lop}{b}{sc}{
+   <-> lopbc8t
+}{}
+
+\DeclareFontShape{T1}{lop}{b}{sl}{
+   <-> lopbo8t
+}{}
+
+\DeclareFontShape{T1}{lop}{b}{it}{
+   <-> lopbi8t
+}{}
+
+\DeclareFontShape{T1}{lop}{bx}{n}{<->ssub * lop/b/n}{}
+\DeclareFontShape{T1}{lop}{bx}{sc}{<->ssub * lop/b/sc}{}
+\DeclareFontShape{T1}{lop}{bx}{sl}{<->ssub * lop/b/sl}{}
+\DeclareFontShape{T1}{lop}{bx}{it}{<->ssub * lop/b/it}{}
+
+\endinput

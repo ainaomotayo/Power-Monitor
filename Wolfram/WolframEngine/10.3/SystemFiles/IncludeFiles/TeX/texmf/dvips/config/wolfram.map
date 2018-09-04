@@ -1,0 +1,122 @@
+Math1      Math1 <Math1.pfa
+Math1-Bold Math1-Bold <Math1-Bold.pfa
+Math2      Math2 <Math2.pfa
+Math2-Bold Math2-Bold <Math2-Bold.pfa
+Math3      Math3 <Math3.pfa
+Math3-Bold Math3-Bold <Math3-Bold.pfa
+Math4      Math4 <Math4.pfa
+Math4-Bold Math4-Bold <Math4-Bold.pfa
+Math5      Math5 <Math5.pfa
+Math5-Bold Math5-Bold <Math5-Bold.pfa
+Math1Mono      Math1Mono <Math1Mono.pfa
+Math1Mono-Bold Math1Mono-Bold <Math1Mono-Bold.pfa
+Math2Mono      Math2Mono <Math2Mono.pfa
+Math2Mono-Bold Math2Mono-Bold <Math2Mono-Bold.pfa
+Math3Mono      Math3Mono <Math3Mono.pfa
+Math3Mono-Bold Math3Mono-Bold <Math3Mono-Bold.pfa
+Math4Mono      Math4Mono <Math4Mono.pfa
+Math4Mono-Bold Math4Mono-Bold <Math4Mono-Bold.pfa
+Math5Mono      Math5Mono <Math5Mono.pfa
+Math5Mono-Bold Math5Mono-Bold <Math5Mono-Bold.pfa
+############################################################
+# Version 4.2 fonts
+############################################################
+Mathematica1 Mathematica1 <Mathematica1.pfa
+Mathematica2 Mathematica2 <Mathematica2.pfa
+Mathematica3 Mathematica3 <Mathematica3.pfa
+Mathematica4 Mathematica4 <Mathematica4.pfa
+Mathematica5 Mathematica5 <Mathematica5.pfa
+Mathematica6 Mathematica6 <Mathematica6.pfa
+Mathematica7 Mathematica7 <Mathematica7.pfa
+Mathematica1-Bold Mathematica1-Bold <Mathematica1-Bold.pfa
+Mathematica2-Bold Mathematica2-Bold <Mathematica2-Bold.pfa
+Mathematica3-Bold Mathematica3-Bold <Mathematica3-Bold.pfa
+Mathematica4-Bold Mathematica4-Bold <Mathematica4-Bold.pfa
+Mathematica5-Bold Mathematica5-Bold <Mathematica5-Bold.pfa
+Mathematica6-Bold Mathematica6-Bold <Mathematica6-Bold.pfa
+Mathematica7-Bold Mathematica7-Bold <Mathematica7-Bold.pfa
+Mathematica1Mono Mathematica1Mono <Mathematica1Mono.pfa
+Mathematica2Mono Mathematica2Mono <Mathematica2Mono.pfa
+Mathematica3Mono Mathematica3Mono <Mathematica3Mono.pfa
+Mathematica4Mono Mathematica4Mono <Mathematica4Mono.pfa
+Mathematica5Mono Mathematica5Mono <Mathematica5Mono.pfa
+Mathematica6Mono Mathematica6Mono <Mathematica6Mono.pfa
+Mathematica7Mono Mathematica7Mono <Mathematica7Mono.pfa
+Mathematica1Mono-Bold Mathematica1Mono-Bold <Mathematica1Mono-Bold.pfa
+Mathematica2Mono-Bold Mathematica2Mono-Bold <Mathematica2Mono-Bold.pfa
+Mathematica3Mono-Bold Mathematica3Mono-Bold <Mathematica3Mono-Bold.pfa
+Mathematica4Mono-Bold Mathematica4Mono-Bold <Mathematica4Mono-Bold.pfa
+Mathematica5Mono-Bold Mathematica5Mono-Bold <Mathematica5Mono-Bold.pfa
+Mathematica6Mono-Bold Mathematica6Mono-Bold <Mathematica6Mono-Bold.pfa
+Mathematica7Mono-Bold Mathematica7Mono-Bold <Mathematica7Mono-Bold.pfa
+#---------------------------------------------------------
+# CMTT fonts
+#---------------------------------------------------------
+wttr8a  Wttr8a  <wttr8a.pfa
+wttro8a  Wttro8a  <wttro8a.pfa
+wttb8a  Wttb8a  <wttb8a.pfa
+wttbo8a  Wttbo8a  <wttbo8a.pfa
+wttr8r  Wttr8a  "TeXBase1Encoding ReEncodeFont"  <8r.enc <wttr8a.pfa
+wttro8r  Wttro9a  "TeXBase1Encoding ReEncodeFont"  <8r.enc <wttro8a.pfa
+wttb8r  Wttb8r "TeXBase1Encoding ReEncodeFont"  <8r.enc  <wttb8a.pfa
+wttbo8r  Wttbo8r "TeXBase1Encoding ReEncodeFont"  <8r.enc  <wttbo8a.pfa
+#---------------------------------------------------------
+Mathematica1CMTT Mathematica1CMTT <Mathematica1CMTT.pfa
+Mathematica2CMTT Mathematica2CMTT <Mathematica2CMTT.pfa
+Mathematica3CMTT Mathematica3CMTT <Mathematica3CMTT.pfa
+Mathematica4CMTT Mathematica4CMTT <Mathematica4CMTT.pfa
+Mathematica5CMTT Mathematica5CMTT <Mathematica5CMTT.pfa
+Mathematica6CMTT Mathematica6CMTT <Mathematica6CMTT.pfa
+Mathematica7CMTT Mathematica7CMTT <Mathematica7CMTT.pfa
+Mathematica1CMTT-Bold Mathematica1CMTT-Bold <Mathematica1CMTT-Bold.pfa
+Mathematica2CMTT-Bold Mathematica2CMTT-Bold <Mathematica2CMTT-Bold.pfa
+Mathematica3CMTT-Bold Mathematica3CMTT-Bold <Mathematica3CMTT-Bold.pfa
+Mathematica4CMTT-Bold Mathematica4CMTT-Bold <Mathematica4CMTT-Bold.pfa
+Mathematica5CMTT-Bold Mathematica5CMTT-Bold <Mathematica5CMTT-Bold.pfa
+Mathematica6CMTT-Bold Mathematica6CMTT-Bold <Mathematica6CMTT-Bold.pfa
+Mathematica7CMTT-Bold Mathematica7CMTT-Bold <Mathematica7CMTT-Bold.pfa
+
+#---------------------------------------------------------
+# Janson Text
+#---------------------------------------------------------
+pjnbi8a JansonText-BoldItalic <pjnbi8a.pfb
+pjnb8a JansonText-Bold <pjnb8a.pfb
+pjnr8a JansonText-Roman <pjnr8a.pfb
+pjnri8a JansonText-Italic <pjnri8a.pfb
+pjnbi8r JansonText-BoldItalic "TeXBase1Encoding ReEncodeFont"  <8r.enc <pjnbi8a.pfb
+pjnb8r JansonText-Bold  "TeXBase1Encoding ReEncodeFont"  <8r.enc  <pjnb8a.pfb
+pjnr8r JansonText-Roman "TeXBase1Encoding ReEncodeFont"  <8r.enc <pjnr8a.pfb
+pjnri8r JansonText-Italic "TeXBase1Encoding ReEncodeFont"  <8r.enc  <pjnri8a.pfb
+#----------------------------------------------------------
+# Adobe Garamond
+#----------------------------------------------------------
+padbi8a AGaramond-BoldItalic <padbi8a.pfb
+padb8a AGaramond-Bold <padb8a.pfb
+padr8a AGaramond-Regular <padr8a.pfb
+padri8a AGaramond-Italic <padri8a.pfb
+padbi8r AGaramond-BoldItalic "TeXBase1Encoding ReEncodeFont"  <8r.enc <padbi8a.pfb
+padb8r AGaramond-Bold "TeXBase1Encoding ReEncodeFont"  <8r.enc  <padb8a.pfb
+padr8r AGaramond-Regular "TeXBase1Encoding ReEncodeFont"  <8r.enc <padr8a.pfb
+padri8r AGaramond-Italic "TeXBase1Encoding ReEncodeFont"  <8r.enc <padri8a.pfb
+#----------------------------------------------------------
+# Linotype Optima
+#----------------------------------------------------------
+lopr8a   Optima  <lopr8a.pfb
+lopri8a	 Optima-Italic <lopri8a.pfb
+lopb8a   Optima-Bold <lopb8a.pfb
+lopbi8a	 Optima-BoldItalic <lopbi8a.pfb
+lopr8r   Optima  "TeXBase1Encoding ReEncodeFont"  <8r.enc <lopr8a.pfb
+lopri8r	 Optima-Italic "TeXBase1Encoding ReEncodeFont"  <8r.enc <lopri8a.pfb
+lopb8r   Optima-Bold "TeXBase1Encoding ReEncodeFont"  <8r.enc <lopb8a.pfb
+lopbi8r	 Optima-BoldItalic "TeXBase1Encoding ReEncodeFont"  <8r.enc <lopbi8a.pfb
+#----------------------------------------------------------
+# Futura
+#----------------------------------------------------------
+pfur8a   Futura  <pfur8a.pfb
+pfuro8a	 Futura-Oblique <pfuro8a.pfb
+pfub8a   Futura-Bold <pfub8a.pfb
+pfubo8a	 Futura-BoldOblique <pfubo8a.pfb
+pfur8r   Futura  "TeXBase1Encoding ReEncodeFont"  <8r.enc <pfur8a.pfb
+pfuro8r	 Futura-Oblique "TeXBase1Encoding ReEncodeFont"  <8r.enc <pfuro8a.pfb
+pfub8r   Futura-Bold "TeXBase1Encoding ReEncodeFont"  <8r.enc <pfub8a.pfb
+pfubo8r	 Futura-BoldOblique "TeXBase1Encoding ReEncodeFont"  <8r.enc <pfubo8a.pfb

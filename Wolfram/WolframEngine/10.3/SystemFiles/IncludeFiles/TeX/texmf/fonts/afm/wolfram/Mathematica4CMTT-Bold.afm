@@ -1,0 +1,248 @@
+StartFontMetrics 2.0
+FontName Mathematica4CMTT-Bold
+FullName Mathematica4CMTT-Bold
+FamilyName Mathematica4CMTT
+Weight Bold
+Notice (Mathematica typeface design by Andre Kuzniarek and Galapagos Design Group. Copyright \(c\) 1996-2001 Wolfram Research, Inc.  [http://www.wolfram.com]. All rights reserved. [Font version 2.00])
+ItalicAngle 0
+IsFixedPitch false
+UnderlinePosition 0
+UnderlineThickness 0
+Version 001.000
+EncodingScheme FontSpecific
+FontBBox -87 -326 2578 886
+CapHeight 486
+XHeight 557
+Descender 0
+Ascender 659
+StartCharMetrics 224
+C 32 ; WX 263 ; N Space ; B 0 0 0 0 ;
+C 33 ; WX 740 ; N RArrowBar ; B 10 77 716 537 ;
+C 34 ; WX 740 ; N LTackArrow ; B -2 77 716 537 ;
+C 35 ; WX 740 ; N RTackArrow ; B 24 74 742 534 ;
+C 36 ; WX 525 ; N UpArrowBar ; B 19 -29 509 737 ;
+C 37 ; WX 525 ; N DownArrowBar ; B 19 1 509 766 ;
+C 38 ; WX 525 ; N UpTackArrow ; B 19 0 509 688 ;
+C 39 ; WX 525 ; N DownTackArrow ; B 16 -19 506 669 ;
+C 40 ; WX 740 ; N LVectorBar ; B 24 83 729 537 ;
+C 41 ; WX 740 ; N RVectorBar ; B 24 83 716 537 ;
+C 42 ; WX 740 ; N DownLVectorBar ; B 24 74 729 532 ;
+C 43 ; WX 740 ; N DownRVectorBar ; B 24 74 716 532 ;
+C 44 ; WX 740 ; N LTackVector ; B -1 83 716 537 ;
+C 45 ; WX 740 ; N RTackVector ; B 24 83 741 537 ;
+C 46 ; WX 740 ; N DownLTackVector ; B -1 74 716 528 ;
+C 47 ; WX 740 ; N DownRTackVector ; B 24 74 741 528 ;
+C 48 ; WX 740 ; N LVector ; B -1 268 729 537 ;
+C 49 ; WX 740 ; N RVector ; B 11 268 741 537 ;
+C 50 ; WX 740 ; N LRVector ; B 11 268 729 537 ;
+C 51 ; WX 740 ; N DownLVector ; B -1 74 729 343 ;
+C 52 ; WX 740 ; N DownRVector ; B 11 74 741 343 ;
+C 53 ; WX 740 ; N DownLRVector ; B 11 74 729 343 ;
+C 54 ; WX 525 ; N LUpDownVector ; B 16 -29 315 659 ;
+C 55 ; WX 525 ; N RUpDownVector ; B 210 -29 509 659 ;
+C 56 ; WX 525 ; N LUpVectorBar ; B 16 -29 502 737 ;
+C 57 ; WX 525 ; N LDownVectorBar ; B 16 0 502 766 ;
+C 58 ; WX 525 ; N RUpVectorBar ; B 23 -29 509 737 ;
+C 59 ; WX 525 ; N RDownVectorBar ; B 23 0 509 766 ;
+C 60 ; WX 525 ; N LUpTackVector ; B 16 0 502 629 ;
+C 61 ; WX 525 ; N LDownTackVector ; B 16 -18 498 611 ;
+C 62 ; WX 525 ; N RUpTackVector ; B 23 0 509 688 ;
+C 63 ; WX 525 ; N RDownTackVector ; B 23 -18 509 670 ;
+C 64 ; WX 525 ; N LUpVector ; B 16 -29 315 659 ;
+C 65 ; WX 525 ; N ExtensUp1 ; B 210 1 315 302 ;
+C 66 ; WX 525 ; N LDownVector ; B 16 -29 315 659 ;
+C 67 ; WX 525 ; N RUpVector ; B 210 -29 509 659 ;
+C 68 ; WX 525 ; N ExtensUp2 ; B 210 1 315 302 ;
+C 69 ; WX 525 ; N RDownVector ; B 210 -29 509 659 ;
+C 70 ; WX 740 ; N Equilibrium ; B -1 12 741 680 ;
+C 71 ; WX 740 ; N RvrsEquilibrium ; B -1 12 741 680 ;
+C 72 ; WX 321 ; N EquilbrmHeadL ; B -1 12 336 486 ;
+C 73 ; WX 321 ; N EquilbrmheadR ; B -15 206 322 680 ;
+C 74 ; WX 321 ; N RvrsEquilbrmHeadL ; B -1 206 336 680 ;
+C 75 ; WX 321 ; N RvrsEquilbrmHeadR ; B -15 12 322 486 ;
+C 76 ; WX 525 ; N UpEquilibrium ; B -87 -29 612 659 ;
+C 77 ; WX 525 ; N RvrsUpEquilibrium ; B -87 -29 612 659 ;
+C 78 ; WX 740 ; N LArrowHookUp ; B 11 77 729 537 ;
+C 79 ; WX 740 ; N RArrowHookUp ; B 11 77 729 537 ;
+C 80 ; WX 729 ; N LArrow ; B 11 77 729 537 ;
+C 81 ; WX 331 ; N Extens ; B 0 256 331 355 ;
+C 82 ; WX 204 ; N LeftTackBase ; B 0 83 180 532 ;
+C 83 ; WX 189 ; N RightTackBase ; B 24 83 204 532 ;
+C 84 ; WX 740 ; N RArrow ; B 11 77 729 537 ;
+C 85 ; WX 525 ; N RUpVector2 ; B 210 -29 509 659 ;
+C 86 ; WX 740 ; N RArrowLArrow ; B 11 85 729 607 ;
+C 87 ; WX 740 ; N LArrowRArrow ; B 11 85 729 607 ;
+C 88 ; WX 740 ; N RArrowLArrowHeadL ; B 11 85 720 486 ;
+C 89 ; WX 740 ; N RArrowLArrowHeadR ; B 16 206 725 607 ;
+C 90 ; WX 740 ; N LArrowRArrowHeadL ; B 16 206 725 607 ;
+C 91 ; WX 740 ; N LArrowRArrowHeadR ; B 16 85 725 486 ;
+C 92 ; WX 525 ; N UpArrowDownArrow ; B -14 -48 539 659 ;
+C 93 ; WX 525 ; N DownArrowUpArrow ; B -14 -29 539 659 ;
+C 94 ; WX 525 ; N VertExt1 ; B 210 1 315 302 ;
+C 95 ; WX 300 ; N HorizExt1 ; B -15 0 316 75 ;
+C 96 ; WX 525 ; N UpArrow ; B 19 -29 509 659 ;
+C 97 ; WX 525 ; N UpTackBase ; B 23 0 502 150 ;
+C 98 ; WX 525 ; N DownTackBase ; B 23 0 502 150 ;
+C 99 ; WX 525 ; N DownArrow ; B 19 -29 509 659 ;
+C 100 ; WX 525 ; N RDownVector2 ; B 210 -29 509 659 ;
+C 101 ; WX 525 ; N UpEquilbrmHeadBttm ; B 107 -5 539 241 ;
+C 102 ; WX 525 ; N DblUpExtens2 ; B 107 0 418 412 ;
+C 103 ; WX 525 ; N RvrsUpEquilbrmHeadTop ; B 107 0 539 246 ;
+C 104 ; WX 525 ; N UpEquilbrmHeadTop ; B -14 0 418 246 ;
+C 105 ; WX 525 ; N DblUpExtens1 ; B 107 0 418 412 ;
+C 106 ; WX 525 ; N RvrsUpEquilibrmHeadBttm ; B -14 -5 418 241 ;
+C 107 ; WX 525 ; N UpArrwDwnArrwBttm ; B 107 -5 539 241 ;
+C 108 ; WX 525 ; N DwnArrwUpArrwTop ; B 107 0 539 246 ;
+C 109 ; WX 525 ; N UpArrwDwnArrwTop ; B -14 0 418 246 ;
+C 110 ; WX 525 ; N DwnArrwUpArrwBttm ; B -14 -5 418 241 ;
+C 111 ; WX 300 ; N DblExtens ; B -15 206 315 486 ;
+C 112 ; WX 1060 ; N OverBracket1 ; B 0 0 1060 266 ;
+C 113 ; WX 1166 ; N OverBracket2 ; B 0 0 1165 266 ;
+C 114 ; WX 1554 ; N OverBracket3 ; B 0 0 1553 266 ;
+C 115 ; WX 1942 ; N OverBracket4 ; B 0 0 1941 266 ;
+C 116 ; WX 268 ; N OverBracketExt1 ; B 0 0 268 266 ;
+C 117 ; WX 300 ; N OverBracketExt2 ; B 0 167 300 266 ;
+C 118 ; WX 268 ; N OverBracketExt3 ; B 0 0 268 266 ;
+C 119 ; WX 525 ; N ShortUpArrow ; B 16 57 506 557 ;
+C 120 ; WX 525 ; N ShortDownArrow ; B 16 57 506 557 ;
+C 121 ; WX 525 ; N ShortLArrow ; B 11 77 514 537 ;
+C 122 ; WX 525 ; N ShortRArrow ; B 11 77 514 537 ;
+C 123 ; WX 740 ; N LArrowBar ; B 24 77 729 537 ;
+C 124 ; WX 378 ; N Dash ; B 22 268 354 343 ;
+C 125 ; WX 525 ; N LongDash ; B 23 268 503 343 ;
+C 126 ; WX 607 ; N DivisionBarExtens ; B 23 268 583 343 ;
+C 127 ; WX 263 ; N DEL ; B 0 0 0 0 ;
+C 128 ; WX 1060 ; N UnderBracket1 ; B 0 0 1060 266 ;
+C 129 ; WX 1166 ; N UnderBracket2 ; B 0 0 1165 266 ;
+C 130 ; WX 1553 ; N UnderBracket3 ; B 0 0 1553 266 ;
+C 131 ; WX 1941 ; N UnderBracket4 ; B 0 0 1941 266 ;
+C 132 ; WX 268 ; N UnderBracketExt1 ; B 0 0 268 266 ;
+C 133 ; WX 300 ; N UnderBracketExt2 ; B 0 0 300 99 ;
+C 134 ; WX 268 ; N UnderBracketExt3 ; B 0 0 268 266 ;
+C 135 ; WX 525 ; N LowerLeftArrow ; B 11 0 515 473 ;
+C 136 ; WX 525 ; N UpperLeftArrow ; B 11 0 515 473 ;
+C 137 ; WX 525 ; N UpperRightArrow ; B 11 0 514 473 ;
+C 138 ; WX 525 ; N LowerRightArrow ; B 10 0 514 473 ;
+C 139 ; WX 1200 ; N LongLowerLeftArrow ; B 22 -325 1179 799 ;
+C 140 ; WX 1200 ; N LongUpperLeftArrow ; B 22 -326 1179 798 ;
+C 141 ; WX 1200 ; N LongUpperRightArrow ; B 22 -326 1179 798 ;
+C 142 ; WX 1200 ; N LongLowerRightArrow ; B 22 -325 1179 799 ;
+C 143 ; WX 525 ; N Arrowhead ; B -15 0 361 348 ;
+C 144 ; WX 769 ; N OverParen1 ; B 0 0 769 193 ;
+C 145 ; WX 1127 ; N OverParen2 ; B 0 -1 1128 266 ;
+C 146 ; WX 1502 ; N OverParen3 ; B 0 0 1503 275 ;
+C 147 ; WX 1930 ; N OverParen4 ; B 0 -1 1930 275 ;
+C 148 ; WX 1042 ; N OverParenExt1 ; B 0 -1 1042 243 ;
+C 149 ; WX 300 ; N OverParenExt2 ; B 0 144 300 243 ;
+C 150 ; WX 1042 ; N OverParenExt3 ; B 0 -1 1042 243 ;
+C 151 ; WX 777 ; N OverBrace1 ; B 0 0 777 331 ;
+C 152 ; WX 1299 ; N OverBrace2 ; B 0 0 1299 331 ;
+C 153 ; WX 1825 ; N OverBrace3 ; B 0 0 1825 331 ;
+C 154 ; WX 2349 ; N OverBrace4 ; B 0 0 2349 331 ;
+C 155 ; WX 360 ; N OverBraceExt1 ; B 0 0 360 205 ;
+C 156 ; WX 180 ; N OverBraceExt2 ; B 0 110 180 205 ;
+C 157 ; WX 610 ; N OverBraceExt3 ; B 0 120 610 331 ;
+C 158 ; WX 360 ; N OverBraceExt4 ; B 0 0 360 205 ;
+C 159 ; WX 525 ; N AngleArrowExtension45 ; B 134 0 391 257 ;
+C 160 ; WX 769 ; N UnderParen1 ; B 0 0 769 193 ;
+C 161 ; WX 1126 ; N UnderParen2 ; B 0 0 1128 267 ;
+C 162 ; WX 1501 ; N UnderParen3 ; B 0 0 1503 275 ;
+C 163 ; WX 1928 ; N UnderParen4 ; B 0 0 1930 275 ;
+C 164 ; WX 1042 ; N UnderParenExt1 ; B 0 0 1042 245 ;
+C 165 ; WX 300 ; N UnderParenExt2 ; B 0 0 300 99 ;
+C 166 ; WX 1042 ; N UnderParenExt3 ; B 0 0 1042 245 ;
+C 167 ; WX 1299 ; N UnderBrace1 ; B 0 -126 1299 205 ;
+C 168 ; WX 1825 ; N UnderBrace2 ; B 0 -126 1825 205 ;
+C 169 ; WX 2349 ; N UnderBrace3 ; B 0 -126 2349 205 ;
+C 170 ; WX 777 ; N UnderBrace4 ; B 0 0 777 331 ;
+C 171 ; WX 360 ; N UnderBraceExt1 ; B 0 0 360 205 ;
+C 172 ; WX 180 ; N UnderBraceExt2 ; B 0 0 180 95 ;
+C 173 ; WX 610 ; N UnderBraceExt3 ; B 0 -120 610 91 ;
+C 174 ; WX 360 ; N UnderBraceExt4 ; B 0 0 360 205 ;
+C 175 ; WX 525 ; N AngleArrowExtension135 ; B 134 0 391 257 ;
+C 176 ; WX 764 ; N OverWedge1 ; B 0 0 765 327 ;
+C 177 ; WX 1148 ; N OverWedge2 ; B 0 0 1149 325 ;
+C 178 ; WX 1538 ; N OverWedge3 ; B 0 0 1538 330 ;
+C 179 ; WX 1926 ; N OverWedge4 ; B 0 0 1926 326 ;
+C 180 ; WX 525 ; N Ellipsis ; B 37 0 488 127 ;
+C 181 ; WX 525 ; N CenterEllipsis ; B 37 179 488 306 ;
+C 182 ; WX 525 ; N VertEllipsis ; B 199 0 326 477 ;
+C 183 ; WX 525 ; N DiagEllipsis ; B 37 0 488 477 ;
+C 184 ; WX 525 ; N BackDiagEllipsis ; B 37 0 488 477 ;
+C 185 ; WX 981 ; N Ellipsis2 ; B 85 -15 896 142 ;
+C 186 ; WX 981 ; N CenterEllipsis2 ; B 85 164 896 321 ;
+C 187 ; WX 525 ; N VertEllipsis2 ; B 182 -24 341 787 ;
+C 188 ; WX 501 ; N Dot ; B 184 0 330 159 ;
+C 189 ; WX 501 ; N CenterDot ; B 184 159 330 319 ;
+C 190 ; WX 469 ; N BackPrime ; B 155 57 379 401 ;
+C 191 ; WX 525 ; N DblBackPrime ; B 42 57 489 401 ;
+C 192 ; WX 764 ; N UnderVee1 ; B 0 0 765 327 ;
+C 193 ; WX 1149 ; N UnderVee2 ; B 0 0 1149 325 ;
+C 194 ; WX 1538 ; N UnderVee3 ; B 0 0 1538 330 ;
+C 195 ; WX 1927 ; N UnderVee4 ; B 0 0 1926 326 ;
+C 196 ; WX 525 ; N UpPointer ; B 34 126 491 368 ;
+C 197 ; WX 525 ; N RightPointer ; B 165 18 406 476 ;
+C 198 ; WX 525 ; N DownPointer ; B 33 126 491 368 ;
+C 199 ; WX 525 ; N LeftPointer ; B 119 18 360 476 ;
+C 200 ; WX 234 ; N UpLHookExt ; B 0 268 195 537 ;
+C 201 ; WX 234 ; N UpRHookExt ; B 40 268 235 537 ;
+C 202 ; WX 263 ; N Nbspace ; B 0 0 0 0 ;
+C 203 ; WX 600 ; N XBox ; B 69 0 531 462 ;
+C 204 ; WX 525 ; N SmileyFace ; B 55 -11 469 622 ;
+C 205 ; WX 525 ; N StraightFace ; B 55 -11 469 622 ;
+C 206 ; WX 525 ; N FrownFace ; B 55 -11 469 622 ;
+C 207 ; WX 525 ; N ShockFace ; B 3 -11 518 886 ;
+C 208 ; WX 525 ; N Strike1 ; B 187 111 345 404 ;
+C 209 ; WX 525 ; N Strike2 ; B 159 10 372 501 ;
+C 210 ; WX 525 ; N Strike3 ; B 130 -88 394 578 ;
+C 211 ; WX 525 ; N Strike4 ; B 125 -107 422 673 ;
+C 212 ; WX 525 ; N Strike5 ; B 121 -122 448 767 ;
+C 213 ; WX 525 ; N Strike6 ; B 99 -200 457 800 ;
+C 214 ; WX 525 ; N KeyBar ; B 108 212 417 398 ;
+C 215 ; WX 234 ; N DownLHookExt ; B 0 73 195 342 ;
+C 216 ; WX 234 ; N DownRHookExt ; B 40 73 235 342 ;
+C 217 ; WX 901 ; N Icos ; B 40 -89 861 655 ;
+C 218 ; WX 837 ; N KernalIcon ; B 25 -102 812 682 ;
+C 219 ; WX 525 ; N LightBulb ; B 16 -129 509 692 ;
+C 220 ; WX 525 ; N WarningSign ; B 21 0 504 611 ;
+C 221 ; WX 597 ; N WatchIcon ; B 50 -84 547 646 ;
+C 222 ; WX 525 ; N Cedilla ; B 159 -208 430 49 ;
+C 223 ; WX 525 ; N Ogonek ; B 163 -209 432 7 ;
+C 224 ; WX 1174 ; N AltKey ; B 65 -126 1109 644 ;
+C 225 ; WX 1318 ; N CmdKey ; B 65 -126 1253 644 ;
+C 226 ; WX 1379 ; N CtrlKey ; B 65 -126 1314 644 ;
+C 227 ; WX 1143 ; N DelKey ; B 65 -126 1078 644 ;
+C 228 ; WX 1146 ; N EntKey ; B 65 -126 1081 644 ;
+C 229 ; WX 1146 ; N EscKey ; B 65 -126 1081 644 ;
+C 230 ; WX 1187 ; N OptKey ; B 65 -126 1122 644 ;
+C 231 ; WX 1174 ; N RetKey ; B 65 -126 1109 644 ;
+C 232 ; WX 1448 ; N ShftKey ; B 65 -126 1383 644 ;
+C 233 ; WX 1187 ; N SpcKey ; B 65 -126 1122 644 ;
+C 234 ; WX 1177 ; N TabKey ; B 65 -126 1112 644 ;
+C 235 ; WX 245 ; N LKeyBracket ; B -72 -279 204 781 ;
+C 236 ; WX 245 ; N RKeyBracket ; B 41 -279 178 781 ;
+C 237 ; WX 600 ; N CloverLeaf ; B 17 -4 583 559 ;
+C 238 ; WX 764 ; N DottedSquare ; B 48 0 716 662 ;
+C 239 ; WX 525 ; N RoundSpaceIndicator ; B 33 -133 492 0 ;
+C 240 ; WX 2643 ; N CommandKey ; B 65 -126 2578 644 ;
+C 241 ; WX 2327 ; N ControlKey ; B 65 -127 2262 644 ;
+C 242 ; WX 1890 ; N DeleteKey ; B 65 -126 1825 644 ;
+C 243 ; WX 1668 ; N EnterKey ; B 65 -126 1603 644 ;
+C 244 ; WX 2000 ; N EscapeKey ; B 65 -126 1935 645 ;
+C 245 ; WX 1869 ; N OptionKey ; B 65 -126 1804 644 ;
+C 246 ; WX 2015 ; N ReturnKey ; B 65 -126 1950 645 ;
+C 247 ; WX 1563 ; N ShiftKey ; B 65 -126 1498 644 ;
+C 248 ; WX 1699 ; N SpaceKey ; B 65 -126 1634 644 ;
+C 249 ; WX 1543 ; N Mod1Key ; B 65 -126 1478 644 ;
+C 250 ; WX 1655 ; N Mod2Key ; B 65 -126 1590 644 ;
+C 251 ; WX 245 ; N RKeyBracket2 ; B 41 -279 178 781 ;
+C 252 ; WX 533 ; N LUpHookExt ; B 30 0 299 195 ;
+C 253 ; WX 533 ; N RUpHookExt ; B 224 0 493 195 ;
+C 254 ; WX 533 ; N LDownHookExt ; B 30 0 299 195 ;
+C 255 ; WX 533 ; N RDownHookExt ; B 224 0 493 195 ;
+EndCharMetrics
+StartKernData
+StartKernPairs 0
+EndKernPairs
+EndKernData
+EndFontMetrics

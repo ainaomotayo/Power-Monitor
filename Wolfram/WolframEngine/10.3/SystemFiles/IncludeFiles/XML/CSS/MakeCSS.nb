@@ -1,0 +1,148 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      4366,        137]
+NotebookOptionsPosition[      3907,        116]
+NotebookOutlinePosition[      4201,        131]
+CellTagsIndexPosition[      4158,        128]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData["Quit"], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "ssdir", " ", "=", " ", 
+   "\"\</build/FE/6.0/SystemFiles/FrontEnd/StyleSheets/\>\""}], 
+  ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "cssdir", "=", "\"\</build/Other/ExtraStuff/IncludeFiles/XML/CSS/\>\""}], 
+  ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"names", " ", "=", " ", 
+  RowBox[{"Map", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"StringReplace", "[", 
+      RowBox[{"#", ",", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"ssdir", "\[Rule]", "\"\<\>\""}], ",", " ", 
+         RowBox[{"\"\<.nb\>\"", "\[Rule]", "\"\<\>\""}]}], "}"}]}], "]"}], 
+     "&"}], ",", 
+    RowBox[{"FileNames", "[", 
+     RowBox[{"\"\<*.nb\>\"", ",", "  ", "ssdir"}], "]"}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"ArticleClassic\"\>", ",", "\<\"ArticleModern\"\>", 
+   ",", "\<\"Classic\"\>", ",", "\<\"Classroom\"\>", ",", "\<\"Default\"\>", 
+   ",", "\<\"Demo\"\>", ",", "\<\"DemoText\"\>", ",", "\<\"HelpBrowser\"\>", 
+   ",", "\<\"HTML\"\>", ",", "\<\"NaturalColor\"\>", 
+   ",", "\<\"NotepadMono\"\>", ",", "\<\"Notepad\"\>", 
+   ",", "\<\"PastelColor\"\>", ",", "\<\"PrimaryColor\"\>", 
+   ",", "\<\"Report\"\>", ",", "\<\"Textbook\"\>", 
+   ",", "\<\"TutorialBook\"\>"}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MakeCSS", "[", 
+   RowBox[{"ssdir_", ",", " ", "cssdir_", ",", " ", "name_"}], "]"}], " ", ":=",
+   "\[IndentingNewLine]", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"source", ",", " ", "target", ",", " ", "strm"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"source", " ", "=", " ", 
+      RowBox[{"Get", "@", 
+       RowBox[{"ToFileName", "[", 
+        RowBox[{"ssdir", ",", " ", 
+         RowBox[{"name", "<>", "\"\<.nb\>\""}]}], "]"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"target", " ", "=", " ", 
+      RowBox[{"ToFileName", "[", 
+       RowBox[{"cssdir", ",", " ", 
+        RowBox[{"name", "<>", "\"\<.css\>\""}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"strm", "=", 
+      RowBox[{"OpenWrite", "[", "target", "]"}]}], ";", "\[IndentingNewLine]",
+      
+     RowBox[{"WriteString", "[", 
+      RowBox[{
+      "strm", ",", " ", "\[IndentingNewLine]", 
+       "\"\</* Wolfram Mathematica \>\"", ",", "name", " ", ",", 
+       "\"\< stylesheet\>\"", ",", "\"\<\\n\>\"", ",", "\[IndentingNewLine]", 
+       "\"\<* CSS version\>\"", ",", "\"\<\\n\>\"", ",", 
+       "\[IndentingNewLine]", "\"\<*\>\"", ",", "\"\<\\n\>\"", ",", 
+       "\[IndentingNewLine]", "\"\<* Created by Wolfram Mathematica \>\"", 
+       ",", "\"\<6.0\>\"", ",", "\"\<.\>\"", ",", "\"\< */\>\"", ",", 
+       "\"\<\\n\>\"", ",", "\[IndentingNewLine]", "\"\<\\n\>\""}], "]"}], ";",
+      "\[IndentingNewLine]", 
+     RowBox[{"Export", "[", 
+      RowBox[{"strm", ",", "source", ",", "\"\<CSS\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Close", "@", "strm"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Scan", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Print", "[", "#", "]"}], ";", 
+      RowBox[{"MakeCSS", "[", 
+       RowBox[{"ssdir", ",", " ", "cssdir", ",", "#"}], "]"}]}], ")"}], "&"}],
+    ",", " ", "names"}], "]"}]], "Input"]
+},
+FrontEndVersion->"6.0 for Macintosh",
+Evaluator->"my",
+WindowSize->{640, 636},
+WindowMargins->{{Automatic, 230}, {Automatic, 21}}
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[544, 19, 30, 0, 24, "Input"],
+Cell[577, 21, 145, 5, 24, "Input"],
+Cell[725, 28, 130, 4, 24, "Input"],
+Cell[CellGroupData[{
+Cell[880, 36, 465, 13, 39, "Input"],
+Cell[1348, 51, 526, 9, 54, "Output"]
+}, Open  ]],
+Cell[1889, 63, 1722, 40, 219, "Input"],
+Cell[3614, 105, 289, 9, 24, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
+

@@ -1,0 +1,746 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     27989,        736]
+NotebookOptionsPosition[     25482,        667]
+NotebookOutlinePosition[     28031,        736]
+CellTagsIndexPosition[     27988,        733]
+WindowTitle->Choose a date format...
+WindowFrame->ModalDialog*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`x$$, $CellContext`i$$, $CellContext`return$$ =
+   System`FEDump`$HFReturn, $CellContext`pos$$ = 
+  System`FEDump`$HFPosition, $CellContext`data$$ = {
+   ValueBox["Date"], 
+   ValueBox["DateLong"], 
+   RowBox[{
+     ValueBox["Month"], "/", 
+     ValueBox["Day"], "/", 
+     ValueBox["Year"]}], 
+   RowBox[{
+     ValueBox["ShortMonthName"], " ", 
+     ValueBox["Day"], ",", " ", 
+     ValueBox["ShortYear"]}], 
+   RowBox[{
+     ValueBox["ShortMonthName"], " ", 
+     ValueBox["Day"], ",", " ", 
+     ValueBox["Year"]}], 
+   RowBox[{
+     ValueBox["MonthName"], " ", 
+     ValueBox["Day"], ",", " ", 
+     ValueBox["Year"]}], 
+   RowBox[{
+     ValueBox["ShortDayName"], ",", " ", 
+     ValueBox["ShortMonthName"], " ", 
+     ValueBox["Day"], ",", " ", 
+     ValueBox["ShortYear"]}], 
+   RowBox[{
+     ValueBox["Month"], "\[Hyphen]", 
+     ValueBox["Day"]}], 
+   RowBox[{
+     ValueBox["ShortMonthName"], " ", 
+     ValueBox["Day"]}], 
+   RowBox[{
+     ValueBox["Day"], " ", 
+     ValueBox["ShortMonthName"], ". ", 
+     ValueBox["Year"]}], 
+   RowBox[{
+     ValueBox["Day"], " ", 
+     ValueBox["MonthName"], " ", 
+     ValueBox["Year"]}], 
+   RowBox[{
+     ValueBox["Day"], ".", 
+     ValueBox["Month"], ".", 
+     ValueBox["Year"]}], 
+   RowBox[{
+     ValueBox["Year"], "\[Hyphen]", 
+     ValueBox["Month"], "\[Hyphen]", 
+     ValueBox["Day"]}], 
+   RowBox[{
+     ValueBox["ShortYear"], "\[Hyphen]", 
+     ValueBox["Month"], "\[Hyphen]", 
+     ValueBox["Day"]}]}}, 
+  TagBox[GridBox[{
+     {
+      TagBox[
+       TagBox[GridBox[{
+          {
+           FrameBox[
+            TagBox[GridBox[{
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = ValueBox["Date"])& ], {1}, Cell[TextData[
+                 ValueBox["Date"]]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 1, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = ValueBox["DateLong"])& ], {2}, Cell[TextData[
+                 ValueBox["DateLong"]]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 2, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["Month"], "/", 
+                    ValueBox["Day"], "/", 
+                    ValueBox["Year"]}])& ], {3}, Cell[TextData[{
+                  
+                  ValueBox["Month"],
+                  "/",
+                  
+                  ValueBox["Day"],
+                  "/",
+                  
+                  ValueBox["Year"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 3, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["ShortMonthName"], " ", 
+                    ValueBox["Day"], ",", " ", 
+                    ValueBox["ShortYear"]}])& ], {4}, Cell[TextData[{
+                  
+                  ValueBox["ShortMonthName"],
+                  " ",
+                  
+                  ValueBox["Day"],
+                  ",",
+                  " ",
+                  
+                  ValueBox["ShortYear"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 4, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["ShortMonthName"], " ", 
+                    ValueBox["Day"], ",", " ", 
+                    ValueBox["Year"]}])& ], {5}, Cell[TextData[{
+                  
+                  ValueBox["ShortMonthName"],
+                  " ",
+                  
+                  ValueBox["Day"],
+                  ",",
+                  " ",
+                  
+                  ValueBox["Year"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 5, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["MonthName"], " ", 
+                    ValueBox["Day"], ",", " ", 
+                    ValueBox["Year"]}])& ], {6}, Cell[TextData[{
+                  
+                  ValueBox["MonthName"],
+                  " ",
+                  
+                  ValueBox["Day"],
+                  ",",
+                  " ",
+                  
+                  ValueBox["Year"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 6, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["ShortDayName"], ",", " ", 
+                    ValueBox["ShortMonthName"], " ", 
+                    ValueBox["Day"], ",", " ", 
+                    ValueBox["ShortYear"]}])& ], {7}, Cell[TextData[{
+                  
+                  ValueBox["ShortDayName"],
+                  ",",
+                  " ",
+                  
+                  ValueBox["ShortMonthName"],
+                  " ",
+                  
+                  ValueBox["Day"],
+                  ",",
+                  " ",
+                  
+                  ValueBox["ShortYear"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 7, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["Month"], "\[Hyphen]", 
+                    ValueBox["Day"]}])& ], {8}, Cell[TextData[{
+                  
+                  ValueBox["Month"],
+                  "\[Hyphen]",
+                  
+                  ValueBox["Day"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 8, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["ShortMonthName"], " ", 
+                    ValueBox["Day"]}])& ], {9}, Cell[TextData[{
+                  
+                  ValueBox["ShortMonthName"],
+                  " ",
+                  
+                  ValueBox["Day"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 9, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["Day"], " ", 
+                    ValueBox["ShortMonthName"], ". ", 
+                    ValueBox["Year"]}])& ], {10}, Cell[TextData[{
+                  
+                  ValueBox["Day"],
+                  " ",
+                  
+                  ValueBox["ShortMonthName"],
+                  ". ",
+                  
+                  ValueBox["Year"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 10, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["Day"], " ", 
+                    ValueBox["MonthName"], " ", 
+                    ValueBox["Year"]}])& ], {11}, Cell[TextData[{
+                  
+                  ValueBox["Day"],
+                  " ",
+                  
+                  ValueBox["MonthName"],
+                  " ",
+                  
+                  ValueBox["Year"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 11, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["Day"], ".", 
+                    ValueBox["Month"], ".", 
+                    ValueBox["Year"]}])& ], {12}, Cell[TextData[{
+                  
+                  ValueBox["Day"],
+                  ".",
+                  
+                  ValueBox["Month"],
+                  ".",
+                  
+                  ValueBox["Year"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 12, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["Year"], "\[Hyphen]", 
+                    ValueBox["Month"], "\[Hyphen]", 
+                    ValueBox["Day"]}])& ], {13}, Cell[TextData[{
+                  
+                  ValueBox["Year"],
+                  "\[Hyphen]",
+                  
+                  ValueBox["Month"],
+                  "\[Hyphen]",
+                  
+                  ValueBox["Day"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 13, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]},
+               {
+                
+                SetterBox[
+                 Dynamic[$CellContext`i$$, ($CellContext`i$$ = #; \
+$CellContext`x$$ = RowBox[{
+                    ValueBox["ShortYear"], "\[Hyphen]", 
+                    ValueBox["Month"], "\[Hyphen]", 
+                    ValueBox["Day"]}])& ], {14}, Cell[TextData[{
+                  
+                  ValueBox["ShortYear"],
+                  "\[Hyphen]",
+                  
+                  ValueBox["Month"],
+                  "\[Hyphen]",
+                  
+                  ValueBox["Day"]
+                 }]],
+                 Background->Dynamic[
+                   If[$CellContext`i$$ == 14, 
+                    RGBColor[0.87, 0.94, 1], Automatic, Automatic]]]}
+              },
+              AutoDelete->False,
+              
+              BaseStyle->{
+               "ControlStyle", 
+                SetterBoxOptions -> {
+                 ImageSize -> {200, 25}, Appearance -> None, 
+                  Alignment -> {Left, Center}, 
+                  FrameMargins -> {{5, 0}, {0, 0}}}},
+              
+              GridBoxItemSize->{
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+              GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {{0}}}],
+             "Grid"],
+            Background->GrayLevel[1],
+            FrameMargins->0,
+            StripOnInput->False], 
+           PaneBox[
+            TagBox[GridBox[{
+               {
+                DynamicBox[ToBoxes[
+                  FEPrivate`FrontEndResource[
+                  "HeadersFootersDialog", "PreviewCodeLabel"], StandardForm],
+                 ImageSizeCache->{41., {0., 9.}}]},
+               {
+                FrameBox[
+                 StyleBox[
+                  DynamicBox[$CellContext`x$$,
+                   ImageSizeCache->{157., {3., 10.}}], "ControlStyle", 
+                  "TextStyling",
+                  StripOnInput->False],
+                 Alignment->Center,
+                 Background->GrayLevel[1],
+                 FrameMargins->{{0, 0}, {20, 20}},
+                 ImageSize->230,
+                 RoundingRadius->5,
+                 StripOnInput->False]}
+              },
+              DefaultBaseStyle->"Column",
+              GridBoxAlignment->{"Columns" -> {{Left}}},
+              
+              GridBoxItemSize->{
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+             "Column"],
+            ImageMargins->{{20, 0}, {40, 20}}]},
+          {"\[SpanFromAbove]", 
+           PaneBox[
+            TagBox[GridBox[{
+               {
+                ItemBox[
+                 DynamicBox[ToBoxes[
+                   FEPrivate`FrontEndResource[
+                   "HeadersFootersDialog", "FormatCodeLabel"], StandardForm],
+                  ImageSizeCache->{67., {1., 9.}}],
+                 DefaultBaseStyle->"PanelLabel",
+                 StripOnInput->False]},
+               {
+                RowBox[{
+                 
+                 InputFieldBox[
+                  Dynamic[$CellContext`x$$, ($CellContext`x$$ = #; \
+$CellContext`i$$ = None)& ], Boxes,
+                  BoxID -> "inputfield",
+                  
+                  BaseStyle->{
+                   "TextStyleInputField", 
+                    ValueBoxOptions -> {
+                    DisplayFunction :> (FEPrivate`StringJoin[
+                    "\[LeftGuillemet]", #2, "\[RightGuillemet]"]& )}},
+                  ContinuousAction->True,
+                  ImageSize->230], "\[InvisibleSpace]", 
+                 
+                 ActionMenuBox["\<\"\[FilledRightTriangle]\"\>", \
+{"\<\"Day\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["Day"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["Day"]}]], "\<\"DayName\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["DayName"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["DayName"]}]], "\<\"ShortDayName\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["ShortDayName"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["ShortDayName"]}]], Delimiter, "\<\"Month\"\>":>
+                  If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["Month"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["Month"]}]], "\<\"MonthName\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["MonthName"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["MonthName"]}]], "\<\"ShortMonthName\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["ShortMonthName"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["ShortMonthName"]}]], 
+                  Delimiter, "\<\"ShortYear\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["ShortYear"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["ShortYear"]}]], "\<\"Year\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["Year"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["Year"]}]], Delimiter, "\<\"Date\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["Date"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["Date"]}]], "\<\"DateLong\"\>":>If[
+                   (And[
+                   Head[#] === FE`BoxReference, Part[#, 2, 1] === 
+                    "inputfield"]& )[
+                    MathLink`CallFrontEnd[
+                    FrontEnd`GetBoxIDs[
+                    EvaluationNotebook[]]]], 
+                   NotebookWrite[
+                    EvaluationNotebook[], 
+                    ValueBox["DateLong"], All], $CellContext`x$$ = 
+                   RowBox[{$CellContext`x$$, 
+                    ValueBox["DateLong"]}]]},
+                  Appearance->None,
+                  ImageMargins->{{5, 0}, {0, 0}}]}]}
+              },
+              DefaultBaseStyle->"Column",
+              GridBoxAlignment->{"Columns" -> {{Left}}},
+              
+              GridBoxItemSize->{
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+             "Column"],
+            ImageMargins->{{20, 0}, {0, 40}}]}
+         },
+         AutoDelete->False,
+         GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Top}}},
+         GridBoxDividers->{
+          "Columns" -> {{None}}, "Rows" -> {{False}}, 
+           "RowsIndexed" -> {2 -> GrayLevel[0.5]}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+        "Grid"],
+       EventHandlerTag[{"UpArrowKeyDown" :> If[
+           IntegerQ[$CellContext`i$$], $CellContext`i$$ = 
+            Replace[$CellContext`i$$ - 1, 0 -> 14]; $CellContext`x$$ = 
+            Part[$CellContext`data$$, $CellContext`i$$]], "DownArrowKeyDown" :> 
+         If[
+           
+           IntegerQ[$CellContext`i$$], $CellContext`i$$ = 
+            Mod[$CellContext`i$$, 14] + 1; $CellContext`x$$ = 
+            Part[$CellContext`data$$, $CellContext`i$$]], PassEventsDown -> 
+         Automatic, PassEventsUp -> True}]], "\[SpanFromLeft]"},
+     {
+      ItemBox[
+       TagBox[GridBox[{
+          {
+           ButtonBox[
+            DynamicBox[ToBoxes[
+              FEPrivate`FrontEndResource[
+              "HeadersFootersDialog", "SetAsDefaultLabel"], StandardForm],
+             ImageSizeCache->{71., {1., 9.}}],
+            Appearance->Automatic,
+            
+            ButtonFunction:>(
+             CurrentValue[$FrontEnd, {
+               PrivateFrontEndOptions, "DialogSettings", "HeadersFooters", 
+                "DateFormat"}] = If["Date" === "Date", 
+               
+               StyleBox[$CellContext`x$$, 
+                TaggingRules -> {"Date", $CellContext`i$$}], 
+               Part[
+                
+                StyleBox[$CellContext`x$$, 
+                 TaggingRules -> {"Date", $CellContext`i$$}], 2, 2]]),
+            
+            Enabled->Dynamic[
+             CurrentValue[$FrontEnd, {
+                PrivateFrontEndOptions, "DialogSettings", "HeadersFooters", 
+                 "DateFormat"}] =!= If["Date" === "Date", 
+                
+                StyleBox[$CellContext`x$$, 
+                 TaggingRules -> {"Date", $CellContext`i$$}], 
+                Part[
+                 
+                 StyleBox[$CellContext`x$$, 
+                  TaggingRules -> {"Date", $CellContext`i$$}], 2, 2]]],
+            Evaluator->Automatic,
+            Method->"Preemptive"]}
+         },
+         AutoDelete->False,
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+        "Grid"],
+       Alignment->Left,
+       StripOnInput->False], 
+      ItemBox[
+       StyleBox[
+        DynamicBox[FEPrivate`FrontEndResource[
+         "FEExpressions", "ChoiceButtonsOrder"][{
+           ButtonBox[
+            DynamicBox[
+             FEPrivate`FrontEndResourceString["okButtonText"]], 
+            ButtonFunction :> (DialogReturn[]; CurrentValue[
+                InputNotebook[], {TaggingRules, "Highlight"}] = Inherited; (If[
+               TrueQ[$CellContext`return$$], CurrentValue[
+                 InputNotebook[], $CellContext`pos$$] = RowBox[{
+                  CurrentValue[
+                   InputNotebook[], $CellContext`pos$$], #3}], 
+               NotebookWrite[
+                InputNotebook[], 
+                TagBox[
+                 FrameBox[
+                  #[
+                   SlotSequence[2]]], "Placeholder"]]]& )[InterpretationBox, 
+               ToBoxes[
+                Dynamic[
+                 FEPrivate`FrontEndResource[
+                 "HeadersFootersDialog", "DateFormatCounterLabel"]]], 
+               
+               StyleBox[$CellContext`x$$, 
+                TaggingRules -> {"Date", $CellContext`i$$}]]), Appearance -> 
+            "DefaultButton", Evaluator -> Automatic, Method -> "Preemptive"], 
+           ButtonBox[
+            DynamicBox[
+             FEPrivate`FrontEndResourceString["cancelButtonText"]], 
+            ButtonFunction :> (DialogReturn[]; CurrentValue[
+                InputNotebook[], {TaggingRules, "Highlight"}] = Inherited), 
+            Appearance -> "CancelButton", Evaluator -> Automatic, Method -> 
+            "Preemptive"]}],
+         ImageSizeCache->{192., {19.5, 26.5}}],
+        Deployed->True,
+        DynamicUpdating->True,
+        ButtonBoxOptions->{ImageMargins->{{2, 2}, {10, 10}},
+        ImageSize->Dynamic[
+          CurrentValue["DefaultButtonSize"]]},
+        GridBoxOptions->{AutoDelete->False,
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}}],
+       Alignment->Right,
+       StripOnInput->False]}
+    },
+    AutoDelete->False,
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"],
+  DynamicModuleValues:>{},
+  Initialization:>({$CellContext`return$$, $CellContext`pos$$} = {
+     System`FEDump`$HFReturn, 
+      System`FEDump`$HFPosition}; {$CellContext`i$$, $CellContext`x$$} = {
+     System`FEDump`$DateIndex, System`FEDump`$DateFormat}; If[
+     ListQ[$CellContext`x$$], $CellContext`x$$ = RowBox[$CellContext`x$$]]),
+  UnsavedVariables:>{$CellContext`x$$, $CellContext`i$$}]],
+ CellMargins->{{8, 8}, {8, 8}},
+ CellBracketOptions->{"Color"->RGBColor[0.269993, 0.308507, 0.6]},
+ CellHorizontalScrolling->True,
+ PageBreakAbove->True,
+ PageBreakWithin->False,
+ ShowAutoStyles->True,
+ LineSpacing->{1.25, 0},
+ AutoItalicWords->{},
+ ScriptMinSize->9,
+ ShowStringCharacters->False,
+ FontFamily:>CurrentValue["PanelFontFamily"],
+ FontSize:>CurrentValue["PanelFontSize"]]
+},
+Evaluator->"System",
+NotebookEventActions->{"ReturnKeyDown" :> FE`Evaluate[
+    FEPrivate`FindAndClickDefaultButton[]], {
+   "MenuCommand", "HandleShiftReturn"} :> FE`Evaluate[
+    FEPrivate`FindAndClickDefaultButton[]], {
+   "MenuCommand", "EvaluateCells"} :> (None; {}), {
+   "MenuCommand", "SimilarCellBelow"} :> (None; {}), "WindowClose" :> 
+  FE`Evaluate[
+    FEPrivate`FindAndClickCancelButton[]], "EscapeKeyDown" :> If[
+    Not[
+     CurrentValue["ShiftKey"]], 
+    FE`Evaluate[
+     FEPrivate`FindAndClickCancelButton[]]], PassEventsDown -> True},
+WindowSize->All,
+WindowMargins->{{711, Automatic}, {Automatic, 358}},
+WindowFrame->"ModalDialog",
+WindowTitle->Dynamic[
+  FEPrivate`FrontEndResource["HeadersFootersDialog", "DateFormatWindowTitle"]],
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (March 4, 2013)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "SystemDialog.nb"]], 
+   Cell[
+    StyleData["Header"], FontSize -> 
+    FrontEnd`CurrentValue[{"ControlsFontSize", Small}]], 
+   Cell[
+    StyleData["Footer"], FontSize -> 
+    FrontEnd`CurrentValue[{"ControlsFontSize", Small}]], 
+   Cell[
+    StyleData["PageNumber"], FontSize -> 
+    FrontEnd`CurrentValue[{"ControlsFontSize", Small}], FontSlant -> Plain], 
+   Cell[
+    StyleData["Placeholder"], Background -> None, 
+    FrameBoxOptions -> {
+     Background -> RGBColor[1., 0.9724879835202563, 0.7976806286717022], 
+      FrameMargins -> {{5, 5}, {0, 0}}, RoundingRadius -> 5}], 
+   Cell[
+    StyleData["TextStyleInputField"], 
+    CounterBoxOptions -> {
+     CounterFunction :> (FEPrivate`StringJoin[
+       "\[LeftGuillemet]", #2, "\[RightGuillemet]"]& )}, 
+    ValueBoxOptions -> {
+     DisplayFunction :> (FEPrivate`StringJoin[
+       "\[LeftGuillemet]", #2, "\[RightGuillemet]"]& )}, 
+    OptionValueBoxOptions -> {
+     DisplayFunction :> (FEPrivate`StringJoin[
+       "\[LeftGuillemet]", #2, "\[RightGuillemet]"]& )}], 
+   Cell[
+    StyleData["SelectionHighlight"], ContextMenu -> None, 
+    TooltipBoxOptions -> {TooltipDelay -> Automatic}], 
+   Cell[
+    StyleData["SelectedHighlight"], ContextMenu -> 
+    FEPrivate`FrontEndResource["ContextMenus", "HeadersFooters"]]}, Visible -> 
+  False, FrontEndVersion -> 
+  "10.0 for Microsoft Windows (64-bit) (March 4, 2013)", StyleDefinitions -> 
+  "Default.nb"],
+Modal -> True,
+Initialization :> FrontEnd`MoveCursorToInputField
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[600, 21, 24878, 644, 423, InheritFromParent,
+ PageBreakAbove->True,
+ PageBreakWithin->False]
+}
+]
+*)
+
+(* End of internal cache information *)
+

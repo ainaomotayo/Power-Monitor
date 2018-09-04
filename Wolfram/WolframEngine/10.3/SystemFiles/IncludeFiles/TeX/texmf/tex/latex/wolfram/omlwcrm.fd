@@ -1,0 +1,22 @@
+%Filename: omlwcrm.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omlwcrm.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OML/wcrm.]
+
+\DeclareFontFamily{OML}{wcrm}{\skewchar \font =127}
+
+\DeclareFontShape{OML}{wcrm}{m}{n}{
+   <-> wcrmm
+}{}
+
+\DeclareFontShape{OML}{wcrm}{b}{n}{
+   <-> wcrmb
+}{}
+
+\DeclareFontShape{OML}{wcrm}{bx}{n}{<->ssub * wcrm/b/n}{}
+
+\endinput

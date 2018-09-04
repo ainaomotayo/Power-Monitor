@@ -1,0 +1,49 @@
+%Filename: t1pjn.fd
+%Created by: tex basefnt
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t1pjn.fd}
+   [2001/10/19 Fontinst v1.914 font definitions for T1/pjn.]
+
+\DeclareFontFamily{T1}{pjn}{}
+
+\DeclareFontShape{T1}{pjn}{m}{n}{
+   <-> pjnr8t
+}{}
+
+\DeclareFontShape{T1}{pjn}{m}{sc}{
+   <-> pjnrc8t
+}{}
+
+\DeclareFontShape{T1}{pjn}{m}{sl}{
+   <-> pjnro8t
+}{}
+
+\DeclareFontShape{T1}{pjn}{m}{it}{
+   <-> pjnri8t
+}{}
+
+\DeclareFontShape{T1}{pjn}{b}{n}{
+   <-> pjnb8t
+}{}
+
+\DeclareFontShape{T1}{pjn}{b}{sc}{
+   <-> pjnbc8t
+}{}
+
+\DeclareFontShape{T1}{pjn}{b}{sl}{
+   <-> pjnbo8t
+}{}
+
+\DeclareFontShape{T1}{pjn}{b}{it}{
+   <-> pjnbi8t
+}{}
+
+\DeclareFontShape{T1}{pjn}{bx}{n}{<->ssub * pjn/b/n}{}
+\DeclareFontShape{T1}{pjn}{bx}{sc}{<->ssub * pjn/b/sc}{}
+\DeclareFontShape{T1}{pjn}{bx}{sl}{<->ssub * pjn/b/sl}{}
+\DeclareFontShape{T1}{pjn}{bx}{it}{<->ssub * pjn/b/it}{}
+
+\endinput

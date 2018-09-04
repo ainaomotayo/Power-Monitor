@@ -1,0 +1,128 @@
+<wolfram:with AssetsPrefix='URLBuild[{$CloudBase, "res/themes"}]'>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+      <wolfram:expr inserter='ToString'>
+        Replace[
+          FirstCase[{
+            #MetaTitle, 
+            #Title,
+            None
+            }, 
+            Except[_Missing]
+          ], {
+            None|_Missing :> "WolframCloud",
+            any_ :> ToString @ OutputForm[any] <> " - Wolfram Cloud"
+          }
+        ]
+      </wolfram:expr>
+    </title>
+
+    <!-- Created with Wolfram Language -->
+
+    <link href='`AssetsPrefix`/css/<* ToLowerCase @ Replace[#PageTheme, {a_String :> StringTrim[a], a_List /; Length[a] > 0 :> First[a], _ -> First[Templating`$TemplateThemes]}] *>.min.css' type="text/css" rel="stylesheet">
+
+    <wolfram:slot id="ExtraHead"></wolfram:slot>
+
+  </head>
+
+  <body class='body-default <* If[TrueQ[#BodyClean], "body-clean", ""] *> <* Replace[`Brand`, {_Missing|None|Null|Automatic -> "", _ -> "body-branded"}] *> <* 
+    If[
+      Quiet @ Not @ StringMatchQ[
+        Lookup[
+          URLQueryDecode[Replace[HTTPRequestData["QueryString"], {_HTTPRequestData -> {}}]],
+          "_embed",
+          "0"
+        ],
+        "0"|"false",
+        IgnoreCase -> True
+      ],
+      "body-embed",
+      ""
+    ] *>'>
+
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+
+          <wolfram:slot id="BodyHeader">
+            <wolfram:if test="MatchQ[#Brand, Except[_Missing]] || MatchQ[#Menu, Except[_Missing]]">
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+              <div class="container container-main">
+                <wolfram:if test="! MatchQ[#Brand, _Missing|None|Null|Automatic]">
+                  <div class="navbar-header">
+                    <wolfram:expr>Annotation[Hyperlink[#Brand, "#"], {"class" -> "navbar-brand"}, "HTMLAttrs"]</wolfram:expr>
+                  </div>
+                </wolfram:if>
+                <!-- nav-collapse -->
+                <ul class="nav navbar-nav">
+                  <wolfram:sequence values="#Menu">
+                    <wolfram:which>
+                      <wolfram:if test="MatchQ[#1, _Rule|_RuleDelayed]">
+                        <li class="dropdown">
+                          <wolfram:expr>Annotation[Hyperlink[First@#1, "#"], {"class"->"dropdown-toggle", "data-toggle" -> "dropdown"}, "HTMLAttrs"]</wolfram:expr>
+                          <ul class="dropdown-menu">
+                            <wolfram:sequence values="Last[#1]">
+                              <wolfram:get path="Templates/Includes/MenuItem.html"/>
+                            </wolfram:sequence>
+                          </ul>
+                        </li>
+                      </wolfram:if>
+                      <wolfram:else>
+                        <wolfram:get path="Templates/Includes/MenuItem.html"/>
+                      </wolfram:else>
+                    </wolfram:which>
+                  </wolfram:sequence>
+                </ul>
+              </div>
+            </div>
+            </wolfram:if>
+          </wolfram:slot>
+
+          <!-- Begin page content -->
+          <div id="content" class="container container-main">
+              <wolfram:slot id="Content">
+              <div class="container-result text-center">
+              <wolfram:if test="#Paneled">
+              <div class="panel panel-default panel-main panel-form">
+              <div class="panel-body">
+              </wolfram:if>
+                <wolfram:get path="Templates/Includes/Title.html"/>
+                <wolfram:slot id="Expression"/>
+              <wolfram:if test="#Paneled">
+              </div>
+              </div>
+              </wolfram:if>
+              </div>
+              </wolfram:slot>
+          </div>
+          <wolfram:slot id="FooterContent">
+            <wolfram:if test="!MatchQ[`Footer`, _Missing]">
+              <footer id="footer" class="footer">
+                <div class="container container-main text-center ">
+                <wolfram:slot id="Footer"/>
+                </div>
+              </footer>
+            </wolfram:if>
+          </wolfram:slot>
+
+      </div> <!-- site-wrapper-inne -->
+    </div> <!-- site-wrapper -->
+
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script defer="defer" type="text/javascript" src="`AssetsPrefix`/js/jquery.min.js"></script>
+    <script defer="defer" type="text/javascript" src="`AssetsPrefix`/js/bootstrap.min.js"></script>
+    <script defer="defer" type="text/javascript" src="`AssetsPrefix`/js/form.min.js"></script>
+    
+  </body>
+</html>
+</wolfram:with>

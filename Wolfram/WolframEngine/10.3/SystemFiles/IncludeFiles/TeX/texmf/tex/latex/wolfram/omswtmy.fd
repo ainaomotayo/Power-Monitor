@@ -1,0 +1,22 @@
+%Filename: omswtmy.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{omswtmy.fd}
+   [2002/03/08 Fontinst v1.914 font definitions for OMS/wtmy.]
+
+\DeclareFontFamily{OMS}{wtmy}{}
+
+\DeclareFontShape{OMS}{wtmy}{m}{n}{
+   <-> wtmym
+}{}
+
+\DeclareFontShape{OMS}{wtmy}{b}{n}{
+   <-> wtmyb
+}{}
+
+\DeclareFontShape{OMS}{wtmy}{bx}{n}{<->ssub * wtmy/b/n}{}
+
+\endinput

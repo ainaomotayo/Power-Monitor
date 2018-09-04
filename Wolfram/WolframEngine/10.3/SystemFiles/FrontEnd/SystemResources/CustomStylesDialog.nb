@@ -1,0 +1,215 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7982,        205]
+NotebookOptionsPosition[      6448,        164]
+NotebookOutlinePosition[      8024,        205]
+CellTagsIndexPosition[      7981,        202]
+WindowTitle->Choose a custom style
+WindowFrame->ModelessDialog*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`popupnb$$, $CellContext`nb$$ = NotebookObject[
+  
+   FrontEndObject[
+    LinkObject["sru_shm", 53, 3]], 
+   17], $CellContext`inputnb$$, $CellContext`styles$$, $CellContext`ss$$, \
+$CellContext`var$$, $CellContext`scope$$, $CellContext`change$$}, 
+  TagBox[GridBox[{
+     {
+      RowBox[{
+       DynamicBox[ToBoxes[
+         FEPrivate`FrontEndResource["FEStrings", "customStylesFieldLabel"], 
+         StandardForm],
+        ImageSizeCache->{133., {2., 8.}}], "\[InvisibleSpace]", 
+       DynamicBox[ToBoxes[If[
+           And[$CellContext`change$$, 
+            Not[
+             CurrentValue[
+              FrontEnd`EvaluationNotebook[], 
+              "NotebookSelected"]]], $CellContext`scope$$ = 
+           False, $CellContext`change$$ = True]; "  ", StandardForm],
+        ImageSizeCache->{6., {0., 6.}},
+        TrackedSymbols:>{}], "\[InvisibleSpace]", 
+       DynamicWrapperBox[
+        DynamicBox[Developer`ComboboxBoxes[
+          Dynamic[$CellContext`var$$], String, $CellContext`styles$$, BoxID -> 
+          "inputfield", ContinuousAction -> True, 
+          ImageSize -> {150, {20, 40}}, "OffsetMargins" :> {
+            Switch[$OperatingSystem, "Windows", 0, "MacOSX", -4, 
+             Blank[], -2], 1}],
+         ImageSizeCache->{154., {11., 16.}}], $CellContext`nb$$ = 
+         NotebookTools`NormalInputNotebook[]; $CellContext`inputnb$$ = 
+         Replace[$CellContext`nb$$, $Failed :> 
+           EvaluationNotebook[]]; $CellContext`ss$$ = 
+         CurrentValue[$CellContext`inputnb$$, StyleDefinitions]; (If[
+          And[
+           StringQ[#], 
+           FileExistsQ[#]], $CellContext`ss$$ = #]& )[
+          FileNameJoin[{
+            Quiet[
+             NotebookDirectory[$CellContext`inputnb$$]], $CellContext`ss$$}]]; 
+        Refresh[$CellContext`styles$$ = 
+          With[{$CellContext`inputnb = $CellContext`inputnb$$}, 
+            Part[
+             Rest[
+              FE`Evaluate[
+               
+               FEPrivate`GetPopupList[$CellContext`inputnb, 
+                "MenuListStyles"]]], All, 2]], UpdateInterval -> 1],
+        ImageSizeCache->{154., {11., 16.}}]}]},
+     {
+      DynamicBox[ToBoxes[
+        FEPrivate`FrontEndResource["FEStrings", "customStylesPreviewLabel"], 
+        StandardForm],
+       ImageSizeCache->{40., {0., 8.}}]},
+     {
+      FrameBox[
+       PaneBox[
+        DynamicBox[ToBoxes[
+          Rasterize[
+           Notebook[{
+             Cell[
+             "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz", \
+$CellContext`var$$, CellMargins -> 5, TextAlignment -> Left, 
+              TextJustification -> 0, PageWidth -> Infinity]}, 
+            StyleDefinitions -> $CellContext`ss$$, WindowSize -> 300]], 
+          StandardForm],
+         ImageSizeCache->{406., {5., 9.}},
+         SynchronousUpdating->False,
+         TrackedSymbols:>{$CellContext`var$$, $CellContext`ss$$}],
+        Alignment->Center,
+        ImageSize->{300, 80},
+        ScrollPosition->{0., 0.}],
+       Background->GrayLevel[1],
+       FrameMargins->5,
+       FrameStyle->GrayLevel[0.6],
+       RoundingRadius->10,
+       StripOnInput->False]},
+     {
+      ItemBox[
+       StyleBox[
+        DynamicBox[FEPrivate`FrontEndResource[
+         "FEExpressions", "ChoiceButtonsOrder"][{
+           ButtonBox[
+            DynamicBox[
+             FEPrivate`FrontEndResourceString["okButtonText"]], 
+            ButtonFunction :> (Apply[FrontEndExecute[
+                FrontEndToken[$CellContext`inputnb$$, "Style", 
+                 SlotSequence[1]]]& , 
+               If[
+                Or[$CellContext`scope$$, 
+                 CurrentValue["OptionKey"]], {$CellContext`var$$, 
+                 "SelectionCell"}, {$CellContext`var$$}]]; 
+             CurrentValue[$FrontEnd, 
+                StyleNameDialogSettings] = $CellContext`var$$; DialogReturn[]; 
+             SetSelectedNotebook[$CellContext`inputnb$$]), Appearance -> 
+            "DefaultButton", Enabled -> 
+            Dynamic[$CellContext`nb$$ =!= $Failed], Evaluator -> Automatic, 
+            Method -> "Preemptive"], 
+           ButtonBox[
+            DynamicBox[
+             FEPrivate`FrontEndResourceString["cancelButtonText"]], 
+            ButtonFunction :> DialogReturn[$Canceled], Appearance -> 
+            "CancelButton", Enabled -> True, Evaluator -> Automatic, Method -> 
+            "Preemptive"]}],
+         ImageSizeCache->{155., {20.90625, 26.09375}}],
+        Deployed->True,
+        DynamicUpdating->True,
+        ButtonBoxOptions->{ImageMargins->{{2, 2}, {10, 10}},
+        ImageSize->Dynamic[
+          CurrentValue["DefaultButtonSize"]]},
+        GridBoxOptions->{AutoDelete->False,
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}}],
+       Alignment->Right,
+       StripOnInput->False]}
+    },
+    DefaultBaseStyle->"Column",
+    GridBoxAlignment->{"Columns" -> {{Left}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+    GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {1, 2, 0.5, 1}}],
+   "Column"],
+  DynamicModuleValues:>{},
+  Initialization:>($CellContext`scope$$ = 
+    CurrentValue["OptionKey"]; $CellContext`change$$ = 
+    False; $CellContext`var$$ = 
+    CurrentValue[$FrontEnd, StyleNameDialogSettings]),
+  UnsavedVariables:>{$CellContext`popupnb$$, $CellContext`inputnb$$, \
+$CellContext`styles$$, $CellContext`ss$$, $CellContext`var$$, \
+$CellContext`scope$$, $CellContext`change$$}]],
+ CellMargins->10,
+ CellBracketOptions->{"Color"->RGBColor[0.269993, 0.308507, 0.6]},
+ CellHorizontalScrolling->True,
+ PageBreakAbove->True,
+ PageBreakWithin->False,
+ ShowAutoStyles->True,
+ LineSpacing->{1.25, 0},
+ AutoItalicWords->{},
+ ScriptMinSize->9,
+ ShowStringCharacters->False,
+ FontFamily:>CurrentValue["PanelFontFamily"],
+ FontSize:>CurrentValue["PanelFontSize"]]
+},
+NotebookEventActions->{"ReturnKeyDown" :> (FE`Evaluate[
+     FEPrivate`FindAndClickDefaultButton[]]; DialogReturn[$Failed]), {
+   "MenuCommand", "EvaluateCells"} :> (FE`Evaluate[
+     FEPrivate`FindAndClickDefaultButton[]]; DialogReturn[$Failed]), {
+   "MenuCommand", "HandleShiftReturn"} :> (FE`Evaluate[
+     FEPrivate`FindAndClickDefaultButton[]]; DialogReturn[$Failed]), {
+   "MenuCommand", "EvaluateNextCell"} :> (FE`Evaluate[
+     FEPrivate`FindAndClickDefaultButton[]]; DialogReturn[$Failed]), 
+  "EscapeKeyDown" :> (FE`Evaluate[
+     FEPrivate`FindAndClickCancelButton[]]; DialogReturn[$Failed]), 
+  "WindowClose" :> (FE`Evaluate[
+     FEPrivate`FindAndClickCancelButton[]]; DialogReturn[$Failed])},
+NotebookDynamicExpression:>Refresh[
+  MathLink`CallFrontEnd[
+   FrontEnd`BoxReferenceFind[
+    FE`BoxReference[
+     EvaluationNotebook[], "inputfield", FE`BoxOffset -> {
+       FE`BoxChild[1]}, FE`SearchStart -> "StartFromBeginning"]]], None],
+WindowSize->All,
+WindowMargins->FrontEnd`CurrentValue[
+ FrontEnd`$FrontEnd, {
+  PrivateFrontEndOptions, "DialogSettings", "CustomStyles", WindowMargins}, 
+  Automatic],
+WindowFrame->"ModelessDialog",
+WindowTitle->FEPrivate`FrontEndResource[
+ "FEStrings", "customStylesWindowTitle"],
+TaggingRules->{"NotebookID" -> "CustomStylesDialog"},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 18, \
+2012)",
+StyleDefinitions->"SystemDialog.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[600, 21, 5844, 141, 234, InheritFromParent,
+ PageBreakAbove->True,
+ PageBreakWithin->False]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,22 @@
+%Filename: ot1wadr.fd
+%Created by: tex fontwtm
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1wadr.fd}
+   [2002/02/24 Fontinst v1.914 font definitions for OT1/wadr.]
+
+\DeclareFontFamily{OT1}{wadr}{}
+
+\DeclareFontShape{OT1}{wadr}{m}{n}{
+   <-> wadrm
+}{}
+
+\DeclareFontShape{OT1}{wadr}{b}{n}{
+   <-> wadrb
+}{}
+
+\DeclareFontShape{OT1}{wadr}{bx}{n}{<->ssub * wadr/b/n}{}
+
+\endinput

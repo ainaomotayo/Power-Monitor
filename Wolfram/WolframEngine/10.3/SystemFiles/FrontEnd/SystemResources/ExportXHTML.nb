@@ -1,0 +1,551 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22365,        541]
+NotebookOptionsPosition[     20783,        496]
+NotebookOutlinePosition[     22407,        541]
+CellTagsIndexPosition[     22364,        538]
+WindowTitle->XHTML Options
+WindowFrame->ModalDialog*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {
+    ItemBox[GridBox[{
+       {
+        DynamicBox[ToBoxes[
+          FEPrivate`FrontEndResource["ExportDialogs", "XHTMLMathOutput"], 
+          StandardForm],
+         ImageSizeCache->{138., {2., 8.}}]},
+       {
+        RowBox[{
+         RowBox[{
+          RadioButtonBox[Dynamic[
+            
+            CurrentValue[$FrontEnd, {
+             ConversionOptions, "ExportOptions", "XHTML", "MathOutput"}, 
+             "PNG"]], {"PNG"}], "\[InvisibleSpace]", 
+          TogglerBox[Dynamic[
+            
+            CurrentValue[$FrontEnd, {
+             ConversionOptions, "ExportOptions", "XHTML", "MathOutput"}, 
+             "PNG"]], {"PNG"->"\<\"PNG\"\>", 
+           "PNG"->"\<\"PNG\"\>"}, "\<\"PNG\"\>"]}], "  ", 
+         RowBox[{
+          RadioButtonBox[Dynamic[
+            
+            CurrentValue[$FrontEnd, {
+             ConversionOptions, "ExportOptions", "XHTML", "MathOutput"}]], {
+           "MathML"}], "\[InvisibleSpace]", 
+          TogglerBox[Dynamic[
+            
+            CurrentValue[$FrontEnd, {
+             ConversionOptions, "ExportOptions", "XHTML", "MathOutput"}]], {
+           "MathML"->"\<\"MathML\"\>", 
+           "MathML"->"\<\"MathML\"\>"}, "\<\"MathML\"\>"]}], "  ", 
+         RowBox[{
+          RadioButtonBox[Dynamic[
+            
+            CurrentValue[$FrontEnd, {
+             ConversionOptions, "ExportOptions", "XHTML", "MathOutput"}]], {
+           "DisplayForm"}], "\[InvisibleSpace]", 
+          TogglerBox[Dynamic[
+            
+            CurrentValue[$FrontEnd, {
+             ConversionOptions, "ExportOptions", "XHTML", "MathOutput"}]], {
+           "DisplayForm"->"\<\"DisplayForm\"\>", 
+           "DisplayForm"->"\<\"DisplayForm\"\>"}, "\<\"DisplayForm\"\>"]}], "  ", 
+         RowBox[{
+          RadioButtonBox[Dynamic[
+            
+            CurrentValue[$FrontEnd, {
+             ConversionOptions, "ExportOptions", "XHTML", "MathOutput"}]], {
+           "InputForm"}], "\[InvisibleSpace]", 
+          TogglerBox[Dynamic[
+            
+            CurrentValue[$FrontEnd, {
+             ConversionOptions, "ExportOptions", "XHTML", "MathOutput"}]], {
+           "InputForm"->"\<\"InputForm\"\>", 
+           "InputForm"->"\<\"InputForm\"\>"}, "\<\"InputForm\"\>"]}]}]},
+       {""},
+       {GridBox[{
+          {GridBox[{
+             {
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "ExportDialogs", "XHTMLExportCellGroup"], StandardForm],
+               ImageSizeCache->{104., {2., 8.}}], "\[SpanFromLeft]"},
+             {"", GridBox[{
+                {
+                 DynamicBox[ToBoxes[
+                   FEPrivate`FrontEndResource[
+                   "ExportDialogs", "XHTMLForwardClosed"], StandardForm],
+                  ImageSizeCache->{73., {0., 8.}}], "\[SpanFromLeft]", 
+                 "\[SpanFromLeft]", 
+                 DynamicBox[ToBoxes[
+                   FEPrivate`FrontEndResource[
+                   "ExportDialogs", "XHTMLReverseClosed"], StandardForm],
+                  ImageSizeCache->{71., {0., 8.}}], "\[SpanFromLeft]", 
+                 "\[SpanFromLeft]"},
+                {"", 
+                 RowBox[{
+                  RadioButtonBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertClosed"}, False]], {False}], "\[InvisibleSpace]", 
+                  
+                  TogglerBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertClosed"}, False]], {False->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedFalse"], StandardForm],
+                    ImageSizeCache->{140., {2., 8.}}], False->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedFalse"], StandardForm],
+                    ImageSizeCache->{140., {2., 8.}}]}, 
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedFalse"], StandardForm],
+                    ImageSizeCache->{140., {2., 8.}}]]}], "", 
+                 RowBox[{
+                  RadioButtonBox[Dynamic[
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertReverseClosed"}, False]], {False}], 
+                  "\[InvisibleSpace]", 
+                  TogglerBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertReverseClosed"}, False]], {False->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedFalse"], StandardForm],
+                    ImageSizeCache->{140., {2., 8.}}], False->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedFalse"], StandardForm],
+                    ImageSizeCache->{140., {2., 8.}}]}, 
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedFalse"], StandardForm],
+                    ImageSizeCache->{140., {2., 8.}}]]}], "", ""},
+                {"", 
+                 RowBox[{
+                  RadioButtonBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertClosed"}]], {True}], "\[InvisibleSpace]", 
+                  TogglerBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertClosed"}]], {True->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedTrue"], StandardForm],
+                    
+                    ImageSizeCache->{138., {2., 8.}}], True->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedTrue"], StandardForm],
+                    
+                    ImageSizeCache->{138., {2., 8.}}]}, 
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedTrue"], StandardForm],
+                    
+                    ImageSizeCache->{138., {2., 8.}}]]}], "", 
+                 RowBox[{
+                  RadioButtonBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertReverseClosed"}]], {True}], "\[InvisibleSpace]", 
+                  TogglerBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertReverseClosed"}]], {True->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedTrue"], StandardForm],
+                    
+                    ImageSizeCache->{138., {2., 8.}}], True->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedTrue"], StandardForm],
+                    
+                    ImageSizeCache->{138., {2., 8.}}]}, 
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedTrue"], StandardForm],
+                    
+                    ImageSizeCache->{138., {2., 8.}}]]}], "", ""},
+                {"", 
+                 RowBox[{
+                  RadioButtonBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertClosed"}]], {"LinkedPage"}], "\[InvisibleSpace]", 
+                  
+                  TogglerBox[Dynamic[
+                    
+                    CurrentValue[$FrontEnd, {
+                    ConversionOptions, "ExportOptions", "XHTML", 
+                    "ConvertClosed"}]], {"LinkedPage"->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedLinkedPage"], 
+                    StandardForm],
+                    ImageSizeCache->{130., {2., 8.}}], "LinkedPage"->
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedLinkedPage"], 
+                    StandardForm],
+                    ImageSizeCache->{130., {2., 8.}}]}, 
+                   DynamicBox[ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "ExportDialogs", "XHTMLConvertClosedLinkedPage"], 
+                    StandardForm],
+                    ImageSizeCache->{130., {2., 8.}}]]}], "", "", "", ""}
+               },
+               AutoDelete->False,
+               
+               GridBoxAlignment->{
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}},
+               
+               GridBoxDividers->{
+                "Columns" -> {{False}}, 
+                 "ColumnsIndexed" -> {
+                  1 -> GrayLevel[0.5], 4 -> GrayLevel[0.5], -1 -> 
+                   GrayLevel[0.5]}, "Rows" -> {{None}}, 
+                 "RowsIndexed" -> {
+                  1 -> GrayLevel[0.5], 2 -> GrayLevel[0.5], -1 -> 
+                   GrayLevel[0.5]}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               
+               GridBoxSpacings->{
+                "Columns" -> {1, 0.3, 0.5, 2, 0.3, 0.5, 2}, 
+                 "Rows" -> {1, 1, 0.3, 0.3, 1}}]}
+            },
+            AutoDelete->False,
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+          {""},
+          {
+           RowBox[{
+            CheckboxBox[Dynamic[
+              
+              CurrentValue[$FrontEnd, {
+               ConversionOptions, "ExportOptions", "XHTML", 
+                "ConvertLinkedNotebooks"}, False]]], "\[InvisibleSpace]", 
+            TogglerBox[Dynamic[
+              
+              CurrentValue[$FrontEnd, {
+               ConversionOptions, "ExportOptions", "XHTML", 
+                "ConvertLinkedNotebooks"}, False]], {True->
+             DynamicBox[ToBoxes[
+               FEPrivate`FrontEndResource[
+               "ExportDialogs", "XHTMLConvertLinkedNotebooks"], StandardForm],
+              
+              ImageSizeCache->{122., {0., 8.}}], False->
+             DynamicBox[ToBoxes[
+               FEPrivate`FrontEndResource[
+               "ExportDialogs", "XHTMLConvertLinkedNotebooks"], StandardForm],
+              
+              ImageSizeCache->{122., {0., 8.}}]}, 
+             DynamicBox[ToBoxes[
+               CurrentValue[$FrontEnd, {
+                ConversionOptions, "ExportOptions", "XHTML", 
+                 "ConvertLinkedNotebooks"}, False], StandardForm],
+              ImageSizeCache->{24., {0., 8.}}]]}]},
+          {
+           RowBox[{
+            CheckboxBox[Dynamic[
+              
+              CurrentValue[$FrontEnd, {
+               ConversionOptions, "ExportOptions", "XHTML", "Content"}, 
+               False]]], "\[InvisibleSpace]", 
+            TogglerBox[Dynamic[
+              
+              CurrentValue[$FrontEnd, {
+               ConversionOptions, "ExportOptions", "XHTML", "Content"}, 
+               False]], {True->
+             DynamicBox[ToBoxes[
+               FEPrivate`FrontEndResource["ExportDialogs", "XHTMLContent"], 
+               StandardForm],
+              ImageSizeCache->{163., {0., 8.}}], False->
+             DynamicBox[ToBoxes[
+               FEPrivate`FrontEndResource["ExportDialogs", "XHTMLContent"], 
+               StandardForm],
+              ImageSizeCache->{163., {0., 8.}}]}, 
+             DynamicBox[ToBoxes[
+               
+               CurrentValue[$FrontEnd, {
+                ConversionOptions, "ExportOptions", "XHTML", "Content"}, 
+                False], StandardForm],
+              ImageSizeCache->{24., {0., 8.}}]]}]},
+          {
+           RowBox[{
+            CheckboxBox[Dynamic[
+              
+              CurrentValue[$FrontEnd, {
+               ConversionOptions, "ExportOptions", "XHTML", "CSSInclude"}, 
+               True]]], "\[InvisibleSpace]", 
+            TogglerBox[Dynamic[
+              
+              CurrentValue[$FrontEnd, {
+               ConversionOptions, "ExportOptions", "XHTML", "CSSInclude"}, 
+               True]], {True->
+             DynamicBox[ToBoxes[
+               FEPrivate`FrontEndResource["ExportDialogs", "XHTMLCSS"], 
+               StandardForm],
+              ImageSizeCache->{56., {1., 8.}}], False->
+             DynamicBox[ToBoxes[
+               FEPrivate`FrontEndResource["ExportDialogs", "XHTMLCSS"], 
+               StandardForm],
+              ImageSizeCache->{56., {1., 8.}}]}, 
+             DynamicBox[ToBoxes[
+               
+               CurrentValue[$FrontEnd, {
+                ConversionOptions, "ExportOptions", "XHTML", "CSSInclude"}, 
+                True], StandardForm],
+              ImageSizeCache->{22., {0., 8.}}]]}]},
+          {
+           RowBox[{"\<\"       \"\>", "\[InvisibleSpace]", 
+            RowBox[{
+             RadioButtonBox[Dynamic[
+               
+               CurrentValue[$FrontEnd, {
+                ConversionOptions, "ExportOptions", "XHTML", "CSSRadio"}, 
+                False]], {False},
+              Enabled->Dynamic[
+                
+                CurrentValue[$FrontEnd, {
+                 ConversionOptions, "ExportOptions", "XHTML", 
+                  "CSSInclude"}]]], "\[InvisibleSpace]", 
+             TogglerBox[Dynamic[
+               
+               CurrentValue[$FrontEnd, {
+                ConversionOptions, "ExportOptions", "XHTML", "CSSRadio"}, 
+                False]], {False->
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["ExportDialogs", "Automatic"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}], False->
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["ExportDialogs", "Automatic"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}]}, 
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["ExportDialogs", "Automatic"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              Enabled->Dynamic[
+                
+                CurrentValue[$FrontEnd, {
+                 ConversionOptions, "ExportOptions", "XHTML", 
+                  "CSSInclude"}]]]}]}]},
+          {
+           RowBox[{"\<\"       \"\>", "\[InvisibleSpace]", 
+            RadioButtonBox[Dynamic[
+              
+              CurrentValue[$FrontEnd, {
+               ConversionOptions, "ExportOptions", "XHTML", "CSSRadio"}]], {
+             True},
+             Enabled->Dynamic[
+               
+               CurrentValue[$FrontEnd, {
+                ConversionOptions, "ExportOptions", "XHTML", "CSSInclude"}]]],
+             "\[InvisibleSpace]", 
+            InputFieldBox[Dynamic[
+              
+              CurrentValue[$FrontEnd, {
+               ConversionOptions, "ExportOptions", "XHTML", "CSSFile"}]], 
+             String,
+             Appearance->"Framed",
+             Enabled->Dynamic[
+               And[
+                
+                CurrentValue[$FrontEnd, {
+                 ConversionOptions, "ExportOptions", "XHTML", "CSSInclude"}], 
+                
+                
+                CurrentValue[$FrontEnd, {
+                 ConversionOptions, "ExportOptions", "XHTML", "CSSRadio"}]]],
+             FieldSize->{30, {1, 5}}], "\[InvisibleSpace]", "\<\"   \"\>", 
+            "\[InvisibleSpace]", 
+            ButtonBox[
+             DynamicBox[FEPrivate`FrontEndResource["FEStrings", "BrowseLabel"],
+              ImageSizeCache->{58., {1., 10.}}],
+             Appearance->"DialogBox",
+             BaseStyle->{"FileNameSetter"},
+             ButtonFunction:>BoxForm`FileNameSetterFunction[
+               Dynamic[
+                
+                CurrentValue[$FrontEnd, {
+                 ConversionOptions, "ExportOptions", "XHTML", "CSSFile"}]], 
+               "Open", {"Cascading Style Sheets (*.css)" -> {"*.css"}}, 
+               Automatic],
+             Enabled->Dynamic[
+               And[
+                
+                CurrentValue[$FrontEnd, {
+                 ConversionOptions, "ExportOptions", "XHTML", "CSSInclude"}], 
+                
+                
+                CurrentValue[$FrontEnd, {
+                 ConversionOptions, "ExportOptions", "XHTML", "CSSRadio"}]]],
+             Evaluator->Automatic,
+             ImageMargins->0,
+             ImageSize->Automatic,
+             Method->"Queued"]}]}
+         },
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     Alignment->Center], "\[SpanFromLeft]"},
+   {GridBox[{
+      {
+       ButtonBox[
+        DynamicBox[FEPrivate`FrontEndResource[
+         "ImportDialogs", "DefaultsButtonLabel"],
+         ImageSizeCache->{149., {3., 11.}}],
+        ButtonFunction:>FrontEndExecute[
+          FrontEnd`SaveConversionOptions[]]], 
+       ButtonBox[
+        DynamicBox[FEPrivate`FrontEndResource[
+         "ImportDialogs", "RestoreButtonLabel"],
+         ImageSizeCache->{118., {1., 11.}}],
+        ButtonFunction:>((FEPrivate`Set[
+           
+           CurrentValue[$FrontEnd, {
+            ConversionOptions, "ExportOptions", "XHTML"}], {}]; 
+         FrontEndExecute[{
+            FrontEnd`SaveConversionOptions[]}])& )]}
+     }], 
+    StyleBox[
+     DynamicBox[FEPrivate`FrontEndResource[
+      "FEExpressions", "ChoiceButtonsOrder"][{
+        ButtonBox[
+         DynamicBox[
+          FEPrivate`FrontEndResourceString["okButtonText"]], ButtonFunction :> 
+         DialogReturn[], Appearance -> "DefaultButton", Evaluator -> 
+         Automatic, Method -> "Preemptive"], 
+        ButtonBox[
+         DynamicBox[
+          FEPrivate`FrontEndResourceString["cancelButtonText"]], 
+         ButtonFunction :> (FrontEndExecute[
+            FrontEnd`RestoreConversionOptions[]]; DialogReturn[]), Appearance -> 
+         "CancelButton", Evaluator -> Automatic, Method -> "Preemptive"]}],
+      ImageSizeCache->{155., {20.9169921875, 26.0830078125}}],
+     Deployed->True,
+     DynamicUpdating->True,
+     ButtonBoxOptions->{ImageMargins->{{2, 2}, {10, 10}},
+     ImageSize->Dynamic[
+       CurrentValue["DefaultButtonSize"]]},
+     GridBoxOptions->{AutoDelete->False,
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}}]}
+  },
+  AutoDelete->False,
+  GridBoxAlignment->{
+   "Columns" -> {Left, Right}, "Rows" -> {{Baseline -> Center}}},
+  GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+  GridBoxSpacings->{"Columns" -> {0, 2, 0}, "Rows" -> {0, 1, 0}}]],
+ CellMargins->{{8, 8}, {8, 8}},
+ CellBracketOptions->{"Color"->RGBColor[0.269993, 0.308507, 0.6]},
+ CellHorizontalScrolling->True,
+ PageBreakAbove->True,
+ PageBreakWithin->False,
+ ShowAutoStyles->True,
+ LineSpacing->{1.25, 0},
+ AutoItalicWords->{},
+ ScriptMinSize->9,
+ ShowStringCharacters->False,
+ FontFamily:>CurrentValue["PanelFontFamily"],
+ FontSize:>CurrentValue["PanelFontSize"]]
+},
+NotebookEventActions->{"ReturnKeyDown" :> (FE`Evaluate[
+     FEPrivate`FindAndClickDefaultButton[]]; DialogReturn[$Failed]), {
+   "MenuCommand", "EvaluateCells"} :> (FE`Evaluate[
+     FEPrivate`FindAndClickDefaultButton[]]; DialogReturn[$Failed]), {
+   "MenuCommand", "HandleShiftReturn"} :> (FE`Evaluate[
+     FEPrivate`FindAndClickDefaultButton[]]; DialogReturn[$Failed]), {
+   "MenuCommand", "EvaluateNextCell"} :> (FE`Evaluate[
+     FEPrivate`FindAndClickDefaultButton[]]; DialogReturn[$Failed]), 
+  "EscapeKeyDown" :> (FE`Evaluate[
+     FEPrivate`FindAndClickCancelButton[]]; DialogReturn[$Failed]), 
+  "WindowClose" :> (FE`Evaluate[
+     FEPrivate`FindAndClickCancelButton[]]; DialogReturn[$Failed])},
+WindowSize->All,
+WindowMargins->Automatic,
+WindowFrame->"ModalDialog",
+WindowTitle->Dynamic[
+  FEPrivate`FrontEndResource["ExportDialogs", "XHTMLLabel"]],
+CellContext->"Global`",
+ButtonBoxOptions->{Appearance->Automatic,
+BaselinePosition->Axis,
+Evaluator->None,
+ImageSize->FrontEnd`CurrentValue["DefaultButtonSize"],
+Method->"Preemptive"},
+CheckboxBoxOptions->{ImageMargins->{{0, 5}, {0, 0}},
+ImageSize->Small},
+InputFieldBoxOptions->{ContinuousAction->True},
+PopupMenuBoxOptions->{BaseStyle->"DialogStyle",
+ImageMargins->{{1, 1}, {2, 2}}},
+RadioButtonBoxOptions->{ImageMargins->{{1, 5}, {2, 2}},
+ImageSize->Small},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (August 9, \
+2013)",
+StyleDefinitions->"SystemDialog.nb",
+Modal -> True
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[590, 21, 20189, 473, 378, InheritFromParent,
+ PageBreakAbove->True,
+ PageBreakWithin->False]
+}
+]
+*)
+
+(* End of internal cache information *)
+

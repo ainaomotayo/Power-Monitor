@@ -1,0 +1,49 @@
+%Filename: ot1pad.fd
+%Created by: tex basefonts
+%Created using fontinst v1.914
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot1pad.fd}
+   [2001/09/10 Fontinst v1.914 font definitions for OT1/pad.]
+
+\DeclareFontFamily{OT1}{pad}{}
+
+\DeclareFontShape{OT1}{pad}{m}{n}{
+   <-> padr7t
+}{}
+
+\DeclareFontShape{OT1}{pad}{m}{sc}{
+   <-> padrc7t
+}{}
+
+\DeclareFontShape{OT1}{pad}{m}{sl}{
+   <-> padro7t
+}{}
+
+\DeclareFontShape{OT1}{pad}{m}{it}{
+   <-> padri7t
+}{}
+
+\DeclareFontShape{OT1}{pad}{b}{n}{
+   <-> padb7t
+}{}
+
+\DeclareFontShape{OT1}{pad}{b}{sc}{
+   <-> padbc7t
+}{}
+
+\DeclareFontShape{OT1}{pad}{b}{sl}{
+   <-> padbo7t
+}{}
+
+\DeclareFontShape{OT1}{pad}{b}{it}{
+   <-> padbi7t
+}{}
+
+\DeclareFontShape{OT1}{pad}{bx}{n}{<->ssub * pad/b/n}{}
+\DeclareFontShape{OT1}{pad}{bx}{sc}{<->ssub * pad/b/sc}{}
+\DeclareFontShape{OT1}{pad}{bx}{sl}{<->ssub * pad/b/sl}{}
+\DeclareFontShape{OT1}{pad}{bx}{it}{<->ssub * pad/b/it}{}
+
+\endinput

@@ -1,0 +1,219 @@
+SetOptions[$DefaultFrontEnd, 
+
+EvaluatorStartup->ToExpression[FEPrivate`FrontEndResourceString["GetFEKernelInit"]],
+
+ContextMenu->FEPrivate`FrontEndResource["ContextMenus", "Text"],
+
+ComponentwiseContextMenu-> {
+	"GraphicsBox" -> FEPrivate`FrontEndResource["ContextMenus", "GraphicsBox"],
+	"Graphics3DBox" -> FEPrivate`FrontEndResource["ContextMenus", "Graphics3DBox"],
+	"LocatorPaneBox" -> FEPrivate`FrontEndResource["ContextMenus", "LocatorPaneBox"],
+	"CellGroup" -> FEPrivate`FrontEndResource["ContextMenus", "CellGroup"],
+	"CellBracket" -> FEPrivate`FrontEndResource["ContextMenus", "CellBracket"],
+	"CellRange" -> FEPrivate`FrontEndResource["ContextMenus", "CellRange"],
+	"CellInsertionPoint" -> FEPrivate`FrontEndResource["ContextMenus", "CellInsertionPoint"]
+},
+
+ImportAutoReplacements -> {
+	"->" -> "\[Rule]",
+	":>" -> "\[RuleDelayed]",
+	"<=" -> "\[LessEqual]",
+	">=" -> "\[GreaterEqual]",
+	"!=" -> "\[NotEqual]",
+	"==" -> "\[Equal]",
+	"<->" -> "\[UndirectedEdge]"
+},
+
+ExportAutoReplacements -> {
+	"\[Rule]" -> "->",
+	"\[RuleDelayed]" -> ":>",
+	"\[LessEqual]" -> "<=",
+	"\[GreaterEqual]" -> ">=",
+	"\[NotEqual]" -> "!=",
+	"\[Equal]" -> "==",
+	"\[LongEqual]" -> "==",
+	"\[LineSeparator]" -> "\n",
+	"\[ParagraphSeparator]" -> "\n",
+	"\[Hyphen]" -> "-",
+	"\[LeftDoubleBracket]" -> "[[",
+	"\[RightDoubleBracket]" -> "]]",
+	"\[LeftSkeleton]" -> "<<",
+	"\[RightSkeleton]" -> ">>",
+	"\[InvisibleSpace]" -> " ",
+	"\[VeryThinSpace]" -> " ",
+	"\[Times]" -> "*",
+	"\[Divide]" -> "/",
+	"\[ExponentialE]" -> "E",
+	"\[ImaginaryI]" -> "I",
+	"\[NoBreak]" -> "",
+	"\[OpenCurlyQuote]" -> "'",
+	"\[CloseCurlyQuote]" -> "'",
+	"\[OpenCurlyDoubleQuote]" -> "\"",
+	"\[CloseCurlyDoubleQuote]" -> "\"",
+	"\[LeftAssociation]" -> "<|",
+	"\[RightAssociation]" -> "|>",
+	"\[UndirectedEdge]" -> "<->"
+},
+
+InputAliases -> {
+	"intt" -> RowBox[{"\[Integral]", RowBox[{"\[SelectionPlaceholder]", RowBox[{"\[DifferentialD]", "\[Placeholder]"}]}]}],
+	"dintt" -> RowBox[{SubsuperscriptBox["\[Integral]", "\[SelectionPlaceholder]", "\[Placeholder]"], RowBox[{"\[Placeholder]", RowBox[{"\[DifferentialD]", "\[Placeholder]"}]}]}],
+	"sumt" -> RowBox[{UnderoverscriptBox["\[Sum]", RowBox[{"\[SelectionPlaceholder]", "=", "\[Placeholder]"}], "\[Placeholder]"], "\[Placeholder]"}],
+	"prodt" -> RowBox[{UnderoverscriptBox["\[Product]", RowBox[{"\[SelectionPlaceholder]", "=", "\[Placeholder]"}], "\[Placeholder]"], "\[Placeholder]"}],
+	"dt" -> RowBox[{SubscriptBox["\[PartialD]", "\[Placeholder]"], " ", "\[SelectionPlaceholder]"}],
+	"ia" -> TemplateBox[{"\[SelectionPlaceholder]"},"Inactive"],
+	"cbrt" -> RadicalBox["\[SelectionPlaceholder]", "3", SurdForm->True, MultilineFunction->None],
+	"surd" -> RadicalBox["\[SelectionPlaceholder]", "\[Placeholder]", SurdForm->True, MultilineFunction->None],
+	"ket" -> TemplateBox[{"\[SelectionPlaceholder]"},"Ket"],
+	"bra" -> TemplateBox[{"\[SelectionPlaceholder]"},"Bra"],
+	"braket" -> TemplateBox[{"\[SelectionPlaceholder]","\[Placeholder]"},"BraKet"],
+	"delay" -> TemplateBox[ {"\[SelectionPlaceholder]"}, "SystemsModelDelay"],
+	"grad" -> RowBox[{SubscriptBox["\[Del]","\[SelectionPlaceholder]"],"\[Placeholder]"}],
+	"del." -> RowBox[{SubscriptBox["\[Del]","\[SelectionPlaceholder]"],".","\[Placeholder]"}],
+	"delx" -> RowBox[{SubscriptBox["\[Del]","\[SelectionPlaceholder]"],"\[Cross]","\[Placeholder]"}],
+	"del2" -> RowBox[{SubsuperscriptBox["\[Del]","\[SelectionPlaceholder]", 2],"\[Placeholder]"}]
+},
+
+EvaluatorNames->{"Local"->{"AutoStartOnLaunch" -> True}},
+
+DefaultFontProperties->{"Times"->{"FontSerifed" -> True, "FontMonospaced" -> False}, 
+"Helvetica"->{"FontSerifed" -> False, "FontMonospaced" -> False}, 
+"Courier"->{"FontSerifed" -> True, "FontMonospaced" -> True}, 
+"Symbol"->{"FontEncoding" -> "Symbol", "FontSerifed" -> True, "FontMonospaced" -> False},
+"ZapfDingbats"->{"FontEncoding" -> "ZapfDingbats", "FontSerifed" -> True, "FontMonospaced" -> False}
+},
+
+BoxFormFormatTypes->{
+StandardForm,
+TraditionalForm
+},
+
+WindowPersistentStyles->{
+WindowFrame,
+WindowMargins,
+WindowSize,
+DockedCells,
+Magnification
+},
+
+"HelpViewerSettings" -> {
+"WindowSize" -> 
+{860, FEPrivate`If[FEPrivate`Less[CurrentValue["ScreenArea"][[1, 2, 2]] - 
+CurrentValue["ScreenArea"][[1, 2, 1]], 780], 720, 750]}}
+
+];
+
+AddFileBrowserFilterPacket["Open", {
+	Item["All Files", FindOpenFilter,  "", "*"],
+	Item["Wolfram Files (*.nb, *.cdf, *.nbp, *.wl, *.m, *.ma)", FEPrivate`FrontEndExecute[FrontEndToken["Open", {#, "Notebook"}]]&, "nb", {"*.nb","*.cdf","*.nbp","*.wl","*.ma","*.m"}, OptionsNotebook->"ImportNotebook.nb"],
+	Item["Picture Files", FindImportPicturesFilter,  "", PictureFilters],
+	Item["Rich Text Format (*.rtf)", FEPrivate`FrontEndExecute[FrontEndToken["Open", {#, "RichText"}]]&, "rtf", "*.rtf", MacintoshFileTypes->{"RTF "}],
+	Item["Text files", FEPrivate`FrontEndExecute[FrontEndToken["Open", {#, "Text"}]]&, "txt", {"*.txt"}, MacintoshFileTypes->{"TEXT"}, OptionsNotebook->"ImportText.nb"]
+}];
+
+AddFileBrowserFilterPacket["Import", {
+	Item["All Files", FindImportFilter,  "", "*"],
+	Item["Wolfram Files (*.nb, *.cdf, *.nbp, *.wl, *.ma, *.m)", FEPrivate`FrontEndExecute[FrontEndToken[#2, "Import", {#, "Notebook"}]]&, "nb", {"*.nb","*.cdf","*.nbp","*.wl","*.ma","*.m"}, OptionsNotebook->"ImportNotebook.nb"],
+	Item["Picture Files", FindImportPicturesFilter,  "", PictureFilters],
+	Item["Rich Text Format (*.rtf)", FEPrivate`FrontEndExecute[FrontEndToken[#2, "Import", {#, "RichText"}]]&, "rtf", "*.rtf", MacintoshFileTypes->{"RTF "}],
+	Item["Text files", FEPrivate`FrontEndExecute[FrontEndToken["Import", {#, "Text"}]]&, "txt", {"*.txt"}, MacintoshFileTypes->{"TEXT"}, OptionsNotebook->"ImportText.nb"]
+}];
+
+AddFileBrowserFilterPacket["ImportPictures", {
+	Item["All Files", FindImportPicturesFilter,  "", "*"],
+	Item["EPS", FEPrivate`FrontEndExecute[FrontEndToken[#2, "ImportPictures", {#, "EPS"}]]&, "eps", {"*.eps"}],
+	Item["GIF", FEPrivate`FrontEndExecute[FrontEndToken[#2, "ImportPictures", {#, "GIF"}]]&, "gif", "*.gif", MacintoshFileTypes->{"GIFf"}, OptionsNotebook -> "ImportGIF.nb"],
+	Item["JPEG", NotebookWrite[#2, ToBoxes[Import[#, "JPEG"]]]&, "jpg", {"*.jpg", "*.jpeg"}, MenuEvaluator->Automatic, MacintoshFileTypes->{"JPEG"}, OptionsNotebook -> "ImportJPEG.nb"],
+	Item["PDF", FEPrivate`If[CurrentValue[{ConversionOptions, "ImportOptions", "PDF", "Editable"}] =!= False,
+					FrontEnd`Private`ImportPDF[#2, #],
+					FEPrivate`FrontEndExecute[FrontEndToken[#2, "ImportPictures", {#, "PDF"}]]
+				]&,	"pdf", {"*.pdf"}, MacintoshFileTypes->{"PDF "}, OptionsNotebook -> "ImportPDF.nb"],
+	Item["PNG", FEPrivate`FrontEndExecute[FrontEndToken[#2, "ImportPictures", {#, "PNG"}]]&, "png", "*.png", MacintoshFileTypes->{"PNGf"}],
+	Item["TIFF", NotebookWrite[#2, ToBoxes[Import[#, "TIFF"]]]&, "tiff", {"*.tiff", "*.tif"}, MenuEvaluator->Automatic, MacintoshFileTypes->{"TIFF"}, OptionsNotebook -> "ImportTIFF.nb"],
+	Item["Raw", NotebookWrite[#2, ToBoxes[Import[#, "Raw"]]]&, "raw", {"*.bay", "*.bmq", "*.cr2", "*.crw", "*.cs1", "*.dc2", "*.dcr", "*.dng", "*.erf", "*.fff", "*.hdr", "*.k25", "*.kdc", "*.mdc", "*.mos", "*.mrw", "*.nef", "*.orf", "*.pef", "*.pxn", "*.raf", "*.raw", "*.rdc", "*.sr2", "*.srf", "*.x3f", "*.arw", "*.3fr", "*.cine", "*.ia", "*.kc2", "*.mef", "*.nrw", "*.qtk", "*.rw2", "*.sti", "*.rwl"}, MenuEvaluator->Automatic]
+}];
+
+AddFileBrowserFilterPacket["Save", {
+	Item["Wolfram Notebook (*.nb)", FEPrivate`FrontEndExecute[FrontEndToken[#2, "Save", {#, "Notebook"}]]&, "nb", "*.nb", MacintoshFileTypes->{"TEXT"}],
+	Item["Computable Document (*.cdf)", FEPrivate`FrontEndExecute[FrontEndToken[#2, "Save", {#, "CDFNotebook"}]]&, "cdf", "*.cdf", MacintoshFileTypes->{"TEXT"}],
+	Item["Wolfram Language Package (*.wl)", FEPrivate`FrontEndExecute[FrontEndToken[#2, "Save", {#, "Package"}]]&, "wl", "*.wl", MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportPackage.nb"],
+	Item["Wolfram Mathematica Package (*.m)", FEPrivate`FrontEndExecute[FrontEndToken[#2, "Save", {#, "Package"}]]&, "m", "*.m", MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportPackage.nb"],
+	Item["Plain Text (*.txt)", FEPrivate`FrontEndExecute[FrontEndToken[#2, "Save", {#, "PlainText"}]]&, "txt", "*.txt", MacintoshFileTypes->{"TEXT"}],
+	Item["LaTeX Document (*.tex)",
+		FrontEnd`SaveAs[#1, #2, "TeX"]&,
+		"tex", "*.tex", MenuEvaluator->Automatic, MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportTeX.nb"],
+	Item["PostScript Document (*.ps)", FEPrivate`FrontEndExecute[NotebookPrint[#2, #1]]&, "ps", "*.ps", MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportVectorFormat.nb"],
+	Item["PDF Document (*.pdf)", FEPrivate`FrontEndExecute[NotebookPrint[#2, #1]]&, "pdf", "*.pdf", MacintoshFileTypes->{"PDF "}, OptionsNotebook -> "ExportPDF.nb"],
+	Item["Rich Text Format (*.rtf)", FEPrivate`FrontEndExecute[FrontEndToken[#2, "Save", {#, "RTF"}]]&, "rtf", "*.rtf", MacintoshFileTypes->{"RTF "}],
+	Item["Web Page (*.html)",
+		FrontEnd`SaveAs[#1, #2, "XHTML"]&,
+		"html", {"*.htm", "*.html"}, MenuEvaluator->Automatic, MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportXHTML.nb"],
+	Item["XML -- XHTML+MathML (*.xml)",
+		FrontEnd`SaveAs[#1, #2, "XHTMLMathML"]&,
+		"xml", {"*.xml", "*.htm", "*.html"}, MenuEvaluator->Automatic, MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportXHTMLMathML.nb" ]
+}];
+
+AddFileBrowserFilterPacket["SaveSelection", {
+	Item["PDF", FEPrivate`FrontEndExecute[FrontEndToken[#2, "SelectionSaveSpecial", {#, "PDF"}]]&,
+				"pdf", {"*.pdf"}, MacintoshFileTypes->{"PDF"}, OptionsNotebook -> "ExportPDF.nb"],
+	Item["Web Page", FrontEnd`SaveSelectionAs[#1, #2, "HTML"]&, "html", {"*.htm", "*.html"}, MenuEvaluator->Automatic, MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportXHTML.nb"],
+	Item["HTML", FrontEnd`SaveSelectionAs[#1, #2, "HTML", "FullDocument"->False]&, "html", {"*.htm", "*.html"}, MenuEvaluator->Automatic, MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportXHTML.nb"],	
+	Item["BMP", FrontEnd`SaveSelectionAs[#1, #2, "BMP"]&, "bmp", "*.bmp", MenuEvaluator->Automatic, MacintoshFileTypes->{"BMP"}, OptionsNotebook -> "ExportBMP.nb"],
+	Item["EPS", FEPrivate`FrontEndExecute[FrontEndToken[#2, "SelectionSaveSpecial", {#, "EPS"}]]&,
+				"eps", {"*.eps"}, MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportEPS.nb"],
+	Item["GIF", FrontEnd`SaveSelectionAs[#1, #2, "GIF"]&, "gif", "*.gif", MenuEvaluator->Automatic, MacintoshFileTypes->{"GIFf"}],
+	Item["JPEG", FrontEnd`SaveSelectionAs[#1, #2, "JPEG"]&, "jpg", {"*.jpeg", "*.jpg"}, MenuEvaluator->Automatic, MacintoshFileTypes->{"JPEG"}, OptionsNotebook -> "ExportJPEG.nb"],
+	Item["PNG", FrontEnd`SaveSelectionAs[#1, #2, "PNG"]&, "png", "*.png", MenuEvaluator->Automatic, MacintoshFileTypes->{"PNGf"}],
+	Item["PXR", FrontEnd`SaveSelectionAs[#1, #2, "PXR"]&, "pxr", "*.pxr", MenuEvaluator->Automatic, MacintoshFileTypes->{"PXR"}],
+	Item["SVG", FEPrivate`FrontEndExecute[FrontEndToken[#2, "SelectionSaveSpecial", {#, "SVG"}]]&,
+				"svg", {"*.svg"}, MacintoshFileTypes->{"TEXT"}, OptionsNotebook -> "ExportVectorFormat.nb"],
+	Item["TIFF", FrontEnd`SaveSelectionAs[#1, #2, "TIFF"]&, "tiff", {"*.tiff", "*.tif"}, MenuEvaluator->Automatic, MacintoshFileTypes->{"TIFF"}, OptionsNotebook -> "ExportTIFF.nb"]
+}];
+
+AddFileBrowserFilterPacket["InstallSource", {
+	Item["Wolfram Notebook (*.nb)", 
+		FEPrivate`Set[FEPrivate`Install`sourceFile, #]&, 
+		"nb", "*.nb", MacintoshFileTypes->{"TEXT"}
+	],
+	Item["Wolfram Language Package (*.wl, *.m)", 
+		FEPrivate`Set[FEPrivate`Install`sourceFile, #]&, 
+		"wl", {"*wl","*.m"}, MacintoshFileTypes->{"TEXT"}
+	],
+	Item[".mx File (*.mx)", 
+		FEPrivate`Set[FEPrivate`Install`sourceFile, #]&, 
+		"mx", "*.mx"
+	],
+	Item["WSTP Program (*.exe)", 
+		FEPrivate`Set[FEPrivate`Install`sourceFile, #]&, 
+		"exe", "*.exe"
+	]
+}];
+
+AddFileBrowserFilterPacket["InstallConfirmation", {
+	Item[
+		"Wolfram Notebook (*.nb)", 
+		FEPrivate`FrontEndExecute[
+				FrontEnd`Install[FEPrivate`Install`sourceFile, #] 
+		]&, 
+		"nb", "*.nb", MacintoshFileTypes->{"TEXT"}
+	],
+	Item[
+		"Wolfram Language Package (*.wl, *.m)", 
+		FEPrivate`FrontEndExecute[
+				FrontEnd`Install[FEPrivate`Install`sourceFile, #]
+		]&, 
+		"wl", {"*.wl","*.m"}, MacintoshFileTypes->{"TEXT"}],
+	Item[
+		".mx File (*.mx)", 
+		FEPrivate`FrontEndExecute[
+				FrontEnd`Install[FEPrivate`Install`sourceFile, #]
+		]&, 
+		"mx", "*.mx"],
+	Item["WSTP Program (*.exe)", 
+		FEPrivate`FrontEndExecute[
+				FrontEnd`Install[FEPrivate`Install`sourceFile, #]
+		]&, 
+		"exe", "*.exe"
+	]
+}];
+
